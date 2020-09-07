@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-09-01T03:33:27.626Z</updated>
+    <updated>2020-09-07T13:07:56.727Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -12,44 +12,68 @@
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
     <entry>
-        <title type="html"><![CDATA[【研二开学第一周】生活在路上]]></title>
-        <id>https://seutodaysz.github.io/post/yan-er-kai-xue-di-yi-zhou-sheng-huo-zai-lu-shang/</id>
-        <link href="https://seutodaysz.github.io/post/yan-er-kai-xue-di-yi-zhou-sheng-huo-zai-lu-shang/">
+        <title type="html"><![CDATA[【天池Python训练营学习笔记】第一天]]></title>
+        <id>https://seutodaysz.github.io/post/a-li-yun-tian-chi-python-xun-lian-ying-xue-xi-bi-ji-di-yi-tian/</id>
+        <link href="https://seutodaysz.github.io/post/a-li-yun-tian-chi-python-xun-lian-ying-xue-xi-bi-ji-di-yi-tian/">
         </link>
-        <updated>2020-08-30T12:52:22.000Z</updated>
-        <content type="html"><![CDATA[<p>不知不觉，已经研究生二年级了。我的很多事情正在慢慢进入轨道。今天是开学第一周的周日，我。留下一个时间，写写博客，做个总结。<br>
-我首先我做个思路导图，就是说我的主要内容分为4个方面，</p>
-<h1 id="健康生活">健康生活</h1>
-<p>这一周，我洗了衣服，洗了鞋子，把自己生活做个全面的清洁和整理，总体上来说，我认为已经很干净和卫生了。接下在保持良好的生活习惯方面继续改进，多买几件好看的衣服，好好收拾一下自己的脸面，自己穿搭，显得不那么邋遢。以及自己良好的作息习惯。洗澡完，衣服尽量尽快洗掉。</p>
-<h1 id="快乐科研">快乐科研</h1>
-<p>这一周，我的科研也慢慢有了方向和进展。总的来说，我进一步明确了导师对于自己的要求和自己的毕业能力要求。首先是自己的电子专业能力要进一步扎实。会画板子，会设计天线，会写嵌入式的代码，会调底层代码。进一步提高自己硬件开发的能力。 对于自己的研究方向，我也慢慢明确，研究柔性射频电子技术。<br>
-更多的东西我也需要进一步沉下心去理解，接受，和学习。</p>
-<h1 id="人际交往">人际交往</h1>
-<h1 id="职业发展">职业发展</h1>
-<h1 id="第二周的规划和安排">第二周的规划和安排</h1>
-<p>第二周，会有新生要加入集体，大家可以进一步开展学习。我也要要明确我的学习目标和学习任务。</p>
+        <updated>2020-09-07T12:25:31.000Z</updated>
+        <content type="html"><![CDATA[<p>从9月6日开始，进行为期10天的Python学习，作为自己博客网站的第一个小项目。对于自己学习Python,做一些整理。</p>
+<p>第一天的学习,主要是包括变量的，运算符，和数据类型，位运算。任何一门语言，都要了解一些最基础的语法知识。因此，以变量为基本单元，进行逐步深入学习。</p>
+<h1 id="变量">👉 变量</h1>
+<p>在高级程序语言设计中，变量都是最基础的组成单位。对于变量，只需要掌握变量命名的三个规则：</p>
 <ol>
-<li>学会AltiumDesigner  （周一，周二）</li>
-<li>根据功能来设计设计电路图，然后进行版图绘制（周三，周四）</li>
-<li>研究RFID防碰撞协议（周一~周五）</li>
-<li>整理电磁场与微波技术的基础课(周一~周五)</li>
-<li>自己小论文：标签天线的设计文档</li>
+<li>变量可以用字母，符号，数字组成；</li>
+<li>数字不能做为变量的开头，符号，字母可以做为变量的开头</li>
+<li>变量不能与系统保留字冲突</li>
 </ol>
-<hr>
-<h2 id="本周的主要任务一-有几个要学习的东西开学第一个月hfss-ad版图设计电磁场与微波技术天线理论与技术二-金融数据分析师职业发展">本周的主要任务：<br>
-一、有几个要学习的东西：<br>
-（开学第一个月）HFSS ，AD版图设计，电磁场与微波技术，天线理论与技术<br>
-二、金融数据分析师：职业发展</h2>
-<h2 id="数据结构计算机组成原理操作系统计算机网络数据库大数据java高级编程语言">数据结构，计算机组成原理，操作系统，计算机网络，数据库，大数据，Java高级编程语言</h2>
-<p>三、毕业的能力</p>
-<ol>
-<li>自己设计电路图，画出电子版图，制作成板子，编写嵌入式程序</li>
-<li>自己设计天线，调试天线性能，完成基本的通信功能</li>
-</ol>
-<hr>
-<p>四、发文章<br>
-毕业能写一篇高水平的文章</p>
-<p>短期规划和长远目标相结合，分清主次任务，确定一个阶段性的目标，然后一步一步去努力实现</p>
+<h1 id="数据类型">👉 数据类型</h1>
+<h2 id="基本数据类型">基本数据类型</h2>
+<p>了解了变量的定义，可以在内存空间生成一个区域,存储变量的值。用于表示现实世界的变量有很多不同类型，需要对不同类型的变量进行区分。主要分为：<br>
+<img src="https://seutodaysz.github.io/post-images/1599482528926.png" alt="" loading="lazy"></p>
+<h2 id="整型例子">整型例子：</h2>
+<pre><code>a = 1024
+b = dir(int)
+print(a,type(a) ) 可以生成 变量的类型
+print(bin(a))      获取 数字的二进制表示
+print(b)
+</code></pre>
+<h2 id="浮点数类型">浮点数类型</h2>
+<pre><code>import decimal
+from decimal  import Decimal
+
+a = decimal.getcontext()
+print(a)
+
+b = Decimal(1)/Decimal(3)
+print(b)
+
+decimal.getcontext().prec = 4
+c = Decimal(1)/Decimal(3)
+print(c)
+</code></pre>
+<h2 id="布尔型数据">布尔型数据</h2>
+<pre><code>print(True+True)
+</code></pre>
+<h2 id="不同类型之间的数据可以进行数据转换">不同类型之间的数据可以进行数据转换</h2>
+<h1 id="运算符">👉 运算符</h1>
+<p>分析了 变量，以及 不同类型的变量以后，可以考虑对于变量进行一些简单的运算。这里就设计到几种常见的运算符</p>
+<h2 id="算术运算符">算术运算符</h2>
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1599483756597.png" alt="" loading="lazy"></figure>
+<h2 id="比较运算符">比较运算符</h2>
+<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1599483760986.png" alt="" loading="lazy"></figure>
+<h2 id="逻辑运算符">逻辑运算符</h2>
+<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1599483765920.png" alt="" loading="lazy"></figure>
+<h2 id="位运算符">位运算符</h2>
+<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1599483770133.png" alt="" loading="lazy"></figure>
+<h2 id="多元运算符">多元运算符</h2>
+<p><img src="https://seutodaysz.github.io/post-images/1599483803586.png" alt="" loading="lazy"><br>
+##其他运算符<br>
+<img src="https://seutodaysz.github.io/post-images/1599483776684.png" alt="" loading="lazy"></p>
+<h1 id="位运算">👉 位运算</h1>
+<p><img src="https://seutodaysz.github.io/post-images/1599483994715.png" alt="" loading="lazy"><br>
+<img src="https://seutodaysz.github.io/post-images/1599484046683.png" alt="" loading="lazy"></p>
+<h1 id="printf-函数">👉 printf() 函数</h1>
+<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1599484070626.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
