@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-09-09T01:29:35.248Z</updated>
+    <updated>2020-09-14T01:54:04.592Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -12,77 +12,26 @@
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
     <entry>
-        <title type="html"><![CDATA[【天池Python训练营学习笔记】第二天]]></title>
-        <id>https://seutodaysz.github.io/post/tian-chi-python-xun-lian-ying-xue-xi-bi-ji-di-er-tian/</id>
-        <link href="https://seutodaysz.github.io/post/tian-chi-python-xun-lian-ying-xue-xi-bi-ji-di-er-tian/">
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://seutodaysz.github.io/post/about/</id>
+        <link href="https://seutodaysz.github.io/post/about/">
         </link>
-        <updated>2020-09-09T01:28:32.000Z</updated>
-        <content type="html"><![CDATA[<p>本章开始第二部分的Python的学习</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【天池Python训练营学习笔记】第一天]]></title>
-        <id>https://seutodaysz.github.io/post/a-li-yun-tian-chi-python-xun-lian-ying-xue-xi-bi-ji-di-yi-tian/</id>
-        <link href="https://seutodaysz.github.io/post/a-li-yun-tian-chi-python-xun-lian-ying-xue-xi-bi-ji-di-yi-tian/">
-        </link>
-        <updated>2020-09-07T12:25:31.000Z</updated>
-        <content type="html"><![CDATA[<p>从9月6日开始，进行为期10天的Python学习，作为自己博客网站的第一个小项目。对于自己学习Python,做一些整理。</p>
-<p>第一天的学习,主要是包括变量的，运算符，和数据类型，位运算。任何一门语言，都要了解一些最基础的语法知识。因此，以变量为基本单元，进行逐步深入学习。</p>
-<h1 id="变量">👉 变量</h1>
-<p>在高级程序语言设计中，变量都是最基础的组成单位。对于变量，只需要掌握变量命名的三个规则：</p>
-<ol>
-<li>变量可以用字母，符号，数字组成；</li>
-<li>数字不能做为变量的开头，符号，字母可以做为变量的开头</li>
-<li>变量不能与系统保留字冲突</li>
-</ol>
-<h1 id="数据类型">👉 数据类型</h1>
-<h2 id="基本数据类型">基本数据类型</h2>
-<p>了解了变量的定义，可以在内存空间生成一个区域,存储变量的值。用于表示现实世界的变量有很多不同类型，需要对不同类型的变量进行区分。主要分为：<br>
-<img src="https://seutodaysz.github.io/post-images/1599482528926.png" alt="" loading="lazy"></p>
-<h2 id="整型例子">整型例子：</h2>
-<pre><code>a = 1024
-b = dir(int)
-print(a,type(a) ) 可以生成 变量的类型
-print(bin(a))      获取 数字的二进制表示
-print(b)
-</code></pre>
-<h2 id="浮点数类型">浮点数类型</h2>
-<pre><code>import decimal
-from decimal  import Decimal
-
-a = decimal.getcontext()
-print(a)
-
-b = Decimal(1)/Decimal(3)
-print(b)
-
-decimal.getcontext().prec = 4
-c = Decimal(1)/Decimal(3)
-print(c)
-</code></pre>
-<h2 id="布尔型数据">布尔型数据</h2>
-<pre><code>print(True+True)
-</code></pre>
-<h2 id="不同类型之间的数据可以进行数据转换">不同类型之间的数据可以进行数据转换</h2>
-<h1 id="运算符">👉 运算符</h1>
-<p>分析了 变量，以及 不同类型的变量以后，可以考虑对于变量进行一些简单的运算。这里就设计到几种常见的运算符</p>
-<h2 id="算术运算符">算术运算符</h2>
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1599483756597.png" alt="" loading="lazy"></figure>
-<h2 id="比较运算符">比较运算符</h2>
-<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1599483760986.png" alt="" loading="lazy"></figure>
-<h2 id="逻辑运算符">逻辑运算符</h2>
-<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1599483765920.png" alt="" loading="lazy"></figure>
-<h2 id="位运算符">位运算符</h2>
-<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1599483770133.png" alt="" loading="lazy"></figure>
-<h2 id="多元运算符">多元运算符</h2>
-<p><img src="https://seutodaysz.github.io/post-images/1599483803586.png" alt="" loading="lazy"><br>
-##其他运算符<br>
-<img src="https://seutodaysz.github.io/post-images/1599483776684.png" alt="" loading="lazy"></p>
-<h1 id="位运算">👉 位运算</h1>
-<p><img src="https://seutodaysz.github.io/post-images/1599483994715.png" alt="" loading="lazy"><br>
-<img src="https://seutodaysz.github.io/post-images/1599484046683.png" alt="" loading="lazy"></p>
-<h1 id="printf-函数">👉 printf() 函数</h1>
-<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1599484070626.png" alt="" loading="lazy"></figure>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>我是一个19级研究生，现就读于东南大学信息学院。研究生的生活的开始是充满着焦虑和后悔。我发现了我只是一个普通人，有自己快乐和忧伤。2020年的新冠疫情是一场始料未及的人类灾难。每个人都不可能置身事外。居家隔离的一段时间里，我好好的整理了自己的生活，仔细思考了自己的人生方向，也在一点一滴的积累自己的技能和能力。于是我搭建了这样一个简单的平台。用来存放自己的一些想法和自己学习的一些心得，以飨各位读者。从一个看客到一个内容生产者，很多自己平时只需要看看就行的概念，慢慢提高了要求，行文表达注意方式，思路注重逻辑。总之，我希望在这样一个平台上，认识更多优秀的人，自己也可以成长的更快一些。</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>我喜欢乒乓球，篮球，骑行，跑步，各种体育运动我都喜欢去尝试。目前为了控制体重，我准备定个健身计划。每天运动1小时，体重控制到70kg以下。</p>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>我的专业是电子信息科学与技术，对于一门工科专业，讲究是自己的专业能力和工程项目，或者学术文章。我也觉得这才是自己硬实力表现。因此，我想在这样一个平台上集中展示自己的学习成果和学习过程，或许可以激励更多人一起努力。对于本站的主要内容，目前我的规划主要是：<br>
+&lt;学术文章品读&gt;,&lt;工程项目分析&gt;&lt;就业方向训练&gt;&lt;人生百味思索&gt;<br>
+这四大板块构成了我生活的全部。我在相信，一年的时间，我可以得到自己想要的未来。即使不容易，我也不曾放弃，只要不虚度，就是有意义。</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>你可以在以下方式中与我取得联系<br>
+微信：sunz1227<br>
+[知乎]:(https://www.zhihu.com/people/seusun)</p>
 ]]></content>
     </entry>
 </feed>
