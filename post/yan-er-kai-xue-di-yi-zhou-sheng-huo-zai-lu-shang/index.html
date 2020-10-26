@@ -1,107 +1,108 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <title>【研二！奋斗！】生活在路上，未来在脚下 | 九天之遥</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1603713569649">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1600048442444">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="不知不觉，已经研究生二年级了。我的很多事情正在慢慢进入轨道。今天是开学第一周的周日，我。留下一个时间，写写博客，做个总结。
-我首先我做个思路导图，就是说我的主要内容分为4个方面，
-健康生活
-这一周，我洗了衣服，洗了鞋子，把自己生活做个全面的..." />
-    <meta name="keywords" content="学习规划" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://seutodaysz.github.io">
-        <img src="https://seutodaysz.github.io/images/avatar.png?v=1600048442444" class="site-logo">
-        <h1 class="site-title">九天之遥</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            九天之遥
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      不积跬步无以至千里
-不积小流无以成江海
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://seutodaysz.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">【研二！奋斗！】生活在路上，未来在脚下</h2>
-            <div class="post-date">2020-08-30</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-              <div class="feature-container" style="background-image: url('https://seutodaysz.github.io/post-images/yan-er-kai-xue-di-yi-zhou-sheng-huo-zai-lu-shang.webp')">
-              </div>
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
             
-            <div class="post-content" v-pre>
-              <p>不知不觉，已经研究生二年级了。我的很多事情正在慢慢进入轨道。今天是开学第一周的周日，我。留下一个时间，写写博客，做个总结。<br>
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1603713569649" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    【研二！奋斗！】生活在路上，未来在脚下
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-08-30 ·
+                    </time>
+                    
+                        <a href="https://seutodaysz.github.io/tag/04FwS2mAP/" class="post-tags">
+                            # 学习规划
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>不知不觉，已经研究生二年级了。我的很多事情正在慢慢进入轨道。今天是开学第一周的周日，我。留下一个时间，写写博客，做个总结。<br>
 我首先我做个思路导图，就是说我的主要内容分为4个方面，</p>
 <h1 id="健康生活">健康生活</h1>
 <p>这一周，我洗了衣服，洗了鞋子，把自己生活做个全面的清洁和整理，总体上来说，我认为已经很干净和卫生了。接下在保持良好的生活习惯方面继续改进，多买几件好看的衣服，好好收拾一下自己的脸面，自己穿搭，显得不那么邋遢。以及自己良好的作息习惯。洗澡完，衣服尽量尽快洗掉。</p>
@@ -163,45 +164,63 @@ HFSS 软件+ADS 软件+ 电磁场基础理论</p>
 项目</p>
 <h2 id="12-月">12 月：</h2>
 <p>数据结构+深度学习</p>
+<p>虽然你有很多的规划，但是有这样一个老板，你也没办法实现自己的目标？<br>
+真的吗？我嫉觉得我还是有机会的，就像是在外面上班的员工，也要想办法实现自己的自由<br>
+我觉得自己走错了陆，但是在过来人看来，也不过是三年罢了。<br>
+在越高的地方，可以看见更多优秀的人，稍不留神，你就已经落后很多了。<br>
+环境还是一个很重要的因素，我可以做好这些事情。</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://seutodaysz.github.io/tag/04FwS2mAP/" class="tag">
-                    学习规划
-                  </a>
-                
-              </div>
-            
-            
-
-            
-
-          </div>
-
+                </div>
+            </article>
         </div>
-      </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://seutodaysz.github.io/post/about/" class="post-title gt-a-link">
+                    关于
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">不积跬步无以至千里
+不积小流无以成江海</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://seutodaysz.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
-
-
-  </body>
+    </div>
+</div>
+</body>
 </html>
