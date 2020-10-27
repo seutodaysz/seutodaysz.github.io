@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-26T13:23:47.793Z</updated>
+    <updated>2020-10-27T02:17:25.205Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,4 +11,114 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[【Markdown语法规则小结】]]></title>
+        <id>https://seutodaysz.github.io/Markdown/</id>
+        <link href="https://seutodaysz.github.io/Markdown/">
+        </link>
+        <updated>2020-10-27T02:12:56.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603764829317.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+<h1 id="一-标题">一、标题</h1>
+<!-- more -->
+<h1 id="二-字体">二、字体</h1>
+<!-- more -->
+<h1 id="三-引用">三、引用</h1>
+<!-- more -->
+<h1 id="四-分割线">四、分割线</h1>
+<!-- more -->
+<h1 id="五-图片">五、图片</h1>
+<!-- more -->
+<h1 id="六-超链接">六、超链接</h1>
+<!-- more -->
+<h1 id="七-列表">七、列表</h1>
+<!-- more -->
+<h1 id="八-表格">八、表格</h1>
+<!-- more -->
+<h1 id="九-代码">九、代码</h1>
+<!-- more -->
+<h1 id="十-流程图">十、流程图</h1>
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【从零开始学数据挖掘与数据分析】]]></title>
+        <id>https://seutodaysz.github.io/DataMine_10_27/</id>
+        <link href="https://seutodaysz.github.io/DataMine_10_27/">
+        </link>
+        <updated>2020-10-27T01:50:43.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603763485708.jpg" alt="" loading="lazy"></figure>
+<h1 id="一-数据挖掘与数据分析的基本概述">一、数据挖掘与数据分析的基本概述</h1>
+<p>数据分析和数据挖掘都是基于搜集来的数据，应用数学、统计、计算机等技术进行处理，抽取数据中的有用的信息，进而为决策提供依据和知道方向。在实际的应用中，有多种多样的数据挖掘和数据分析的方法，针对不同的应用场景，选用不同的分析模型，得到不同的结果。</p>
+<p>从应用领域来看，数据分析和数据挖掘已经广泛应用在：电商、交通出行、医疗健康等领域</p>
+<h2 id="电商">电商</h2>
+<h2 id="交通">交通</h2>
+<h2 id="医疗">医疗</h2>
+<h2 id="金融">金融</h2>
+<p>从技术对比来看，数据分析和数据挖掘又有着不同的特点:</p>
+<p>从实现流程来看，数据挖掘的主要流程为：</p>
+<!-- more -->
+<h1 id="二-数据挖掘的实例波士顿房价预测">二、数据挖掘的实例—波士顿房价预测</h1>
+<!-- more -->
+<h1 id="三-python-的快速入门">三、Python 的快速入门</h1>
+<!-- more -->
+<h1 id="四-python-的科学计算工具">四、Python 的科学计算工具</h1>
+<!-- more -->
+<h1 id="五-python-的数据处理工具">五、Python 的数据处理工具</h1>
+<!-- more -->
+<h1 id="六-python-的数据可视化处理">六、Python 的数据可视化处理</h1>
+<!-- more -->
+<h1 id="七-数据挖掘中常见的模型">七、数据挖掘中常见的模型</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【研究生学术规划】厦门大学移动计算实验室 ]]></title>
+        <id>https://seutodaysz.github.io/ability/</id>
+        <link href="https://seutodaysz.github.io/ability/">
+        </link>
+        <updated>2020-10-27T01:37:16.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603763367926.jpg" alt="" loading="lazy"></figure>
+<p>研究生阶段，要具备的能力和知识点清单如下:</p>
+<!-- more -->
+<h1 id="能力清单">👉 能力清单：</h1>
+<p>1️⃣ 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
+2️⃣ 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
+3️⃣ 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
+4️⃣ 沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
+5️⃣ 时间管理的能力：能合理管理自己的时间，高效做事；<br>
+6️⃣ 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
+<!-- more -->
+<h1 id="知识清单">👉 知识清单：</h1>
+<p>1️⃣ 编程语言：</p>
+<p>​       精通 python、java，matlab,C/C++；<br>
+​       有项目经验，能独立完成实验和科研项目；</p>
+<p>2️⃣ 操作系统和工具：</p>
+<p>​ 熟悉Linux的部署、配置，基本命令等；（Cent OS、Ubuntu）<br>
+​ 尽量在Linux上开发和编程；<br>
+​ Linux上搭建常见应用（Apache、ftp等）；</p>
+<p>3️⃣ 计算机相关理论：</p>
+<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
+​ 重点掌握机器学习基本原理；<br>
+​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
+<p>4️⃣ 常用工具的熟练掌握：</p>
+<p>​ 常规机器学习平台：scikit learn<br>
+​ 深度学习平台：Pytorch、TensorFlow<br>
+​ 数据处理工具包：pandas、numpy<br>
+​ 数据库：my-sql、mongodb</p>
+<p>5️⃣ 科研和论文写作：</p>
+<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
+​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
+<p>6️⃣ 大数据平台构建和数据分析</p>
+<p>​ 可选1-2个进行研究（如Spark、Hadoop等）；</p>
+<p>7️⃣ 其他工具</p>
+<p>​ 版本控制：Git<br>
+​ 网站：WordPress、Apache、ngnix</p>
+<!-- more -->
+<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603763379782.jpg" alt="" loading="lazy"></figure>
+<h1 id="时间管理">👉 时间管理：</h1>
+]]></content>
+    </entry>
 </feed>
