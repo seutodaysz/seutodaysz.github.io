@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-27T13:01:02.234Z</updated>
+    <updated>2020-10-27T13:21:34.203Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -29,33 +29,40 @@
 2018年7月18日，全球最大的可编程芯片（FPGA）厂商赛灵思宣布收购中国 AI 芯片领域的明星创业公司——深鉴科技。有“中国英伟达”之称的AI芯片初创企业将继续在其北京办公室运营。目前，交易金额及细节尚未公布。 [1]<br>
 2019年10月23日， 2019《财富》未来50强榜单公布，赛灵思（Xilinx）排名第17。</p>
 <h2 id="fpga芯片的组成"><strong>FPGA芯片的组成</strong></h2>
-<h3 id="可编程输入输出单元">可编程输入输出单元；</h3>
-<h3 id="基本可编程逻辑单元">基本可编程逻辑单元；</h3>
-<h3 id="完整的时钟管理">完整的时钟管理；</h3>
-<h3 id="嵌入块式ram">嵌入块式RAM；</h3>
-<h3 id="丰富的布线资源">丰富的布线资源；</h3>
-<h3 id="内嵌的底层功能单元和专用硬件模块">内嵌的底层功能单元和专用硬件模块；</h3>
-<pre><code>    CLB是FPGA内的基本逻辑单元。CLB的实际数量和特性会依器件的不同而不同，但是每个CLB都包含：一个可配置开关矩阵，此矩阵由4或6个输入、一些选型电路（多路复用器等）和触发器组成。开关矩阵是高度灵活的，可以对其进行配置以便处理组合逻辑、移位寄存器或RAM。在Xilinx公司的FPGA器件中，CLB由多个（一般为4个或2个）相同的Slice和附加逻辑构成。
-    每个CLB模块不仅可以用于实现组合逻辑、时序逻辑，还可以配置为分布式RAM和分布式ROM。
-    -FPGA内部结构（专用BRAM）
-    ·输入通道：两个DDR寄存器
-    ·输出通道：两个DDR寄存器
-    ·两个三态使能：DDR复用器
-    ·独立的时钟和时钟使能，用于I和O
-    ·共享置位和复位信号
-</code></pre>
+<p>1️⃣ 可编程输入输出单元；<br>
+2️⃣ 基本可编程逻辑单元；<br>
+3️⃣ 完整的时钟管理；<br>
+4️⃣ 嵌入块式RAM；<br>
+5️⃣ 丰富的布线资源；<br>
+6️⃣ 内嵌的底层功能单元和专用硬件模块；</p>
 <!-- more -->
 <h1 id="二-vivado-软件安装">二、Vivado 软件安装</h1>
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603804705841.jpg" alt="" loading="lazy"></figure>
 <h1 id="三-veilog-hdl-硬件描述语言">三、Veilog hdl 硬件描述语言</h1>
+<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603804608114.jpg" alt="" loading="lazy"></figure>
+<h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
+<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1603804639696.jpg" alt="" loading="lazy"></figure>
 <h2 id="gpio实验">GPIO实验</h2>
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603803446613.png" alt="" loading="lazy"></figure>
+<h3 id="1-led点灯">1. led点灯</h3>
+<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1603803446613.png" alt="" loading="lazy"></figure>
+<h3 id="2-按键控制">2. 按键控制</h3>
+<p><img src="https://seutodaysz.github.io/post-images/1603803862468.png" alt="" loading="lazy"><br>
+<img src="https://seutodaysz.github.io/post-images/1603803867480.png" alt="" loading="lazy"></p>
+<h3 id="3-呼吸灯">3. 呼吸灯</h3>
+<p><img src="https://seutodaysz.github.io/post-images/1603803956957.png" alt="" loading="lazy"><br>
+<img src="https://seutodaysz.github.io/post-images/1603803961144.png" alt="" loading="lazy"></p>
+<h3 id="4按键蜂鸣器">4.按键蜂鸣器</h3>
 <h2 id="ip核实验">IP核实验</h2>
 <h2 id="串口通信">串口通信</h2>
 <h2 id="频率计">频率计</h2>
-<h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
-<h2 id="1">1.</h2>
 <h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
+<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603804570891.jpg" alt="" loading="lazy"></figure>
+<h2 id="crc-校验">CRC 校验</h2>
+<p>CRC校验码的全称是循环冗余码，常用于数字基带通信中的校验位。在RFID实验中，用到的CRC校验码有2种，主要是CRC5和CRC16.这里主要是基于CRC16进行深入的介绍。</p>
+<h2 id="信源编码">信源编码</h2>
+<h2 id="信道编码">信道编码</h2>
 <h1 id="六-基于fpga的深度学习加速">六、基于FPGA的深度学习加速</h1>
+<figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1603804665028.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
