@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-27T02:24:09.261Z</updated>
+    <updated>2020-10-27T10:55:01.990Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -43,7 +43,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[【从零开始学数据挖掘与数据分析】]]></title>
+        <title type="html"><![CDATA[【从零开始学Python数据挖掘与数据分析】]]></title>
         <id>https://seutodaysz.github.io/DataMine_10_27/</id>
         <link href="https://seutodaysz.github.io/DataMine_10_27/">
         </link>
@@ -61,16 +61,22 @@
 <p>从实现流程来看，数据挖掘的主要流程为：</p>
 <!-- more -->
 <h1 id="二-数据挖掘的实例波士顿房价预测">二、数据挖掘的实例—波士顿房价预测</h1>
+<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603795486805.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
 <h1 id="三-python-的快速入门">三、Python 的快速入门</h1>
+<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1603795511667.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
 <h1 id="四-python-的科学计算工具">四、Python 的科学计算工具</h1>
+<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1603795519352.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
 <h1 id="五-python-的数据处理工具">五、Python 的数据处理工具</h1>
+<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603795523853.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
 <h1 id="六-python-的数据可视化处理">六、Python 的数据可视化处理</h1>
+<figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1603795532503.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
 <h1 id="七-数据挖掘中常见的模型">七、数据挖掘中常见的模型</h1>
+<figure data-type="image" tabindex="7"><img src="https://seutodaysz.github.io/post-images/1603795538118.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -84,7 +90,8 @@
 <p>研究生阶段，要具备的能力和知识点清单如下:</p>
 <!-- more -->
 <h1 id="能力清单">👉 能力清单：</h1>
-<p>1️⃣ 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
+<p><img src="https://seutodaysz.github.io/post-images/1603795589976.jpg" alt="" loading="lazy"><br>
+1️⃣ 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
 2️⃣ 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
 3️⃣ 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
 4️⃣ 沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
@@ -92,7 +99,8 @@
 6️⃣ 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
 <!-- more -->
 <h1 id="知识清单">👉 知识清单：</h1>
-<p>1️⃣ 编程语言：</p>
+<p><img src="https://seutodaysz.github.io/post-images/1603795601664.jpg" alt="" loading="lazy"><br>
+1️⃣ 编程语言：</p>
 <p>​       精通 python、java，matlab,C/C++；<br>
 ​       有项目经验，能独立完成实验和科研项目；</p>
 <p>2️⃣ 操作系统和工具：</p>
