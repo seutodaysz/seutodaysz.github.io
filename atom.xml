@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-27T11:08:06.584Z</updated>
+    <updated>2020-10-27T11:30:44.695Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,6 +11,26 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[【机器学习基础】]]></title>
+        <id>https://seutodaysz.github.io/MechineLearning/</id>
+        <link href="https://seutodaysz.github.io/MechineLearning/">
+        </link>
+        <updated>2020-10-27T11:29:26.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603798183532.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【深度学习基础】]]></title>
+        <id>https://seutodaysz.github.io/DeepLearning/</id>
+        <link href="https://seutodaysz.github.io/DeepLearning/">
+        </link>
+        <updated>2020-10-27T11:28:14.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603798157999.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【Markdown语法规则小结】]]></title>
         <id>https://seutodaysz.github.io/Markdown/</id>
@@ -125,8 +145,8 @@
 <p>​ 版本控制：Git<br>
 ​ 网站：WordPress、Apache、ngnix</p>
 <!-- more -->
-<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603763379782.jpg" alt="" loading="lazy"></figure>
 <h1 id="时间管理">👉 时间管理：</h1>
+<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603763379782.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
