@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>学习规划 | 九天之遥</title>
+<title>【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习 | 九天之遥</title>
 
 <link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1603803659087">
 
@@ -25,11 +25,11 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -93,79 +93,81 @@
     </div>
 </nav>
 
-        <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #学习规划
-            </h2>
-        </div>
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://seutodaysz.github.io/ability/">
-                            <span class="post-title gt-c-content-color-first">【研究生三年规划】厦门大学移动计算实验室 </span>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-10-27 ·
+                    </time>
+                    
+                        <a href="https://seutodaysz.github.io/dADoqBkvU/" class="post-tags">
+                            # FPGA
                         </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-10-27 ·
-                        </time>
-                        
-                            <a href="https://seutodaysz.github.io/04FwS2mAP/" class="post-tag">
-                                # 学习规划
-                            </a>
-                        
-                    </div>
+                    
                 </div>
-                
-                    <a href="https://seutodaysz.github.io/ability/" class="post-feature-image"
-                       style="background-image: url('https://seutodaysz.github.io/post-images/ability.jpg')">
-                    </a>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://seutodaysz.github.io/Plan/">
-                            <span class="post-title gt-c-content-color-first">【研二】知行合一</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603718131034.jpg" alt="" loading="lazy"></figure>
+                <div class="post-content">
+                    <!-- more -->
+<p><img src="https://seutodaysz.github.io/post-images/1603801860730.jpg" alt="" loading="lazy"><br>
+近期在做的一个科研要用到FPGA技术，在这里开一个FPGA学习的专场，对于这几年学习的数字电子技术进行一个系统的整理和梳理，以便自己后续的进一步深入掌握。</p>
+<!-- more -->
+<p>总的来说，FPGA技术是基于数字电子技术的底层开发技术，属于芯片领域的核心技术，也是国家现在被卡脖子的领域之一。对于高端的FPGA芯片，美国的封禁也难以阻挡我们向着人类智慧结晶的芯片技术发起进攻的号角。因此，要学好FPGA技术，另外复习一下数字电子技术。两者相辅相乘，才能是深入掌握了FPGA技术。</p>
+<!-- more -->
+<h1 id="一-xilinx公司简介">一、Xilinx公司简介</h1>
+<h2 id="百度百科"><strong>百度百科</strong></h2>
+<p>Xilinx(赛灵思)是全球领先的可编程逻辑完整解决方案的供应商。Xilinx研发、制造并销售范围广泛的高级集成电路、软件设计工具以及作为预定义系统级功能的IP（Intellectual Property）核。<br>
+2018年7月18日，全球最大的可编程芯片（FPGA）厂商赛灵思宣布收购中国 AI 芯片领域的明星创业公司——深鉴科技。有“中国英伟达”之称的AI芯片初创企业将继续在其北京办公室运营。目前，交易金额及细节尚未公布。 [1]<br>
+2019年10月23日， 2019《财富》未来50强榜单公布，赛灵思（Xilinx）排名第17。</p>
+<h2 id="fpga芯片的组成"><strong>FPGA芯片的组成</strong></h2>
+<h3 id="可编程输入输出单元">可编程输入输出单元；</h3>
+<h3 id="基本可编程逻辑单元">基本可编程逻辑单元；</h3>
+<h3 id="完整的时钟管理">完整的时钟管理；</h3>
+<h3 id="嵌入块式ram">嵌入块式RAM；</h3>
+<h3 id="丰富的布线资源">丰富的布线资源；</h3>
+<h3 id="内嵌的底层功能单元和专用硬件模块">内嵌的底层功能单元和专用硬件模块；</h3>
+<pre><code>    CLB是FPGA内的基本逻辑单元。CLB的实际数量和特性会依器件的不同而不同，但是每个CLB都包含：一个可配置开关矩阵，此矩阵由4或6个输入、一些选型电路（多路复用器等）和触发器组成。开关矩阵是高度灵活的，可以对其进行配置以便处理组合逻辑、移位寄存器或RAM。在Xilinx公司的FPGA器件中，CLB由多个（一般为4个或2个）相同的Slice和附加逻辑构成。
+    每个CLB模块不仅可以用于实现组合逻辑、时序逻辑，还可以配置为分布式RAM和分布式ROM。
+    -FPGA内部结构（专用BRAM）
+    ·输入通道：两个DDR寄存器
+    ·输出通道：两个DDR寄存器
+    ·两个三态使能：DDR复用器
+    ·独立的时钟和时钟使能，用于I和O
+    ·共享置位和复位信号
+</code></pre>
+<!-- more -->
+<h1 id="二-vivado-软件安装">二、Vivado 软件安装</h1>
+<h1 id="三-veilog-hdl-硬件描述语言">三、Veilog hdl 硬件描述语言</h1>
+<h2 id="gpio实验">GPIO实验</h2>
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603803446613.png" alt="" loading="lazy"></figure>
+<h2 id="ip核实验">IP核实验</h2>
+<h2 id="串口通信">串口通信</h2>
+<h2 id="频率计">频率计</h2>
+<h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
+<h2 id="1">1.</h2>
+<h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
+<h1 id="六-基于fpga的深度学习加速">六、基于FPGA的深度学习加速</h1>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-08-30 ·
-                        </time>
-                        
-                            <a href="https://seutodaysz.github.io/04FwS2mAP/" class="post-tag">
-                                # 学习规划
-                            </a>
-                        
-                    </div>
                 </div>
-                
-                    <a href="https://seutodaysz.github.io/Plan/" class="post-feature-image"
-                       style="background-image: url('https://seutodaysz.github.io/post-images/Plan.jpg')">
-                    </a>
-                
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://seutodaysz.github.io/MechineLearning/" class="post-title gt-a-link">
+                    【机器学习基础】
+                </a>
             </div>
         
-    </div>
-</div>
-        <div class="pagination-container">
-    
-    
-</div>
+
+        
+
+        
+
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">不积跬步无以至千里
