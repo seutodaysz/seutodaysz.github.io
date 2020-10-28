@@ -6,7 +6,7 @@
 
 <title>【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1603865666115">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1603884351159">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
@@ -85,7 +85,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1603865666115" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1603884351159" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -150,12 +150,46 @@
 <h2 id="频率计">频率计</h2>
 <h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
 <figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603804570891.jpg" alt="" loading="lazy"></figure>
-<h2 id="crc-校验">CRC 校验</h2>
-<p>CRC校验码的全称是循环冗余码，是数据通信领域中最常用的一种差错校验码，其特征是信息字段和校验字段的长度可以任意选定。在RFID实验中，用到的CRC校验码有2种，主要是CRC5和CRC16.这里主要是基于CRC16进行深入的介绍。</p>
+<h2 id="51-crc-校验"><strong>5.1 CRC 校验</strong></h2>
+<h3 id="511-什么是crc校验"><strong>5.1.1 什么是CRC校验</strong></h3>
+<p>CRC校验码的全称是循环冗余码，是数据通信领域中最常用的一种差错校验码，其特征是信息字段和校验字段的长度可以任意选定。</p>
+<p>这个校验方式的根本思想是在发送数据的后面拼接上一些额外的数据位，使得这个拼接之后的数据可以被一个固定的数模2整除（这里的模2整除是一种区别于普通的除法的运算方法，也不难理解），之后将数据发送……接收端同样将整个拼接后的数据与之前确定的固定的数据做模2除法，若能整除，则说明传输过程没有出错，若不能整除，则可以根据余数判断是哪一位发生了错误。、</p>
+<p>在RFID实验中，用到的CRC校验码有2种，主要是CRC5和CRC16.这里主要是基于CRC16进行深入的介绍。</p>
+<h3 id="512-crc-校验的基本原理"><strong>5.1.2 CRC 校验的基本原理</strong></h3>
 <p>生成CRC码的基本原理:<br>
-任意一个由二进制位串组成的代码都可以和一个系数仅为‘0’和‘1’取值的多项式一一对应。例如：代码1010111对应的多项式为x6+x4+x2+x+1，而多项式为x5+x3+x2+x+1对应的代码101111</p>
-<h2 id="信源编码">信源编码</h2>
-<h2 id="信道编码">信道编码</h2>
+任意一个由二进制位串组成的代码都可以和一个系数仅为‘0’和‘1’取值的多项式一一对应。例如：代码1010111对应的多项式为x6+x4+x2+x+1，而多项式为x5+x3+x2+x+1对应的代码101111。</p>
+<p>标准CRC生成多项式如下表：</p>
+<p>名称          生成多项式                          简记式*           标准引用</p>
+<p>CRC-4         x4+x+1                             3                ITU G.704</p>
+<p>CRC-8         x8+x5+x4+1                     0x31</p>
+<p>CRC-8         x8+x2+x1+1                     0x07</p>
+<p>CRC-8         x8+x6+x4+x3+x2+x1       0x5E</p>
+<p>CRC-12        x12+x11+x3+x+1             80F</p>
+<p>CRC-16        x16+x15+x2+1                 8005               IBM SDLC</p>
+<p>CRC16-CCITT  x16+x12+x5+1                1021                ISO HDLC</p>
+<p>CRC-32      x32+x26+x23+...+x2+x+1 04C11              IEEE 802 LAN/FDDI</p>
+<p>CRC-32c     x32+x28+x27+...+x8+x6+1 1EDC6F41     SCTP</p>
+<p><strong>CRC校验是前面几段数据内容的校验值，为一个16位数据，发送时，低8位在前，高8为最后。</strong></p>
+<p>例如：信息字段代码为: 1011001，校验字段为：1010。</p>
+<p>发送方：发出的传输字段为:  1 0 1 1 0 0 1 1 0 10<br>
+信息字段       校验字段<br>
+接收方：使用相同的计算方法计算出信息字段的校验码，对比接收到的实际校验码，如果相等及信息正确，不相等则信息错误；或者将接受到的所有信息除多项式，如果能够除尽，则信息正确</p>
+<h3 id="513-crc校验的步骤"><strong>5.1.3 CRC校验的步骤</strong></h3>
+<p>常用查表法和计算法。计算方法一般都是：<br>
+（1）预置1个16位的寄存器为十六进制FFFF（即全为1），称此寄存器为CRC寄存器；<br>
+（2）把第一个8位二进制数据（既通讯信息帧的第一个字节）与16位的CRC寄存器的低<br>
+8位相异或，把结果放于CRC寄存器，高八位数据不变；<br>
+（3）把CRC寄存器的内容右移一位（朝低位）用0填补最高位，并检查右移后的移出位；<br>
+（4）如果移出位为0：重复第3步（再次右移一位）；如果移出位为1，CRC寄存器与多<br>
+多项式A001（1010 0000 0000 0001）进行异或；<br>
+（5）重复步骤3和4，直到右移8次，这样整个8位数据全部进行了处理；<br>
+（6）重复步骤2到步骤5，进行通讯信息帧下一个字节的处理；<br>
+（7）将该通讯信息帧所有字节按上述步骤计算完成后，得到的16位CRC寄存器的高、低<br>
+字节进行交换；<br>
+（8）最后得到的CRC寄存器内容即为：CRC码。</p>
+<h3 id="514-源代码"><strong>5.1.4 源代码</strong></h3>
+<h2 id="52-信源编码">5.2 信源编码</h2>
+<h2 id="53-频率计">5.3 频率计</h2>
 <h1 id="六-基于fpga的深度学习加速">六、基于FPGA的深度学习加速</h1>
 <figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1603804665028.jpg" alt="" loading="lazy"></figure>
 
