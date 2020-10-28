@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-27T13:21:34.203Z</updated>
+    <updated>2020-10-28T01:46:44.345Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,6 +11,26 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[【金融大数据挖掘与分析】]]></title>
+        <id>https://seutodaysz.github.io/7IqpjdyfF/</id>
+        <link href="https://seutodaysz.github.io/7IqpjdyfF/">
+        </link>
+        <updated>2020-10-27T14:14:51.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603808134635.jpg" alt="" loading="lazy"></figure>
+<h1 id="一-python-基础">一、Python 基础</h1>
+<h1 id="二-金融数据挖掘之爬虫基础">二、金融数据挖掘之爬虫基础</h1>
+<h1 id="三-金融数据挖掘案例1">三、金融数据挖掘案例1</h1>
+<h1 id="四-数据库详解与实战">四、数据库详解与实战</h1>
+<h1 id="五-数据清洗优化及数据评分系统搭建">五、数据清洗优化及数据评分系统搭建</h1>
+<h1 id="六-数据分析利器">六、数据分析利器：</h1>
+<h1 id="七-数据可视化与数据相关性分析">七、数据可视化与数据相关性分析</h1>
+<h1 id="八-金融数据挖掘之爬虫技术进阶">八、金融数据挖掘之爬虫技术进阶</h1>
+<h1 id="九-金融数据挖掘案例2">九、金融数据挖掘案例2</h1>
+<h1 id="十-通过pdf文本解析上市公司理财公告">十、通过PDF文本解析上市公司理财公告</h1>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习]]></title>
         <id>https://seutodaysz.github.io/FPGA/</id>
@@ -58,7 +78,9 @@
 <h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
 <figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603804570891.jpg" alt="" loading="lazy"></figure>
 <h2 id="crc-校验">CRC 校验</h2>
-<p>CRC校验码的全称是循环冗余码，常用于数字基带通信中的校验位。在RFID实验中，用到的CRC校验码有2种，主要是CRC5和CRC16.这里主要是基于CRC16进行深入的介绍。</p>
+<p>CRC校验码的全称是循环冗余码，是数据通信领域中最常用的一种差错校验码，其特征是信息字段和校验字段的长度可以任意选定。在RFID实验中，用到的CRC校验码有2种，主要是CRC5和CRC16.这里主要是基于CRC16进行深入的介绍。</p>
+<p>生成CRC码的基本原理:<br>
+任意一个由二进制位串组成的代码都可以和一个系数仅为‘0’和‘1’取值的多项式一一对应。例如：代码1010111对应的多项式为x6+x4+x2+x+1，而多项式为x5+x3+x2+x+1对应的代码101111</p>
 <h2 id="信源编码">信源编码</h2>
 <h2 id="信道编码">信道编码</h2>
 <h1 id="六-基于fpga的深度学习加速">六、基于FPGA的深度学习加速</h1>
@@ -276,51 +298,6 @@ cond(yes)-&gt;e
 cond(no)-&gt;op
 &amp;```
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【从零开始学Python数据挖掘与数据分析】]]></title>
-        <id>https://seutodaysz.github.io/DataMine_10_27/</id>
-        <link href="https://seutodaysz.github.io/DataMine_10_27/">
-        </link>
-        <updated>2020-10-27T01:50:43.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603763485708.jpg" alt="" loading="lazy"></figure>
-<h1 id="一-数据挖掘与数据分析的基本概述">一、数据挖掘与数据分析的基本概述</h1>
-<!-- more -->
-<p>数据分析和数据挖掘都是基于搜集来的数据，应用数学、统计、计算机等技术对数据进行处理，从中取抽取有用的信息，进而为决策提供依据和指导方向。在实际的应用中，有多种多样的数据挖掘和数据分析的方法，作为一个优秀的数据分析工程师，就应该知道如何针对不同的应用场景，选用不同的分析模型，得到不同的结果。</p>
-<!-- more -->
-<p>从应用领域来看，数据分析和数据挖掘已经广泛应用在：电商、交通出行、医疗健康等领域</p>
-<h2 id="电商">电商</h2>
-<!-- more -->
-<p>在电商领域做数据分析，最典型的例子，就是在数以亿计的数据中，找出异常的交易数据，并搞清楚整个数据流程，揪出数据造假之徒，使得整个电商的营销得以正常运行；除了找出有问题的地方，数据分析还可以应用在对于不同用户做消费能力的分类，根据已有的数据进行消费推荐，提高成交概率，促成商业繁荣。</p>
-<p>以上，都是数据分析在电商领域的精准应用。但不可忽视的是，现在国内对于数据隐私权的保护还远远不够，这才促成了数据分析的繁荣；以后加强了对于消费者的信息监管，数据的应用也不是那么方便，那或许会造成新的发展瓶颈。</p>
-<h2 id="交通">交通</h2>
-<p>最典型的应用场景，应该是在打车领域。通过数据分析，可以优化打车的分单派送以及路线规划，实现最优化的操作，从而可以极大的提高平台派单数量，并降低消费者的打车成本，从而形成正向循环，促进打车软件的发展。</p>
-<h2 id="医疗">医疗</h2>
-<!-- more -->
-<h2 id="金融">金融</h2>
-<!-- more -->
-<p>从技术对比来看，数据分析和数据挖掘又有着不同的特点:</p>
-<p>从实现流程来看，数据挖掘的主要流程为：</p>
-<!-- more -->
-<h1 id="二-数据挖掘的实例波士顿房价预测">二、数据挖掘的实例—波士顿房价预测</h1>
-<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603795486805.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="三-python-的快速入门">三、Python 的快速入门</h1>
-<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1603795511667.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="四-python-的科学计算工具">四、Python 的科学计算工具</h1>
-<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1603795519352.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="五-python-的数据处理工具">五、Python 的数据处理工具</h1>
-<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603795523853.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="六-python-的数据可视化处理">六、Python 的数据可视化处理</h1>
-<figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1603795532503.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="七-数据挖掘中常见的模型">七、数据挖掘中常见的模型</h1>
-<figure data-type="image" tabindex="7"><img src="https://seutodaysz.github.io/post-images/1603795538118.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
