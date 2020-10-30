@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-30T08:43:46.238Z</updated>
+    <updated>2020-10-30T09:11:06.801Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -38,25 +38,13 @@
 <h2 id="关于自律">关于自律</h2>
 <p>~~选择， 可以说是一个对于自己的认识，以及对于世界认识的一个整体的结果，才导致了我们会做出不同 的选择。但是，自律可以说是这样一种认识的具体实践。并且，自律更会形成一种正向反馈，不断形成自己向上提高的源泉。自律形成一个习惯，深化为一个思维方式和认识形态，那么，成功也必然不远了。</p>
 <p>我觉得自己还是不够自律的。或者说我想自律，但是没有做好。</p>
-<h2 id="关于规划">关于规划</h2>
+<p>我觉得自律应该是这三个方面的，事件类型，时间安排，做事优先级，这就形成了自己的时间效率，也决定了自己的成长方式。以下具体说明：<br>
+<strong>做事安排</strong> ：选择做什么事，什么事要加入到自己一天的安排中，这体现出自己的价值取向。比如，在个人成长方面：我要早起，我要按规律吃饭，我要减肥，我要选择有营养又管饱的食品，我要健身，我要保持自己的健康和美观，<br>
+在技术成长方面：我要学机器学习，我要学计算机，我要写文章，我要研究，这都是一种设想，这体现了自己的欲望和事情的安排，那么如何将这样的欲望统一好，合理的分配自己的精力，控制自己的欲望，我想这就是符合自己特性的时间管理。<br>
+<strong>时间管理</strong> 以前心理学讲到一个自己的兴奋点，那就是自己在什么时候，达到自己状态最好的时候， 自己什么时候状态最差，合理分配自己的事情，根据自己的作息规律和自己心理学上的精力变化曲线去改变的自己的行为方式，做最优秀的自己。<br>
+<strong>做事优先级</strong> 一个人的精力总是有限的，时间也是有限的。要做好事情的优先级安排，这样可以进一步提高自己的时间效率</p>
 <p>~~</p>
 <figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1604046975415.jpg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【Paper Reading】数字编码超材料的论文理解]]></title>
-        <id>https://seutodaysz.github.io/Meta-Paper/</id>
-        <link href="https://seutodaysz.github.io/Meta-Paper/">
-        </link>
-        <updated>2020-10-28T02:02:05.000Z</updated>
-        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603850555045.jpg" alt="" loading="lazy"></figure>
-]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603850555045.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<p>本章节主要是品读 数字编码超材料的Paper.</p>
-<p>1.时域超表面理论研究与应用--戴俊彦<br>
-<strong>基于时域编码超表面的简化无线通信发射机</strong><br>
-<img src="https://seutodaysz.github.io/post-images/1603850997721.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -234,6 +222,16 @@
         <updated>2020-10-27T11:29:26.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
 <figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603798183532.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【深度学习基础】]]></title>
+        <id>https://seutodaysz.github.io/DeepLearning/</id>
+        <link href="https://seutodaysz.github.io/DeepLearning/">
+        </link>
+        <updated>2020-10-27T11:28:14.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603798157999.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
