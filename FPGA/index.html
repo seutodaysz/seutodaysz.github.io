@@ -6,7 +6,7 @@
 
 <title>【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604130536137">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604131040105">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
@@ -92,7 +92,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1604130536137" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1604131040105" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -124,6 +124,7 @@
 <p>总的来说，FPGA技术是基于数字电子技术的底层开发技术，属于芯片领域的核心技术，也是国家现在被卡脖子的领域之一。对于高端的FPGA芯片，美国的封禁也难以阻挡我们向着人类智慧结晶的芯片技术发起进攻的号角。因此，要学好FPGA技术，另外复习一下数字电子技术。两者相辅相乘，才能是深入掌握了FPGA技术。</p>
 <!-- more -->
 <h1 id="一-xilinx公司简介">一、Xilinx公司简介</h1>
+<p>先做一个简单的介绍，参考一下百度</p>
 <h2 id="百度百科"><strong>百度百科</strong></h2>
 <p>Xilinx(赛灵思)是全球领先的可编程逻辑完整解决方案的供应商。Xilinx研发、制造并销售范围广泛的高级集成电路、软件设计工具以及作为预定义系统级功能的IP（Intellectual Property）核。<br>
 2018年7月18日，全球最大的可编程芯片（FPGA）厂商赛灵思宣布收购中国 AI 芯片领域的明星创业公司——深鉴科技。有“中国英伟达”之称的AI芯片初创企业将继续在其北京办公室运营。目前，交易金额及细节尚未公布。 [1]<br>
@@ -289,13 +290,12 @@ end
 
 endmodule
 </code></pre>
-<h3 id="4按键蜂鸣器">4.按键蜂鸣器</h3>
 <h2 id="ip核实验">IP核实验</h2>
-<h2 id="串口通信">串口通信</h2>
-<h2 id="频率计">频率计</h2>
+<p>Verilog 中很重要的一种功能，就是实现了IP核的封装调用，极大提高的代码的复用效果。</p>
 <h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
-<p>第五部分，主要介绍设么是CRC校验位</p>
+<p>第五部分，主要介绍设么是CRC校验位。</p>
 <h2 id="51-crc-校验"><strong>5.1 CRC 校验</strong></h2>
+<p>分为以下这四部分来介绍。</p>
 <h3 id="511-什么是crc校验"><strong>5.1.1 什么是CRC校验</strong></h3>
 <p>CRC校验码的全称是循环冗余码，是数据通信领域中最常用的一种差错校验码，其特征是信息字段和校验字段的长度可以任意选定。</p>
 <p>这个校验方式的根本思想是在发送数据的后面拼接上一些额外的数据位，使得这个拼接之后的数据可以被一个固定的数模2整除（这里的模2整除是一种区别于普通的除法的运算方法，也不难理解），之后将数据发送……接收端同样将整个拼接后的数据与之前确定的固定的数据做模2除法，若能整除，则说明传输过程没有出错，若不能整除，则可以根据余数判断是哪一位发生了错误。、</p>
