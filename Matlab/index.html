@@ -6,7 +6,7 @@
 
 <title>【Matlab 智能算法】 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604140903253">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604150760747">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
@@ -92,7 +92,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1604140903253" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1604150760747" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -119,10 +119,87 @@
                 <div class="post-content">
                     <!-- more -->
 <h1 id="1模拟退火算法">【1】模拟退火算法</h1>
+<p>第一部分介绍一下模拟退火算法</p>
 <h2 id="11概述">【1.1】概述</h2>
+<p>模拟退火算法最早是在1953年提出的，然后1983年的时候，利用模拟退火算法求解了组合最优化问题。模拟退火问题是一种基于迭代求解的随机寻优算法，其出发点是物理中固体物质的退火过程与一般组合优化求解策略的相似性，其目的在于为NP难问题提供有效的近似求解方法，克服了其他算法容易陷入局部极小的缺陷和对于初值的依赖。</p>
 <h2 id="12原理">【1.2】原理</h2>
+<p>模拟退火算法新解的产生和接受可以分为如下的三个步骤：<br>
+🌟 由一个产生函数从当前解产生一个位于解空间的新解；为了便于后续的计算和接受，减少算法耗时，通过简单变换即可产生新解的方法。新解的变换方法决定了当前解的邻域结构。<br>
+🌟 判断新解是否会被接受，判断依据是一个接受准则，最常用的接受准则是Metropolis准则，若delta E&lt; 0,则 接受X'作为新的当前解 X；否则，以概率exp(-deltaE/T) 作为新的当前解<br>
+🌟当新解被确定接受时，用新解代替当前解，将当前解中对应于产生新解的变换部分予以实现，同时修正目标函数值即可。此时，当前解实现了一次迭代，可在此基础上开始下一轮试验。若当前解被判定为舍弃，则在原当前解的基础上继续下一轮试验；</p>
 <h2 id="13源码">【1.3】源码</h2>
+<pre><code class="language-matlab">%%%%%%%%%%%%%%%%%%%%%%模拟退火算法解决函数极值%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear all;                      %清除所有变量
+close all;                      %清图
+clc;                            %清屏
+D=10;                           %变量维数 
+Xs=20;                          %上限                                
+Xx=-20;                         %下限
+%%%%%%%%%%%%%%%%%%%%%%%%%%%冷却表参数%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+L = 200;                        %马可夫链长度
+K = 0.998;                      %衰减参数
+S = 0.01;                       %步长因子
+T=100;                          %初始温度
+YZ = 1e-8;                      %容差
+P = 0;                          %Metropolis过程中总接受点
+%%%%%%%%%%%%%%%%%%%%%%%%%%随机选点 初值设定%%%%%%%%%%%%%%%%%%%%%%%%%
+PreX = rand(D,1)*(Xs-Xx)+Xx;
+PreBestX = PreX;
+PreX =  rand(D,1)*(Xs-Xx)+Xx;
+BestX = PreX;
+%%%%%%%%%%%每迭代一次退火一次(降温), 直到满足迭代条件为止%%%%%%%%%%%%
+deta=abs( func1( BestX)-func1(PreBestX));
+while (deta &gt; YZ) &amp;&amp; (T&gt;0.001)
+    T=K*T; 
+    %%%%%%%%%%%%%%%%%%%%%在当前温度T下迭代次数%%%%%%%%%%%%%%%%%%%%%%
+    for i=1:L  
+        %%%%%%%%%%%%%%%%%在此点附近随机选下一点%%%%%%%%%%%%%%%%%%%%%
+            NextX = PreX + S* (rand(D,1) *(Xs-Xx)+Xx);
+            %%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%%%%%
+            for ii=1:D
+                if NextX(ii)&gt;Xs | NextX(ii)&lt;Xx
+                    NextX(ii)=PreX(ii) + S* (rand *(Xs-Xx)+Xx);
+                end
+            end            
+        %%%%%%%%%%%%%%%%%%%%%%%是否全局最优解%%%%%%%%%%%%%%%%%%%%%%
+        if (func1(BestX) &gt; func1(NextX))
+            %%%%%%%%%%%%%%%%%%保留上一个最优解%%%%%%%%%%%%%%%%%%%%%
+            PreBestX = BestX;
+            %%%%%%%%%%%%%%%%%%%此为新的最优解%%%%%%%%%%%%%%%%%%%%%%
+            BestX=NextX;
+        end
+        %%%%%%%%%%%%%%%%%%%%%%%% Metropolis过程%%%%%%%%%%%%%%%%%%%
+        if( func1(PreX) - func1(NextX) &gt; 0 )
+            %%%%%%%%%%%%%%%%%%%%%%%接受新解%%%%%%%%%%%%%%%%%%%%%%%%
+            PreX=NextX;
+            P=P+1;
+        else
+            changer = -1*(func1(NextX)-func1(PreX))/ T ;
+            p1=exp(changer);
+            %%%%%%%%%%%%%%%%%%%%%%%%接受较差的解%%%%%%%%%%%%%%%%%%%%
+            if p1 &gt; rand        
+                PreX=NextX;
+                P=P+1;         
+            end
+        end
+    trace(P+1)=func1( BestX);    
+    end
+    deta=abs( func1( BestX)-func1 (PreBestX)); 
+end
+disp('最小值在点:');
+BestX
+disp( '最小值为:');
+func1(BestX)
+figure
+plot(trace(2:end))
+xlabel('迭代次数')
+ylabel('目标函数值')
+title('适应度进化曲线')
+</code></pre>
 <h2 id="14结果">【1.4】结果</h2>
+<p><img src="https://seutodaysz.github.io/post-images/1604150708902.png" alt="" loading="lazy"><br>
+从中可以看出 基于模拟退火算法计算的结果，很快就收敛了。</p>
 <h1 id="2粒子群算法">【2】粒子群算法</h1>
 <p>第二部分，介绍粒子群算法</p>
 <h2 id="21概述">【2.1】概述</h2>
