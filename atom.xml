@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-10-31T04:33:14.766Z</updated>
+    <updated>2020-10-31T04:44:02.998Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,6 +11,65 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[【Matlab 智能算法】]]></title>
+        <id>https://seutodaysz.github.io/Matlab/</id>
+        <link href="https://seutodaysz.github.io/Matlab/">
+        </link>
+        <updated>2020-10-31T04:33:54.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<h1 id="matlab-语法小结">Matlab 语法小结</h1>
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604119049503.jpg" alt="" loading="lazy"></figure>
+<h1 id="1模拟退火算法">【1】模拟退火算法</h1>
+<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1604118990270.jpg" alt="" loading="lazy"></figure>
+<h2 id="11概述">【1.1】概述</h2>
+<h2 id="12原理">【1.2】原理</h2>
+<h2 id="13源码">【1.3】源码</h2>
+<h2 id="14结果">【1.4】结果</h2>
+<h1 id="2粒子群算法">【2】粒子群算法</h1>
+<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1604119000667.jpg" alt="" loading="lazy"></figure>
+<h2 id="21概述">【2.1】概述</h2>
+<h2 id="22原理">【2.2】原理</h2>
+<h2 id="23源码">【2.3】源码</h2>
+<h2 id="24结果">【2.4】结果</h2>
+<h1 id="3蚁群算法">【3】蚁群算法</h1>
+<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1604119007499.jpg" alt="" loading="lazy"></figure>
+<h2 id="31概述">【3.1】概述</h2>
+<h2 id="32原理">【3.2】原理</h2>
+<h2 id="33源码">【3.3】源码</h2>
+<h2 id="34结果">【3.4】结果</h2>
+<h1 id="4遗传算法">【4】遗传算法</h1>
+<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1604119073687.jpg" alt="" loading="lazy"></figure>
+<h2 id="41概述">【4.1】概述</h2>
+<h2 id="42原理">【4.2】原理</h2>
+<h2 id="43源码">【4.3】源码</h2>
+<h2 id="44结果">【4.4】结果</h2>
+<h1 id="5免疫算法">【5】免疫算法</h1>
+<figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1604119079286.jpg" alt="" loading="lazy"></figure>
+<h2 id="51概述">【5.1】概述</h2>
+<h2 id="52原理">【5.2】原理</h2>
+<h2 id="53源码">【5.3】源码</h2>
+<h2 id="54结果">【5.4】结果</h2>
+<h1 id="6差分进化算法">【6】差分进化算法</h1>
+<figure data-type="image" tabindex="7"><img src="https://seutodaysz.github.io/post-images/1604119085340.jpg" alt="" loading="lazy"></figure>
+<h2 id="61概述">【6.1】概述</h2>
+<h2 id="62原理">【6.2】原理</h2>
+<h2 id="63源码">【6.3】源码</h2>
+<h2 id="64结果">【6.4】结果</h2>
+<h1 id="7禁忌搜索算法">【7】禁忌搜索算法</h1>
+<figure data-type="image" tabindex="8"><img src="https://seutodaysz.github.io/post-images/1604119093255.jpg" alt="" loading="lazy"></figure>
+<h2 id="71概述">【7.1】概述</h2>
+<h2 id="72原理">【7.2】原理</h2>
+<h2 id="73源码">【7.3】源码</h2>
+<h2 id="74结果">【7.4】结果</h2>
+<h1 id="8神经网络算法">【8】神经网络算法</h1>
+<figure data-type="image" tabindex="9"><img src="https://seutodaysz.github.io/post-images/1604119098343.jpg" alt="" loading="lazy"></figure>
+<h2 id="81概述">【8.1】概述</h2>
+<h2 id="82原理">【8.2】原理</h2>
+<h2 id="83源码">【8.3】源码</h2>
+<h2 id="84结果">【8.4】结果</h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【金融大数据挖掘】]]></title>
         <id>https://seutodaysz.github.io/Finance/</id>
@@ -362,42 +421,6 @@ title可加可不加</p>
 <!-- more -->
 <h1 id="时间管理">👉 时间管理：</h1>
 <figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603763379782.jpg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【读书笔记 】《见识》-吴军]]></title>
-        <id>https://seutodaysz.github.io/Read1/</id>
-        <link href="https://seutodaysz.github.io/Read1/">
-        </link>
-        <updated>2020-10-30T08:02:41.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604045040643.jpg" alt="" loading="lazy"></figure>
-<p>~~最近的状态很差，昨晚不知道为啥就失眠了，凌晨三点醒来以后，就异常的清醒，然后自己还控制不住一直在玩手机。躺在床上玩手机，真是一件不需要开动脑子的事情，只需要无意识的滑动那几个软件，从中取涉取一些能够刺激我感官兴趣的东西。午夜时分，睡不着觉，开始刷手机，我现在感觉，我想是一个没有灵魂的动物，在条件反射式的寻求一些精神上的快感，刺激自己的激素分泌，在明明知道这样会导致自己第二天的精神状态很差的情况下，依然选择刷手机，这样的事情，意识到我渐渐失去了对于自己的控制力，失去了自律，失去了自己沿着自己既定目标前进的能力，结果，可是也预见的。一事无成。</p>
-<!-- more -->
-<p>~~或许博客的作用，在这个时候开始显示出来了。我在这样时候，开始自我反省。这应该是我自我调节的重要环节。之前，可能这样的反省，只会在脑中短短停留了一会儿，其他事情的到来，就将之冲散，久而久之，我的问题并没有得到解决，反而形成了更深的习惯和条件反射，因此，我觉得，很有必要，花时间，自己把自己的问题写下来，当做是一个明智的，理智的老师，在与我进行深入的交流和反思，强化我的自律意识，也让我的生活更快的回到正轨。</p>
-<!-- more -->
-<p>~~应该说，我近期的生活不顺畅，效率不高，我没有对其进行过一个全面的反省，或者说，也只是零星的反思，并没有形成一个系统的，全面的问题整理，但其实存在在身上的问题，已经到了不得不进行全面革新的阶段了。我的博客也搭建好了，我的新习惯，也要慢慢开始养成，今天的这一篇博文，就是一个好的开始。</p>
-<!-- more -->
-<p>我将我现在读研存在的问题归纳为三类：<br>
-1️⃣ 方向（战略）<br>
-2️⃣ 能力（战役）<br>
-3️⃣ 自律（战术）</p>
-<!-- more -->
-<h2 id="关于选择">关于选择</h2>
-<p>~~一直以来，我就对于我的方向抱有极大的主动思考，面对方向，就要涉及到选择。一方面，人们总希望自己有尽可能多的选择。在生活中,选择也是无处不在，小到买什么东西，吃什么，大到国家走什么道路，选什么领导人。人们把拥有选择的权利作为一种神圣的权利加以捍卫，但问题又来了，既然不喜欢被安排和拘束，那么就要做出真正契合自己的选择。于是，诞生了很多优化算法，意见领袖。但其实，在我看来，这都不是一种真正意义上的选择。很多人，不愿意去思考什么样才是适合自己的，自己想要是什么？很多人更多的是借助长辈的观念，前辈的经验，甚至是排行榜的结果，但这样的选择真的是负责任的吗？毕竟选择的后果，就要由自己去承担。如果选到了不好的，会不会心有不甘?即使选到了大多数人认为合适的，又是否是真正自己追求的。这个一切的一切，都是一个及其复杂的问题。于是又回到了一个状态，一些人开始怀念没有那么多选择的时候，因为只要被动接受了这样的结果，才能沉下心去做一个学问，才能不断精进自己。因为，真正好的选择，并不是在于选择的时候，而是在于你选择以后，是如何度过的之后时光。你如何看清楚自己的喜好，对于自己的认识，是否到了足够的层次。</p>
-<!-- more -->
-<p>~~选择是一门大学问。不同人有不同选择的方式。作为一个独立的人，我想对自己说，我和解了。我不要在纠结与过去的那个选择，我也不要去想未来会有怎么样的形态。对于过去，我想要清晰的总结出它的不足和缺点，这个是我成长的经验。也要看到自己做的好的地方，并不断保持下去。另一方面，对于未来，我要保持一种模糊的美感。一个简单的设想都足以激励我更多的精力去奋斗就好。因此，我更多的，要关注自己的当下。这也是我写博客的一个出发点。<br>
-~~既然已经选择了，就要沉下心，好好做。</p>
-<h2 id="关于自律">关于自律</h2>
-<p>~~选择， 可以说是一个对于自己的认识，以及对于世界认识的一个整体的结果，才导致了我们会做出不同 的选择。但是，自律可以说是这样一种认识的具体实践。并且，自律更会形成一种正向反馈，不断形成自己向上提高的源泉。自律形成一个习惯，深化为一个思维方式和认识形态，那么，成功也必然不远了。</p>
-<p>我觉得自己还是不够自律的。或者说我想自律，但是没有做好。</p>
-<p>我觉得自律应该是这三个方面的，事件类型，时间安排，做事优先级，这就形成了自己的时间效率，也决定了自己的成长方式。以下具体说明：<br>
-<strong>做事安排</strong> ：选择做什么事，什么事要加入到自己一天的安排中，这体现出自己的价值取向。比如，在个人成长方面：我要早起，我要按规律吃饭，我要减肥，我要选择有营养又管饱的食品，我要健身，我要保持自己的健康和美观，<br>
-在技术成长方面：我要学机器学习，我要学计算机，我要写文章，我要研究，这都是一种设想，这体现了自己的欲望和事情的安排，那么如何将这样的欲望统一好，合理的分配自己的精力，控制自己的欲望，我想这就是符合自己特性的时间管理。<br>
-<strong>时间管理</strong> 以前心理学讲到一个自己的兴奋点，那就是自己在什么时候，达到自己状态最好的时候， 自己什么时候状态最差，合理分配自己的事情，根据自己的作息规律和自己心理学上的精力变化曲线去改变的自己的行为方式，做最优秀的自己。<br>
-<strong>做事优先级</strong> 一个人的精力总是有限的，时间也是有限的。要做好事情的优先级安排，这样可以进一步提高自己的时间效率</p>
-<p>~~</p>
-<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1604046975415.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
