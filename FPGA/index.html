@@ -6,7 +6,7 @@
 
 <title>【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604128965016">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604130536137">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
@@ -92,7 +92,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1604128965016" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1604130536137" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="post-content">
                     <!-- more -->
-<p><img src="https://seutodaysz.github.io/post-images/1603801860730.jpg" alt="" loading="lazy"><br>
+<p><img src="https://seutodaysz.github.io/post-images/1603804705841.jpg" alt="" loading="lazy"><br>
 近期在做的一个科研要用到FPGA技术，在这里开一个FPGA学习的专场，对于这几年学习的数字电子技术进行一个系统的整理和梳理，以便自己后续的进一步深入掌握。</p>
 <!-- more -->
 <p>总的来说，FPGA技术是基于数字电子技术的底层开发技术，属于芯片领域的核心技术，也是国家现在被卡脖子的领域之一。对于高端的FPGA芯片，美国的封禁也难以阻挡我们向着人类智慧结晶的芯片技术发起进攻的号角。因此，要学好FPGA技术，另外复习一下数字电子技术。两者相辅相乘，才能是深入掌握了FPGA技术。</p>
@@ -137,26 +137,164 @@
 6️⃣ 内嵌的底层功能单元和专用硬件模块；</p>
 <!-- more -->
 <h1 id="二-vivado-软件安装">二、Vivado 软件安装</h1>
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603804705841.jpg" alt="" loading="lazy"></figure>
+<p><a href="https://blog.csdn.net/taowei1314520/article/details/74860356">Vivado 下载与安装</a></p>
 <h1 id="三-veilog-hdl-硬件描述语言">三、Veilog hdl 硬件描述语言</h1>
-<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603804608114.jpg" alt="" loading="lazy"></figure>
+<p><a href="https://www.ituring.com.cn/book/miniarticle/120813">Verilog hdl 学习</a></p>
 <h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
-<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1603804639696.jpg" alt="" loading="lazy"></figure>
 <h2 id="gpio实验">GPIO实验</h2>
 <h3 id="1-led点灯">1. led点灯</h3>
-<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1603803446613.png" alt="" loading="lazy"></figure>
+<pre><code class="language-verilog">module led_twinkle(
+    input          sys_clk  ,  //系统时钟
+    input          sys_rst_n,  //系统复位，低电平有效
+
+    output  [1:0]  led         //LED灯
+);
+
+//reg define
+reg  [25:0]  cnt ;
+
+//*****************************************************
+//**                    main code
+//*****************************************************
+
+//对计数器的值进行判断，以输出LED的状态
+assign led = (cnt &lt; 26'd2500_0000) ? 2'b01 : 2'b10 ;
+//assign led = (cnt &lt; 26'd5)         ? 2'b01 : 2'b10 ;  //仅用于仿真
+
+//计数器在0~5000_000之间进行计数
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        cnt &lt;= 26'd0;
+    else if(cnt &lt; 26'd5000_0000)
+//  else if(cnt &lt; 26'd10)  //仅用于仿真
+        cnt &lt;= cnt + 1'b1;
+    else
+        cnt &lt;= 26'd0;
+end
+
+endmodule
+</code></pre>
 <h3 id="2-按键控制">2. 按键控制</h3>
-<p><img src="https://seutodaysz.github.io/post-images/1603803862468.png" alt="" loading="lazy"><br>
-<img src="https://seutodaysz.github.io/post-images/1603803867480.png" alt="" loading="lazy"></p>
+<pre><code class="language-verilog">module key_led(
+    input               sys_clk ,
+    input               sys_rst_n ,
+
+    input        [1:0]  key ,
+    output  reg  [1:0]  led
+);
+
+//reg define
+reg [24:0] cnt;
+reg        led_ctrl;
+
+//*****************************************************
+//**                    main code
+//*****************************************************
+
+//1-频率计数：计数器
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        cnt &lt;= 25'd0;
+    else if(cnt &lt; 25'd2500_0000)  //计数500ms=0.5s 
+        cnt &lt;= cnt + 1'b1;
+    else
+        cnt &lt;= 25'd0;
+end
+
+//2-状态控制：每隔500ms就更改LED的闪烁状态
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        led_ctrl &lt;= 1'b0;
+    else if(cnt == 25'd2500_0000)
+        led_ctrl &lt;= ~led_ctrl;
+end
+
+//3-功能模块：根据按键的状态以及LED的闪烁状态来赋值LED
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        led &lt;= 2'b11;
+    else 
+		case(key)
+			2'b10 :  //如果按键0按下，则两个LED交替闪烁
+				if(led_ctrl == 1'b0)
+					led &lt;= 2'b01;
+				else
+					led &lt;= 2'b10;
+			2'b01 :  //如果按键1按下，则两个LED同时亮灭交替
+				if(led_ctrl == 1'b0)
+					led &lt;= 2'b11;
+				else
+					led &lt;= 2'b00;
+			2'b11 :  //如果两个按键都未按下，则两个LED都保持点亮
+					led &lt;= 2'b11;
+			default: ;
+		endcase
+end
+
+endmodule
+</code></pre>
 <h3 id="3-呼吸灯">3. 呼吸灯</h3>
-<p><img src="https://seutodaysz.github.io/post-images/1603803956957.png" alt="" loading="lazy"><br>
-<img src="https://seutodaysz.github.io/post-images/1603803961144.png" alt="" loading="lazy"></p>
+<pre><code class="language-verilog">module breath_led(
+    input   sys_clk   ,  //时钟信号50Mhz
+    input   sys_rst_n ,  //复位信号
+
+    output  led          //LED
+);
+
+//reg define
+reg  [15:0]  period_cnt ;   //周期计数器频率：1khz 周期:1ms  计数值:1ms/20ns=50000
+reg  [15:0]  duty_cycle ;   //占空比数值
+reg          inc_dec_flag ; //0 递增  1 递减
+
+//*****************************************************
+//**                  main code
+//*****************************************************
+
+//根据占空比和计数值之间的大小关系来输出LED
+assign   led = (period_cnt &gt;= duty_cycle) ?  1'b1  :  1'b0;
+
+//周期计数器
+always @(posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        period_cnt &lt;= 16'd0;
+    else if(period_cnt == 16'd50000)
+        period_cnt &lt;= 16'd0;
+    else
+        period_cnt &lt;= period_cnt + 1'b1;
+end
+
+//在周期计数器的节拍下递增或递减占空比
+always @(posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n) begin
+        duty_cycle   &lt;= 16'd0;
+        inc_dec_flag &lt;= 1'b0;
+    end
+    else begin
+        if(period_cnt == 16'd50000) begin    //计满1ms
+            if(inc_dec_flag == 1'b0) begin   //占空比递增状态
+                if(duty_cycle == 16'd50000)  //如果占空比已递增至最大
+                    inc_dec_flag &lt;= 1'b1;    //则占空比开始递减
+                else                         //否则占空比以25为单位递增
+                    duty_cycle &lt;= duty_cycle + 16'd25;
+            end
+            else begin                       //占空比递减状态
+                if(duty_cycle == 16'd0)      //如果占空比已递减至0
+                    inc_dec_flag &lt;= 1'b0;    //则占空比开始递增
+                else                         //否则占空比以25为单位递减
+                    duty_cycle &lt;= duty_cycle - 16'd25;
+            end
+        end
+    end
+end
+
+endmodule
+</code></pre>
 <h3 id="4按键蜂鸣器">4.按键蜂鸣器</h3>
 <h2 id="ip核实验">IP核实验</h2>
 <h2 id="串口通信">串口通信</h2>
 <h2 id="频率计">频率计</h2>
 <h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
-<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603804570891.jpg" alt="" loading="lazy"></figure>
+<p>第五部分，主要介绍设么是CRC校验位</p>
 <h2 id="51-crc-校验"><strong>5.1 CRC 校验</strong></h2>
 <h3 id="511-什么是crc校验"><strong>5.1.1 什么是CRC校验</strong></h3>
 <p>CRC校验码的全称是循环冗余码，是数据通信领域中最常用的一种差错校验码，其特征是信息字段和校验字段的长度可以任意选定。</p>
@@ -166,19 +304,65 @@
 <p>生成CRC码的基本原理:<br>
 任意一个由二进制位串组成的代码都可以和一个系数仅为‘0’和‘1’取值的多项式一一对应。例如：代码1010111对应的多项式为x6+x4+x2+x+1，而多项式为x5+x3+x2+x+1对应的代码101111。</p>
 <p>标准CRC生成多项式如下表：</p>
-<p>名称          生成多项式                          简记式*           标准引用</p>
-<p>CRC-4         x4+x+1                             3                ITU G.704</p>
-<p>CRC-8         x8+x5+x4+1                     0x31</p>
-<p>CRC-8         x8+x2+x1+1                     0x07</p>
-<p>CRC-8         x8+x6+x4+x3+x2+x1       0x5E</p>
-<p>CRC-12        x12+x11+x3+x+1             80F</p>
-<p>CRC-16        x16+x15+x2+1                 8005               IBM SDLC</p>
-<p>CRC16-CCITT  x16+x12+x5+1                1021                ISO HDLC</p>
-<p>CRC-32      x32+x26+x23+...+x2+x+1 04C11              IEEE 802 LAN/FDDI</p>
-<p>CRC-32c     x32+x28+x27+...+x8+x6+1 1EDC6F41     SCTP</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>名称</strong></th>
+<th style="text-align:center"><strong>生成多项式</strong></th>
+<th style="text-align:center"><strong>简记式</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CRC-4</td>
+<td style="text-align:center">x4+x+1</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-8</td>
+<td style="text-align:center">x8+x5+x4+1</td>
+<td style="text-align:center">0x31</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-8</td>
+<td style="text-align:center">x8+x2+x1+1</td>
+<td style="text-align:center">0x07</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-8</td>
+<td style="text-align:center">x8+x6+x4+x3+x2+x1</td>
+<td style="text-align:center">0x5E</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-12</td>
+<td style="text-align:center">x12+x11+x3+x+1</td>
+<td style="text-align:center">80F</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-16</td>
+<td style="text-align:center">x16+x15+x2+1</td>
+<td style="text-align:center">8005</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC16-CCITT</td>
+<td style="text-align:center">x16+x12+x5+1</td>
+<td style="text-align:center">1 021</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-32</td>
+<td style="text-align:center">x32+x26+x23+...+x2+x+1</td>
+<td style="text-align:center">04C11</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-32c</td>
+<td style="text-align:center">x32+x28+x27+...+x8+x6+1</td>
+<td style="text-align:center">1EDC6F41</td>
+</tr>
+</tbody>
+</table>
 <p><strong>CRC校验是前面几段数据内容的校验值，为一个16位数据，发送时，低8位在前，高8为最后。</strong></p>
-<p>例如：信息字段代码为: 1011001，校验字段为：1010。</p>
-<p>发送方：发出的传输字段为:  1 0 1 1 0 0 1 1 0 10<br>
+<p>例如：信息字段代码为: 1011001，校验字段为：1010。<br>
+发送方：发出的传输字段为:  1 0 1 1 0 0 1 1 0 10<br>
 信息字段       校验字段<br>
 接收方：使用相同的计算方法计算出信息字段的校验码，对比接收到的实际校验码，如果相等及信息正确，不相等则信息错误；或者将接受到的所有信息除多项式，如果能够除尽，则信息正确</p>
 <h3 id="513-crc校验的步骤"><strong>5.1.3 CRC校验的步骤</strong></h3>
@@ -195,10 +379,56 @@
 字节进行交换；<br>
 （8）最后得到的CRC寄存器内容即为：CRC码。</p>
 <h3 id="514-源代码"><strong>5.1.4 源代码</strong></h3>
-<h2 id="52-信源编码">5.2 信源编码</h2>
-<h2 id="53-频率计">5.3 频率计</h2>
+<pre><code class="language-verilog">module crc16(
+	input						sclk		, 
+	input						s_rst_n	,
+	input			[7:0]		data	,
+	output		reg	 [15:0]		out		
+);
+
+
+reg 			[15:0]		    crc16_out	;
+reg 			[15:0]			crc_reg		;
+reg 			temp;
+integer  i,j,m,n ;
+
+always @ (posedge sclk or negedge s_rst_n) begin
+	if(s_rst_n == 1'b0)
+		crc16_out&lt;=16'b0;
+	else	
+        crc16_out&lt;=crc_reg;
+end
+
+
+always @ (crc16_out or data) begin
+        crc_reg=crc16_out;
+        for (i = 7; i &gt;= 0; i = i - 1)
+            begin
+                temp=data[i]^crc_reg[15];
+ 
+                for (j = 15;  j &gt; 12; j = j - 1)
+                    begin
+                        crc_reg[j]=crc_reg[j-1];
+                    end
+                crc_reg[12]=temp^crc_reg[11];
+ 
+                for (m = 11; m &gt;5 ; m = m - 1)
+                    begin
+                        crc_reg[m]=crc_reg[m-1];
+                    end
+                crc_reg[5]=temp^crc_reg[4];
+ 
+                for (n = 4; n &gt;0 ; n = n - 1)
+                    begin
+                        crc_reg[n]=crc_reg[n-1];
+                    end
+                crc_reg[0]=temp^0;
+            end
+        out=crc_reg;
+end
+endmodule
+</code></pre>
 <h1 id="六-基于fpga的深度学习加速">六、基于FPGA的深度学习加速</h1>
-<figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1603804665028.jpg" alt="" loading="lazy"></figure>
 
                 </div>
             </article>
