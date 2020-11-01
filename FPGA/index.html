@@ -6,7 +6,7 @@
 
 <title>【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604196334279">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604198046442">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
@@ -92,7 +92,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1604196334279" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1604198046442" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -144,7 +144,8 @@
 <h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
 <h2 id="gpio实验">GPIO实验</h2>
 <h3 id="1-led点灯">1. led点灯</h3>
-<pre><code class="language-verilog">module led_twinkle(
+<pre><code>
+module led_twinkle(
     input          sys_clk  ,  //系统时钟
     input          sys_rst_n,  //系统复位，低电平有效
 
@@ -176,7 +177,7 @@ end
 endmodule
 </code></pre>
 <h3 id="2-按键控制">2. 按键控制</h3>
-<pre><code class="language-verilog">module key_led(
+<pre><code>module key_led(
     input               sys_clk ,
     input               sys_rst_n ,
 
@@ -235,7 +236,8 @@ end
 endmodule
 </code></pre>
 <h3 id="3-呼吸灯">3. 呼吸灯</h3>
-<pre><code class="language-verilog">module breath_led(
+<pre><code>
+module breath_led(
     input   sys_clk   ,  //时钟信号50Mhz
     input   sys_rst_n ,  //复位信号
 
@@ -379,7 +381,8 @@ endmodule
 字节进行交换；<br>
 （8）最后得到的CRC寄存器内容即为：CRC码。</p>
 <h3 id="514-源代码"><strong>5.1.4 源代码</strong></h3>
-<pre><code class="language-verilog">module crc16(
+<pre><code>
+module crc16(
 	input						sclk		, 
 	input						s_rst_n	,
 	input			[7:0]		data	,
