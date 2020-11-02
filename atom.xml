@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-11-01T12:06:31.860Z</updated>
+    <updated>2020-11-02T12:47:17.890Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -273,164 +273,6 @@ result=summ;
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[【金融大数据挖掘】]]></title>
-        <id>https://seutodaysz.github.io/Finance/</id>
-        <link href="https://seutodaysz.github.io/Finance/">
-        </link>
-        <updated>2020-10-31T04:30:02.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603808134635.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="一-python-基础">一、Python 基础</h1>
-<h1 id="二-金融数据挖掘之爬虫基础">二、金融数据挖掘之爬虫基础</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">\d</td>
-<td style="text-align:center">匹配1个数字字符</td>
-</tr>
-<tr>
-<td style="text-align:center">\w</td>
-<td style="text-align:center">匹配1个字母、数字或下画字符等</td>
-</tr>
-<tr>
-<td style="text-align:center">\s</td>
-<td style="text-align:center">匹配1个空白字符、如换行符、制表符、普通空格等</td>
-</tr>
-<tr>
-<td style="text-align:center">\S</td>
-<td style="text-align:center">匹配1个非空白字符</td>
-</tr>
-<tr>
-<td style="text-align:center">\n</td>
-<td style="text-align:center">匹配1个换行符、相当于按下一个Enter键</td>
-</tr>
-<tr>
-<td style="text-align:center">\t</td>
-<td style="text-align:center">匹配1个制表符、相当于按下一个Tab键或者8次空格键</td>
-</tr>
-<tr>
-<td style="text-align:center">.</td>
-<td style="text-align:center">匹配1个任意字符、换行符除外</td>
-</tr>
-<tr>
-<td style="text-align:center">*</td>
-<td style="text-align:center">匹配0个或多个表达式</td>
-</tr>
-<tr>
-<td style="text-align:center">+</td>
-<td style="text-align:center">匹配1个或多个表达式</td>
-</tr>
-<tr>
-<td style="text-align:center">?</td>
-<td style="text-align:center">非贪婪限定符，常与.和*配合使用</td>
-</tr>
-<tr>
-<td style="text-align:center">()</td>
-<td style="text-align:center">匹配括号内的表达式，也表示一个组</td>
-</tr>
-</tbody>
-</table>
-<h2 id="使用举例"><strong>使用举例</strong></h2>
-<p><strong>Python 源代码</strong></p>
-<pre><code class="language-python">import requests
-import re
-
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'}
-
-url = 'https://www.baidu.com/s?tn=news&amp;rtt=1&amp;bsst=1&amp;cl=2&amp;wd=阿里巴巴'  
-res = requests.get(url, headers=headers).text 
-# print(res)
-
-p_info = '&lt;p class=&quot;c-author&quot;&gt;(.*?)&lt;/p&gt;'
-info = re.findall(p_info, res, re.S)
-p_href = '&lt;h3 class=&quot;c-title&quot;&gt;.*?&lt;a href=&quot;(.*?)&quot;'
-href = re.findall(p_href, res, re.S)
-p_title = '&lt;h3 class=&quot;c-title&quot;&gt;.*?&gt;(.*?)&lt;/a&gt;'
-title = re.findall(p_title, res, re.S)
-# print(info)  # 常通过打印列表及列表长度，先看看获取的内容是否正确
-# print(len(info))
-# print(href)
-# print(len(href))
-# print(title)
-# print(len(title))
-
-source = []  # 先创建两个空列表来储存等会分割后的来源和日期
-date = []
-for i in range(len(info)):
-    title[i] = title[i].strip()
-    title[i] = re.sub('&lt;.*?&gt;', '', title[i])
-    info[i] = re.sub('&lt;.*?&gt;', '', info[i])
-    source.append(info[i].split('&amp;nbsp;&amp;nbsp;')[0])
-    date.append(info[i].split('&amp;nbsp;&amp;nbsp;')[1])
-    source[i] = source[i].strip()
-    date[i] = date[i].strip()
-
-    print(str(i + 1) + '.' + title[i] + '(' + date[i] + '-' + source[i] + ')')
-    print(href[i])
-</code></pre>
-<h1 id="三-金融数据挖掘案例1">三、金融数据挖掘案例1</h1>
-<h1 id="四-数据库详解与实战">四、数据库详解与实战</h1>
-<h1 id="五-数据清洗优化及数据评分系统搭建">五、数据清洗优化及数据评分系统搭建</h1>
-<h1 id="六-数据分析利器">六、数据分析利器：</h1>
-<h1 id="七-数据可视化与数据相关性分析">七、数据可视化与数据相关性分析</h1>
-<h1 id="八-金融数据挖掘之爬虫技术进阶">八、金融数据挖掘之爬虫技术进阶</h1>
-<h1 id="九-金融数据挖掘案例2">九、金融数据挖掘案例2</h1>
-<h1 id="十-通过pdf文本解析上市公司理财公告">十、通过PDF文本解析上市公司理财公告</h1>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【从零开始学数据挖掘】]]></title>
-        <id>https://seutodaysz.github.io/DataMine1/</id>
-        <link href="https://seutodaysz.github.io/DataMine1/">
-        </link>
-        <updated>2020-10-31T04:28:05.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603763485708.jpg" alt="" loading="lazy"></figure>
-<h1 id="一-数据挖掘与数据分析的基本概述">一、数据挖掘与数据分析的基本概述</h1>
-<!-- more -->
-<p>数据分析和数据挖掘都是基于搜集来的数据，应用数学、统计、计算机等技术对数据进行处理，从中取抽取有用的信息，进而为决策提供依据和指导方向。在实际的应用中，有多种多样的数据挖掘和数据分析的方法，作为一个优秀的数据分析工程师，就应该知道如何针对不同的应用场景，选用不同的分析模型，得到不同的结果。</p>
-<!-- more -->
-<p>从应用领域来看，数据分析和数据挖掘已经广泛应用在：电商、交通出行、医疗健康等领域</p>
-<h2 id="电商">电商</h2>
-<!-- more -->
-<p>在电商领域做数据分析，最典型的例子，就是在数以亿计的数据中，找出异常的交易数据，并搞清楚整个数据流程，揪出数据造假之徒，使得整个电商的营销得以正常运行；除了找出有问题的地方，数据分析还可以应用在对于不同用户做消费能力的分类，根据已有的数据进行消费推荐，提高成交概率，促成商业繁荣。</p>
-<p>以上，都是数据分析在电商领域的精准应用。但不可忽视的是，现在国内对于数据隐私权的保护还远远不够，这才促成了数据分析的繁荣；以后加强了对于消费者的信息监管，数据的应用也不是那么方便，那或许会造成新的发展瓶颈。</p>
-<h2 id="交通">交通</h2>
-<p>最典型的应用场景，应该是在打车领域。通过数据分析，可以优化打车的分单派送以及路线规划，实现最优化的操作，从而可以极大的提高平台派单数量，并降低消费者的打车成本，从而形成正向循环，促进打车软件的发展。</p>
-<h2 id="医疗">医疗</h2>
-<!-- more -->
-<h2 id="金融">金融</h2>
-<!-- more -->
-<p>从技术对比来看，数据分析和数据挖掘又有着不同的特点:</p>
-<p>从实现流程来看，数据挖掘的主要流程为：</p>
-<!-- more -->
-<h1 id="二-数据挖掘的实例波士顿房价预测">二、数据挖掘的实例—波士顿房价预测</h1>
-<figure data-type="image" tabindex="2"><img src="https://seutodaysz.github.io/post-images/1603795486805.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="三-python-的快速入门">三、Python 的快速入门</h1>
-<figure data-type="image" tabindex="3"><img src="https://seutodaysz.github.io/post-images/1603795511667.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="四-python-的科学计算工具">四、Python 的科学计算工具</h1>
-<figure data-type="image" tabindex="4"><img src="https://seutodaysz.github.io/post-images/1603795519352.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="五-python-的数据处理工具">五、Python 的数据处理工具</h1>
-<figure data-type="image" tabindex="5"><img src="https://seutodaysz.github.io/post-images/1603795523853.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="六-python-的数据可视化处理">六、Python 的数据可视化处理</h1>
-<figure data-type="image" tabindex="6"><img src="https://seutodaysz.github.io/post-images/1603795532503.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<h1 id="七-数据挖掘中常见的模型">七、数据挖掘中常见的模型</h1>
-<figure data-type="image" tabindex="7"><img src="https://seutodaysz.github.io/post-images/1603795538118.jpg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[【Markdown语法小结】]]></title>
         <id>https://seutodaysz.github.io/Markdown/</id>
         <link href="https://seutodaysz.github.io/Markdown/">
@@ -613,6 +455,377 @@ title可加可不加</p>
 <p>单行代码：代码之间分别用一个反引号包起来<br>
 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
 <pre><code></code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【研究生规划】厦门大学移动计算实验室]]></title>
+        <id>https://seutodaysz.github.io/StudyPlan/</id>
+        <link href="https://seutodaysz.github.io/StudyPlan/">
+        </link>
+        <updated>2020-10-31T04:24:14.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604126372771.jpg" alt="" loading="lazy"></figure>
+<p>研究生阶段，要具备的能力和知识点清单如下:</p>
+<!-- more -->
+<h1 id="能力清单">👉 能力清单：</h1>
+<p>🙏 1. 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
+🙏 2. 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
+🙏 3. 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
+🙏 4.沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
+🙏 5.时间管理的能力：能合理管理自己的时间，高效做事；<br>
+🙏 6. 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
+<!-- more -->
+<h1 id="知识清单">👉 知识清单：</h1>
+<p>研究生期间需要掌握的知识清单：</p>
+<h2 id="编程语言">🏅 编程语言：</h2>
+<p>​       精通 python，matlab，C/C++，Java；<br>
+​       有项目经验，能独立完成实验和科研项目；</p>
+<h2 id="操作系统和工具">💻 操作系统和工具：</h2>
+<p>​ 熟悉Linux的部署、配置，基本命令等；（Cent OS、Ubuntu）<br>
+​ 尽量在Linux上开发和编程；<br>
+​ Linux上搭建常见应用（Apache、ftp等）；</p>
+<h2 id="计算机相关理论">🚀 计算机相关理论：</h2>
+<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
+​ 重点掌握机器学习基本原理；<br>
+​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
+<h2 id="常用工具的熟练掌握">🌉 常用工具的熟练掌握：</h2>
+<p>​ 常规机器学习平台：scikit learn<br>
+​ 深度学习平台：Pytorch、TensorFlow<br>
+​ 数据处理工具包：pandas、numpy<br>
+​ 数据库：my-sql、mongodb</p>
+<h2 id="科研和论文写作">📄 科研和论文写作：</h2>
+<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
+​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
+<h2 id="大数据平台构建和数据分析">📊 大数据平台构建和数据分析</h2>
+<p>​ 可选1-2个进行研究（如Spark、Hadoop等）；</p>
+<h2 id="其他工具">📤 其他工具</h2>
+<p>​ 版本控制：Git<br>
+​ 网站：WordPress、Apache、ngnix</p>
+<!-- more -->
+<h1 id="时间管理">👉 时间管理：</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习]]></title>
+        <id>https://seutodaysz.github.io/FPGA/</id>
+        <link href="https://seutodaysz.github.io/FPGA/">
+        </link>
+        <updated>2020-10-27T12:29:41.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p><img src="https://seutodaysz.github.io/post-images/1603804705841.jpg" alt="" loading="lazy"><br>
+近期在做的一个科研要用到FPGA技术，在这里开一个FPGA学习的专场，对于这几年学习的数字电子技术进行一个系统的整理和梳理，以便自己后续的进一步深入掌握。</p>
+<!-- more -->
+<p>总的来说，FPGA技术是基于数字电子技术的底层开发技术，属于芯片领域的核心技术，也是国家现在被卡脖子的领域之一。对于高端的FPGA芯片，美国的封禁也难以阻挡我们向着人类智慧结晶的芯片技术发起进攻的号角。因此，要学好FPGA技术，另外复习一下数字电子技术。两者相辅相乘，才能是深入掌握了FPGA技术。</p>
+<!-- more -->
+<h1 id="一-xilinx公司简介">一、Xilinx公司简介</h1>
+<p>先做一个简单的介绍，参考一下百度</p>
+<h2 id="百度百科"><strong>百度百科</strong></h2>
+<p>Xilinx(赛灵思)是全球领先的可编程逻辑完整解决方案的供应商。Xilinx研发、制造并销售范围广泛的高级集成电路、软件设计工具以及作为预定义系统级功能的IP（Intellectual Property）核。<br>
+2018年7月18日，全球最大的可编程芯片（FPGA）厂商赛灵思宣布收购中国 AI 芯片领域的明星创业公司——深鉴科技。有“中国英伟达”之称的AI芯片初创企业将继续在其北京办公室运营。目前，交易金额及细节尚未公布。 [1]<br>
+2019年10月23日， 2019《财富》未来50强榜单公布，赛灵思（Xilinx）排名第17。</p>
+<h2 id="fpga芯片的组成"><strong>FPGA芯片的组成</strong></h2>
+<p>1️⃣ 可编程输入输出单元；<br>
+2️⃣ 基本可编程逻辑单元；<br>
+3️⃣ 完整的时钟管理；<br>
+4️⃣ 嵌入块式RAM；<br>
+5️⃣ 丰富的布线资源；<br>
+6️⃣ 内嵌的底层功能单元和专用硬件模块；</p>
+<!-- more -->
+<h1 id="二-vivado-软件安装">二、Vivado 软件安装</h1>
+<p><a href="https://blog.csdn.net/taowei1314520/article/details/74860356">Vivado 下载与安装</a></p>
+<h1 id="三-veilog-hdl-硬件描述语言">三、Veilog hdl 硬件描述语言</h1>
+<p><a href="https://www.ituring.com.cn/book/miniarticle/120813">Verilog hdl 学习</a></p>
+<h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
+<h2 id="gpio实验">GPIO实验</h2>
+<h3 id="1-led点灯">1. led点灯</h3>
+<pre><code>
+module led_twinkle(
+    input          sys_clk  ,  //系统时钟
+    input          sys_rst_n,  //系统复位，低电平有效
+
+    output  [1:0]  led         //LED灯
+);
+
+//reg define
+reg  [25:0]  cnt ;
+
+//*****************************************************
+//**                    main code
+//*****************************************************
+
+//对计数器的值进行判断，以输出LED的状态
+assign led = (cnt &lt; 26'd2500_0000) ? 2'b01 : 2'b10 ;
+//assign led = (cnt &lt; 26'd5)         ? 2'b01 : 2'b10 ;  //仅用于仿真
+
+//计数器在0~5000_000之间进行计数
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        cnt &lt;= 26'd0;
+    else if(cnt &lt; 26'd5000_0000)
+//  else if(cnt &lt; 26'd10)  //仅用于仿真
+        cnt &lt;= cnt + 1'b1;
+    else
+        cnt &lt;= 26'd0;
+end
+
+endmodule
+</code></pre>
+<h3 id="2-按键控制">2. 按键控制</h3>
+<pre><code>module key_led(
+    input               sys_clk ,
+    input               sys_rst_n ,
+
+    input        [1:0]  key ,
+    output  reg  [1:0]  led
+);
+
+//reg define
+reg [24:0] cnt;
+reg        led_ctrl;
+
+//*****************************************************
+//**                    main code
+//*****************************************************
+
+//1-频率计数：计数器
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        cnt &lt;= 25'd0;
+    else if(cnt &lt; 25'd2500_0000)  //计数500ms=0.5s 
+        cnt &lt;= cnt + 1'b1;
+    else
+        cnt &lt;= 25'd0;
+end
+
+//2-状态控制：每隔500ms就更改LED的闪烁状态
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        led_ctrl &lt;= 1'b0;
+    else if(cnt == 25'd2500_0000)
+        led_ctrl &lt;= ~led_ctrl;
+end
+
+//3-功能模块：根据按键的状态以及LED的闪烁状态来赋值LED
+always @ (posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        led &lt;= 2'b11;
+    else 
+		case(key)
+			2'b10 :  //如果按键0按下，则两个LED交替闪烁
+				if(led_ctrl == 1'b0)
+					led &lt;= 2'b01;
+				else
+					led &lt;= 2'b10;
+			2'b01 :  //如果按键1按下，则两个LED同时亮灭交替
+				if(led_ctrl == 1'b0)
+					led &lt;= 2'b11;
+				else
+					led &lt;= 2'b00;
+			2'b11 :  //如果两个按键都未按下，则两个LED都保持点亮
+					led &lt;= 2'b11;
+			default: ;
+		endcase
+end
+
+endmodule
+</code></pre>
+<h3 id="3-呼吸灯">3. 呼吸灯</h3>
+<pre><code>
+module breath_led(
+    input   sys_clk   ,  //时钟信号50Mhz
+    input   sys_rst_n ,  //复位信号
+
+    output  led          //LED
+);
+
+//reg define
+reg  [15:0]  period_cnt ;   //周期计数器频率：1khz 周期:1ms  计数值:1ms/20ns=50000
+reg  [15:0]  duty_cycle ;   //占空比数值
+reg          inc_dec_flag ; //0 递增  1 递减
+
+//*****************************************************
+//**                  main code
+//*****************************************************
+
+//根据占空比和计数值之间的大小关系来输出LED
+assign   led = (period_cnt &gt;= duty_cycle) ?  1'b1  :  1'b0;
+
+//周期计数器
+always @(posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        period_cnt &lt;= 16'd0;
+    else if(period_cnt == 16'd50000)
+        period_cnt &lt;= 16'd0;
+    else
+        period_cnt &lt;= period_cnt + 1'b1;
+end
+
+//在周期计数器的节拍下递增或递减占空比
+always @(posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n) begin
+        duty_cycle   &lt;= 16'd0;
+        inc_dec_flag &lt;= 1'b0;
+    end
+    else begin
+        if(period_cnt == 16'd50000) begin    //计满1ms
+            if(inc_dec_flag == 1'b0) begin   //占空比递增状态
+                if(duty_cycle == 16'd50000)  //如果占空比已递增至最大
+                    inc_dec_flag &lt;= 1'b1;    //则占空比开始递减
+                else                         //否则占空比以25为单位递增
+                    duty_cycle &lt;= duty_cycle + 16'd25;
+            end
+            else begin                       //占空比递减状态
+                if(duty_cycle == 16'd0)      //如果占空比已递减至0
+                    inc_dec_flag &lt;= 1'b0;    //则占空比开始递增
+                else                         //否则占空比以25为单位递减
+                    duty_cycle &lt;= duty_cycle - 16'd25;
+            end
+        end
+    end
+end
+
+endmodule
+</code></pre>
+<h2 id="ip核实验">IP核实验</h2>
+<p>Verilog 中很重要的一种功能，就是实现了IP核的封装调用，极大提高的代码的复用效果。</p>
+<h1 id="五-基于fpga的数字基带信号处理">五、基于FPGA的数字基带信号处理</h1>
+<p>第五部分，主要介绍设么是CRC校验位。</p>
+<h2 id="51-crc-校验"><strong>5.1 CRC 校验</strong></h2>
+<p>分为以下这四部分来介绍。</p>
+<h3 id="511-什么是crc校验"><strong>5.1.1 什么是CRC校验</strong></h3>
+<p>CRC校验码的全称是循环冗余码，是数据通信领域中最常用的一种差错校验码，其特征是信息字段和校验字段的长度可以任意选定。</p>
+<p>这个校验方式的根本思想是在发送数据的后面拼接上一些额外的数据位，使得这个拼接之后的数据可以被一个固定的数模2整除（这里的模2整除是一种区别于普通的除法的运算方法，也不难理解），之后将数据发送……接收端同样将整个拼接后的数据与之前确定的固定的数据做模2除法，若能整除，则说明传输过程没有出错，若不能整除，则可以根据余数判断是哪一位发生了错误。、</p>
+<p>在RFID实验中，用到的CRC校验码有2种，主要是CRC5和CRC16.这里主要是基于CRC16进行深入的介绍。</p>
+<h3 id="512-crc-校验的基本原理"><strong>5.1.2 CRC 校验的基本原理</strong></h3>
+<p>生成CRC码的基本原理:<br>
+任意一个由二进制位串组成的代码都可以和一个系数仅为‘0’和‘1’取值的多项式一一对应。例如：代码1010111对应的多项式为x6+x4+x2+x+1，而多项式为x5+x3+x2+x+1对应的代码101111。</p>
+<p>标准CRC生成多项式如下表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>名称</strong></th>
+<th style="text-align:center"><strong>生成多项式</strong></th>
+<th style="text-align:center"><strong>简记式</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CRC-4</td>
+<td style="text-align:center">x4+x+1</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-8</td>
+<td style="text-align:center">x8+x5+x4+1</td>
+<td style="text-align:center">0x31</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-8</td>
+<td style="text-align:center">x8+x2+x1+1</td>
+<td style="text-align:center">0x07</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-8</td>
+<td style="text-align:center">x8+x6+x4+x3+x2+x1</td>
+<td style="text-align:center">0x5E</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-12</td>
+<td style="text-align:center">x12+x11+x3+x+1</td>
+<td style="text-align:center">80F</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-16</td>
+<td style="text-align:center">x16+x15+x2+1</td>
+<td style="text-align:center">8005</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC16-CCITT</td>
+<td style="text-align:center">x16+x12+x5+1</td>
+<td style="text-align:center">1 021</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-32</td>
+<td style="text-align:center">x32+x26+x23+...+x2+x+1</td>
+<td style="text-align:center">04C11</td>
+</tr>
+<tr>
+<td style="text-align:center">CRC-32c</td>
+<td style="text-align:center">x32+x28+x27+...+x8+x6+1</td>
+<td style="text-align:center">1EDC6F41</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CRC校验是前面几段数据内容的校验值，为一个16位数据，发送时，低8位在前，高8为最后。</strong></p>
+<p>例如：信息字段代码为: 1011001，校验字段为：1010。<br>
+发送方：发出的传输字段为:  1 0 1 1 0 0 1 1 0 10<br>
+信息字段       校验字段<br>
+接收方：使用相同的计算方法计算出信息字段的校验码，对比接收到的实际校验码，如果相等及信息正确，不相等则信息错误；或者将接受到的所有信息除多项式，如果能够除尽，则信息正确</p>
+<h3 id="513-crc校验的步骤"><strong>5.1.3 CRC校验的步骤</strong></h3>
+<p>常用查表法和计算法。计算方法一般都是：<br>
+（1）预置1个16位的寄存器为十六进制FFFF（即全为1），称此寄存器为CRC寄存器；<br>
+（2）把第一个8位二进制数据（既通讯信息帧的第一个字节）与16位的CRC寄存器的低<br>
+8位相异或，把结果放于CRC寄存器，高八位数据不变；<br>
+（3）把CRC寄存器的内容右移一位（朝低位）用0填补最高位，并检查右移后的移出位；<br>
+（4）如果移出位为0：重复第3步（再次右移一位）；如果移出位为1，CRC寄存器与多<br>
+多项式A001（1010 0000 0000 0001）进行异或；<br>
+（5）重复步骤3和4，直到右移8次，这样整个8位数据全部进行了处理；<br>
+（6）重复步骤2到步骤5，进行通讯信息帧下一个字节的处理；<br>
+（7）将该通讯信息帧所有字节按上述步骤计算完成后，得到的16位CRC寄存器的高、低<br>
+字节进行交换；<br>
+（8）最后得到的CRC寄存器内容即为：CRC码。</p>
+<h3 id="514-源代码"><strong>5.1.4 源代码</strong></h3>
+<pre><code>
+module crc16(
+	input						sclk		, 
+	input						s_rst_n	,
+	input			[7:0]		data	,
+	output		reg	 [15:0]		out		
+);
+
+
+reg 			[15:0]		    crc16_out	;
+reg 			[15:0]			crc_reg		;
+reg 			temp;
+integer  i,j,m,n ;
+
+always @ (posedge sclk or negedge s_rst_n) begin
+	if(s_rst_n == 1'b0)
+		crc16_out&lt;=16'b0;
+	else	
+        crc16_out&lt;=crc_reg;
+end
+
+
+always @ (crc16_out or data) begin
+        crc_reg=crc16_out;
+        for (i = 7; i &gt;= 0; i = i - 1)
+            begin
+                temp=data[i]^crc_reg[15];
+ 
+                for (j = 15;  j &gt; 12; j = j - 1)
+                    begin
+                        crc_reg[j]=crc_reg[j-1];
+                    end
+                crc_reg[12]=temp^crc_reg[11];
+ 
+                for (m = 11; m &gt;5 ; m = m - 1)
+                    begin
+                        crc_reg[m]=crc_reg[m-1];
+                    end
+                crc_reg[5]=temp^crc_reg[4];
+ 
+                for (n = 4; n &gt;0 ; n = n - 1)
+                    begin
+                        crc_reg[n]=crc_reg[n-1];
+                    end
+                crc_reg[0]=temp^0;
+            end
+        out=crc_reg;
+end
+endmodule
+</code></pre>
+<h1 id="六-基于fpga的深度学习加速">六、基于FPGA的深度学习加速</h1>
 ]]></content>
     </entry>
 </feed>
