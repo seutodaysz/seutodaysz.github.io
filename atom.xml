@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-11-07T08:43:40.370Z</updated>
+    <updated>2020-11-07T09:39:06.913Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -18,8 +18,17 @@
         </link>
         <updated>2020-11-07T08:13:22.000Z</updated>
         <content type="html"><![CDATA[<p>网上的学习资料特别多，如何在如此众多的资料中，找到最有价值的信息来学习，我们需要听取前辈的经验，少走弯路。<br>
-<img src="https://seutodaysz.github.io/post-images/1604736924825.jpg" alt="" loading="lazy"><br>
-<a href="https://zhuanlan.zhihu.com/p/69869004">数据分析资料</a></p>
+<img src="https://seutodaysz.github.io/post-images/1604736924825.jpg" alt="" loading="lazy"></p>
+<h1 id="如何称为一个优秀的数据分析师">如何称为一个优秀的数据分析师</h1>
+<p><a href="https://kuaibao.qq.com/s/20191024A03EO100?refer=spider">职业规划</a><br>
+<a href="https://github.com/virgili0/Virgilio">Github 职业规划</a></p>
+<h1 id="数据分析的学习资料">数据分析的学习资料</h1>
+<p><a href="%5B%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%B5%84%E6%96%99%5D(https://zhuanlan.zhihu.com/p/69869004)">知乎推荐</a></p>
+<h1 id="数据集哪里找">数据集哪里找</h1>
+<p><a href="https://lionbridge.ai/datasets/the-50-best-free-datasets-for-machine-learning-zh/">数据集</a></p>
+<h1 id="数理基础">数理基础</h1>
+<h1 id="计算机基础">计算机基础</h1>
+<h1 id=""></h1>
 <p><strong>持续更新中...</strong></p>
 ]]></content>
     </entry>
