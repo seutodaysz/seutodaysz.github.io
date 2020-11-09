@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-11-07T09:39:06.913Z</updated>
+    <updated>2020-11-09T09:09:24.809Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,6 +11,16 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[【可穿戴柔性标签天线设计】]]></title>
+        <id>https://seutodaysz.github.io/wearable/</id>
+        <link href="https://seutodaysz.github.io/wearable/">
+        </link>
+        <updated>2020-11-09T09:05:41.000Z</updated>
+        <content type="html"><![CDATA[<p>最近课题组的研究方向已经调整为做可穿戴柔性射频前端上去了，现在有很多的小方向可以做。应该说，在东南大学这个大招牌下，我们可以集中资源去攻克这样一个问题。这样的过程，也可以看得出，科研有时候并不是做不了，要坐得住，要学得进。那就要沉下心，好好去研究。</p>
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604912937125.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【数据分析 学习资料小结】]]></title>
         <id>https://seutodaysz.github.io/Material Data/</id>
@@ -23,7 +33,7 @@
 <p><a href="https://kuaibao.qq.com/s/20191024A03EO100?refer=spider">职业规划</a><br>
 <a href="https://github.com/virgili0/Virgilio">Github 职业规划</a></p>
 <h1 id="数据分析的学习资料">数据分析的学习资料</h1>
-<p><a href="%5B%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%B5%84%E6%96%99%5D(https://zhuanlan.zhihu.com/p/69869004)">知乎推荐</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/69869004">知乎推荐</a></p>
 <h1 id="数据集哪里找">数据集哪里找</h1>
 <p><a href="https://lionbridge.ai/datasets/the-50-best-free-datasets-for-machine-learning-zh/">数据集</a></p>
 <h1 id="数理基础">数理基础</h1>
@@ -39,6 +49,7 @@
         </link>
         <updated>2020-11-06T06:49:57.000Z</updated>
         <content type="html"><![CDATA[<p>十一月的第一周的已经过去，我又做了些什么呢？我还有什么没有做的呢？我走在什么样的道路上?我要前往什么方向呢？</p>
+<p>浮躁是这个时代的代名词，我想我要做一些事情开克服这样浮躁的状态</p>
 ]]></content>
     </entry>
     <entry>
@@ -170,227 +181,6 @@ While  Num2 !=0:
 <strong>时间管理</strong> 以前心理学讲到一个自己的兴奋点，那就是自己在什么时候，达到自己状态最好的时候， 自己什么时候状态最差，合理分配自己的事情，根据自己的作息规律和自己心理学上的精力变化曲线去改变的自己的行为方式，做最优秀的自己。<br>
 <strong>做事优先级</strong> 一个人的精力总是有限的，时间也是有限的。要做好事情的优先级安排，这样可以进一步提高自己的时间效率</p>
 <p>~~</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【Matlab 智能算法】]]></title>
-        <id>https://seutodaysz.github.io/Matlab/</id>
-        <link href="https://seutodaysz.github.io/Matlab/">
-        </link>
-        <updated>2020-10-31T04:33:54.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604119007499.jpg" alt="" loading="lazy"></figure>
-<h1 id="1模拟退火算法">【1】模拟退火算法</h1>
-<p>第一部分介绍一下模拟退火算法</p>
-<h2 id="11概述">【1.1】概述</h2>
-<p>模拟退火算法最早是在1953年提出的，然后1983年的时候，Krikpatrick利用模拟退火算法求解了组合最优化问题。模拟退火算法是一种基于迭代求解的随机寻优算法，其出发点是物理中固体物质的退火过程与一般组合优化求解策略的相似性，其目的在于为NP难问题提供有效的近似求解方法，克服了其他算法容易陷入局部极小的缺陷和对于初值的依赖。</p>
-<h2 id="12原理">【1.2】原理</h2>
-<p>模拟退火算法新解的产生和接受可以分为如下的三个步骤：<br>
-🌟 由一个产生函数从当前解产生一个位于解空间的新解；为了便于后续的计算和接受，减少算法耗时，通过简单变换即可产生新解的方法。新解的变换方法决定了当前解的邻域结构。<br>
-🌟 判断新解是否会被接受，判断依据是一个接受准则，最常用的接受准则是Metropolis准则，若delta E&lt; 0,则 接受X'作为新的当前解 X；否则，以概率exp(-deltaE/T) 作为新的当前解<br>
-🌟当新解被确定接受时，用新解代替当前解，将当前解中对应于产生新解的变换部分予以实现，同时修正目标函数值即可。此时，当前解实现了一次迭代，可在此基础上开始下一轮试验。若当前解被判定为舍弃，则在原当前解的基础上继续下一轮试验；</p>
-<h2 id="13源码">【1.3】源码</h2>
-<pre><code>%%%%%%%%%%%%%%%%%%%%%%模拟退火算法解决函数极值%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clear all;                      %清除所有变量
-close all;                      %清图
-clc;                            %清屏
-D=10;                           %变量维数 
-Xs=20;                          %上限                                
-Xx=-20;                         %下限
-%%%%%%%%%%%%%%%%%%%%%%%%%%%冷却表参数%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-L = 200;                        %马可夫链长度
-K = 0.998;                      %衰减参数
-S = 0.01;                       %步长因子
-T=100;                          %初始温度
-YZ = 1e-8;                      %容差
-P = 0;                          %Metropolis过程中总接受点
-%%%%%%%%%%%%%%%%%%%%%%%%%%随机选点 初值设定%%%%%%%%%%%%%%%%%%%%%%%%%
-PreX = rand(D,1)*(Xs-Xx)+Xx;
-PreBestX = PreX;
-PreX =  rand(D,1)*(Xs-Xx)+Xx;
-BestX = PreX;
-%%%%%%%%%%%每迭代一次退火一次(降温), 直到满足迭代条件为止%%%%%%%%%%%%
-deta=abs( func1( BestX)-func1(PreBestX));
-while (deta &gt; YZ) &amp;&amp; (T&gt;0.001)
-    T=K*T; 
-    %%%%%%%%%%%%%%%%%%%%%在当前温度T下迭代次数%%%%%%%%%%%%%%%%%%%%%%
-    for i=1:L  
-        %%%%%%%%%%%%%%%%%在此点附近随机选下一点%%%%%%%%%%%%%%%%%%%%%
-            NextX = PreX + S* (rand(D,1) *(Xs-Xx)+Xx);
-            %%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%%%%%
-            for ii=1:D
-                if NextX(ii)&gt;Xs | NextX(ii)&lt;Xx
-                    NextX(ii)=PreX(ii) + S* (rand *(Xs-Xx)+Xx);
-                end
-            end            
-        %%%%%%%%%%%%%%%%%%%%%%%是否全局最优解%%%%%%%%%%%%%%%%%%%%%%
-        if (func1(BestX) &gt; func1(NextX))
-            %%%%%%%%%%%%%%%%%%保留上一个最优解%%%%%%%%%%%%%%%%%%%%%
-            PreBestX = BestX;
-            %%%%%%%%%%%%%%%%%%%此为新的最优解%%%%%%%%%%%%%%%%%%%%%%
-            BestX=NextX;
-        end
-        %%%%%%%%%%%%%%%%%%%%%%%% Metropolis过程%%%%%%%%%%%%%%%%%%%
-        if( func1(PreX) - func1(NextX) &gt; 0 )
-            %%%%%%%%%%%%%%%%%%%%%%%接受新解%%%%%%%%%%%%%%%%%%%%%%%%
-            PreX=NextX;
-            P=P+1;
-        else
-            changer = -1*(func1(NextX)-func1(PreX))/ T ;
-            p1=exp(changer);
-            %%%%%%%%%%%%%%%%%%%%%%%%接受较差的解%%%%%%%%%%%%%%%%%%%%
-            if p1 &gt; rand        
-                PreX=NextX;
-                P=P+1;         
-            end
-        end
-    trace(P+1)=func1( BestX);    
-    end
-    deta=abs( func1( BestX)-func1 (PreBestX)); 
-end
-disp('最小值在点:');
-BestX
-disp( '最小值为:');
-func1(BestX)
-figure
-plot(trace(2:end))
-xlabel('迭代次数')
-ylabel('目标函数值')
-title('适应度进化曲线')
-</code></pre>
-<h2 id="14结果">【1.4】结果</h2>
-<p><img src="https://seutodaysz.github.io/post-images/1604150708902.png" alt="" loading="lazy"><br>
-从中可以看出 基于模拟退火算法计算的结果，很快就收敛了。</p>
-<h1 id="2粒子群算法">【2】粒子群算法</h1>
-<p>第二部分，介绍粒子群算法</p>
-<h2 id="21概述">【2.1】概述</h2>
-<p>🗒 粒子群算法最早是在1987年提出，并经过许多人的改进和努力，最终在1995年提出，并引起广泛的注意和学习。粒子群优化算法源自鸟类群体活动的规律性，模拟了鸟类觅食的原理，将鸟比作粒子，将求解问题的搜索空间比作鸟类的覅恶性空间，将寻找最优解的过程比作鸟类飞行觅食的过程，进而求解复杂的优化算法。</p>
-<h2 id="22原理">【2.2】原理</h2>
-<p>🗒 在粒子群算法中，每个优化问题的潜在解都是搜索空间中的一只鸟，称为粒子。所有粒子都有一个被优化的函数决定的适应度值，每个粒子都有速度和位置，然后，每个粒子就追随当前的最优粒子在解空间中搜索。<br>
-🗒 粒子群基于“种群”和“进化”的概念，通过个体间的协作和竞争，实现复杂空间的最优化解的搜索，其流程如下：</p>
-<p>⚡️ （1）初始化粒子群，包括群体规模 <em>N，每个粒子的位置 xi和速度 vi</em>;<br>
-⚡️ （2）计算每个粒子的适应度值 <em>fit[i]</em><br>
-⚡️ （3）对于每个粒子用它的适应度值<em>fit[i]和个体极值pbest[i]</em>,如果<em>fit[t] &lt;pbest[i] ,则用fit[t] 替换掉 pbest[i]</em>；<br>
-⚡️ （4）对于每个粒子用它的适应度值<em>fit[i]和全体极值gbest[i]</em>,如果<em>fit[t]&lt; gbest[i],则用fit[t]替换掉gbest[i</em>]<br>
-⚡️ （5）迭代更新每个粒子的位置<em>xi和速度 vi</em>;;<br>
-⚡️ （6）边界处理<br>
-⚡️ （5）判断算法是否终止条件满足，若是，结束算法，并输出优化结果，否则，返回步骤(2)</p>
-<!-- more -->
-<h2 id="23源码">【2.3】源码</h2>
-<pre><code>%%%%%%%%%%%%%%%%%粒子群算法求函数极值%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clear all;              %清除所有变量
-close all;              %清图
-clc;                    %清屏
-N=100;                  %群体粒子个数
-D=10;                   %粒子维数
-T=200;                  %最大迭代次数
-c1=1.5;                 %学习因子1
-c2=1.5;                 %学习因子2
-w=0.8;                  %惯性权重
-Xmax=20;                %位置最大值
-Xmin=-20;               %位置最小值
-Vmax=10;                %速度最大值
-Vmin=-10;               %速度最小值
-%%%%%%%%%%%%%%%%初始化种群个体（限定位置和速度）%%%%%%%%%%%%%%%%
-x=rand(N,D) * (Xmax-Xmin)+Xmin;
-v=rand(N,D) * (Vmax-Vmin)+Vmin;
-%%%%%%%%%%%%%%%%%%初始化个体最优位置和最优值%%%%%%%%%%%%%%%%%%%
-p=x;
-pbest=ones(N,1);
-for i=1:N
-    pbest(i)=func1(x(i,:));
-end
-%%%%%%%%%%%%%%%%%%%初始化全局最优位置和最优值%%%%%%%%%%%%%%%%%%
-g=ones(1,D);
-gbest=inf;
-for i=1:N
-    if(pbest(i)&lt;gbest)
-        g=p(i,:);
-        gbest=pbest(i);
-    end
-end
-gb=ones(1,T);
-%%%%%%%%%%%按照公式依次迭代直到满足精度或者迭代次数%%%%%%%%%%%%%
-for i=1:T
-    for j=1:N
-        %%%%%%%%%%%%%%更新个体最优位置和最优值%%%%%%%%%%%%%%%%%
-        if (func1(x(j,:))&lt;pbest(j))
-            p(j,:)=x(j,:);
-            pbest(j)=func1(x(j,:));
-        end
-        %%%%%%%%%%%%%%%%更新全局最优位置和最优值%%%%%%%%%%%%%%%
-        if(pbest(j)&lt;gbest)
-            g=p(j,:);
-            gbest=pbest(j);
-        end
-        %%%%%%%%%%%%%%%%%跟新位置和速度值%%%%%%%%%%%%%%%%%%%%%
-        v(j,:)=w*v(j,:)+c1*rand*(p(j,:)-x(j,:))...
-            +c2*rand*(g-x(j,:));
-        x(j,:)=x(j,:)+v(j,:);
-        %%%%%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%
-        for ii=1:D
-            if (v(j,ii)&gt;Vmax)  |  (v(j,ii)&lt; Vmin)
-                v(j,ii)=rand * (Vmax-Vmin)+Vmin;
-            end
-            if (x(j,ii)&gt;Xmax)  |  (x(j,ii)&lt; Xmin)
-                x(j,ii)=rand * (Xmax-Xmin)+Xmin;
-            end
-        end
-    end
-    %%%%%%%%%%%%%%%%%%%%记录历代全局最优值%%%%%%%%%%%%%%%%%%%%%
-    gb(i)=gbest;
-end
-g;                         %最优个体         
-gb(end);                   %最优值
-figure
-plot(gb)
-xlabel('迭代次数');
-ylabel('适应度值');
-title('适应度进化曲线')
-
-</code></pre>
-<p>fun1 函数附录为：</p>
-<pre><code>%%%%%%%%%%%%%%%%%%%适应度函数%%%%%%%%%%%%%%%%%%%%
-function result=func1(x)
-summ=sum(x.^2);
-result=summ;
-
-</code></pre>
-<h2 id="24结果">【2.4】结果</h2>
-<p><img src="https://seutodaysz.github.io/post-images/1604128875065.jpg" alt="" loading="lazy"><br>
-从结果可以看出 粒子群算法在迭代50次 的时候就已经收敛了。</p>
-<h1 id="3蚁群算法">【3】蚁群算法</h1>
-<h2 id="31概述">【3.1】概述</h2>
-<h2 id="32原理">【3.2】原理</h2>
-<h2 id="33源码">【3.3】源码</h2>
-<h2 id="34结果">【3.4】结果</h2>
-<h1 id="4遗传算法">【4】遗传算法</h1>
-<h2 id="41概述">【4.1】概述</h2>
-<h2 id="42原理">【4.2】原理</h2>
-<h2 id="43源码">【4.3】源码</h2>
-<h2 id="44结果">【4.4】结果</h2>
-<h1 id="5免疫算法">【5】免疫算法</h1>
-<h2 id="51概述">【5.1】概述</h2>
-<h2 id="52原理">【5.2】原理</h2>
-<h2 id="53源码">【5.3】源码</h2>
-<h2 id="54结果">【5.4】结果</h2>
-<h1 id="6差分进化算法">【6】差分进化算法</h1>
-<h2 id="61概述">【6.1】概述</h2>
-<h2 id="62原理">【6.2】原理</h2>
-<h2 id="63源码">【6.3】源码</h2>
-<h2 id="64结果">【6.4】结果</h2>
-<h1 id="7禁忌搜索算法">【7】禁忌搜索算法</h1>
-<h2 id="71概述">【7.1】概述</h2>
-<h2 id="72原理">【7.2】原理</h2>
-<h2 id="73源码">【7.3】源码</h2>
-<h2 id="74结果">【7.4】结果</h2>
-<h1 id="8神经网络算法">【8】神经网络算法</h1>
-<h2 id="81概述">【8.1】概述</h2>
-<h2 id="82原理">【8.2】原理</h2>
-<h2 id="83源码">【8.3】源码</h2>
-<h2 id="84结果">【8.4】结果</h2>
 ]]></content>
     </entry>
 </feed>
