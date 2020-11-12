@@ -6,7 +6,7 @@
 
 <title>【FPGA】基于Xilinx公司的Vivado软件进行FPGA学习 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604971427339">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1605169332660">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
@@ -92,7 +92,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1604971427339" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1605169332660" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -143,6 +143,12 @@
 <a href="https://blog.csdn.net/qq_40033089/article/details/82693492?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">Vivado 软件的使用</a></p>
 <h1 id="三-veilog-hdl-硬件描述语言">三、Veilog hdl 硬件描述语言</h1>
 <p><a href="https://www.ituring.com.cn/book/miniarticle/120813">Verilog hdl 学习</a></p>
+<h2 id="一些小细节">一些小细节</h2>
+<p>`timescale 仿真时间单位 / 时间精度</p>
+<p>用于说明仿真时间单位和时间精度的 数字只能是1、10、100，不能为其它的数字。而且，时间精度不能比时间单位还要大。最多两则一样大。比如：下面定义都是对的：<br>
+<code>timescale 1ns/1ps</code>timescale 100ns/100ns</p>
+<p>`timescale 1ps/1ns 是错误的<br>
+时间精度就是模块仿真时间和延时的精确程序，比如：定义时间精度为10ns， 那么时序中所有的延时至多能精确到10ns，而8ns或者18ns是不可能做到的。</p>
 <h1 id="四-vivado软件的使用与一些入门的实验">四、Vivado软件的使用与一些入门的实验</h1>
 <h2 id="gpio实验">GPIO实验</h2>
 <h3 id="1-led点灯">1. led点灯</h3>
