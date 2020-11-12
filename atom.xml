@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-11-12T08:22:15.180Z</updated>
+    <updated>2020-11-12T08:32:46.027Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -12,13 +12,21 @@
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
     <entry>
-        <title type="html"><![CDATA[【可穿戴柔性标签天线设计】]]></title>
-        <id>https://seutodaysz.github.io/wearable/</id>
-        <link href="https://seutodaysz.github.io/wearable/">
+        <title type="html"><![CDATA[【2020.11月 莆田地区招聘信息汇总】]]></title>
+        <id>https://seutodaysz.github.io/Jop/</id>
+        <link href="https://seutodaysz.github.io/Jop/">
         </link>
-        <updated>2020-11-09T09:05:41.000Z</updated>
-        <content type="html"><![CDATA[<p>最近课题组的研究方向已经调整为做可穿戴柔性射频前端上去了，现在有很多的小方向可以做。应该说，在东南大学这个大招牌下，我们可以集中资源去攻克这样一个问题。这样的过程，也可以看得出，科研有时候并不是做不了，要坐得住，要学得进。那就要沉下心，好好去研究。</p>
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604912937125.jpg" alt="" loading="lazy"></figure>
+        <updated>2020-11-12T08:22:28.000Z</updated>
+        <content type="html"><![CDATA[<p>【1】 三棵树企业<br>
+<img src="https://seutodaysz.github.io/post-images/1605169704589.png" alt="" loading="lazy"><br>
+【2】 才子服饰<br>
+<img src="https://seutodaysz.github.io/post-images/1605169740022.png" alt="" loading="lazy"><br>
+【3】炬星教育科技有限公司<br>
+<img src="https://seutodaysz.github.io/post-images/1605169792735.png" alt="" loading="lazy"><br>
+【4】星云电子<br>
+<img src="https://seutodaysz.github.io/post-images/1605169797627.png" alt="" loading="lazy"><br>
+【5】云度公司<br>
+<img src="https://seutodaysz.github.io/post-images/1605169803051.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -43,144 +51,457 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[【吾日三省吾身11.6】]]></title>
-        <id>https://seutodaysz.github.io/Thinking_11_6/</id>
-        <link href="https://seutodaysz.github.io/Thinking_11_6/">
+        <title type="html"><![CDATA[【Matlab 智能算法】]]></title>
+        <id>https://seutodaysz.github.io/Matlab/</id>
+        <link href="https://seutodaysz.github.io/Matlab/">
         </link>
-        <updated>2020-11-06T06:49:57.000Z</updated>
-        <content type="html"><![CDATA[<p>十一月的第一周的已经过去，我又做了些什么呢？我还有什么没有做的呢？我走在什么样的道路上?我要前往什么方向呢？</p>
-<p>浮躁是这个时代的代名词，我想我要做一些事情开克服这样浮躁的状态</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【图解算法—Python篇】]]></title>
-        <id>https://seutodaysz.github.io/DataStruct/</id>
-        <link href="https://seutodaysz.github.io/DataStruct/">
-        </link>
-        <updated>2020-11-06T02:29:20.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="一-进入算法的世界">一、 进入算法的世界</h1>
-<h2 id="1-什么是算法">1. 什么是算法：</h2>
-<p>算法就是解决问题的具体步骤和方法。在计算机中，就是需要用有限数量来机械性或重复性的指令与计算步骤，从而解决某个具体的问题。</p>
-<pre><code># 求两个整数的最大公约数
-Num1 = int(input('请输入第一个整数:'))
-Num2 = int(input('请输入第二个整数:'))
-
-if Num1 &lt; Num2:
-    Tmp_Num = Num1
-    Num1 = Num2
-    Num2 = Tmp_Num
-
-While  Num2 !=0:
-    Tmp_Num = Num1 % Num2
-    Num1 = Num2
-    Num2 = Tmp_Num
-</code></pre>
-<h2 id="2-算法的基本条件">2. 算法的基本条件</h2>
-<table>
-<thead>
-<tr>
-<th>算法特性</th>
-<th>内容与说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>输入</td>
-<td>0个或者多个输入数据，这些输入必须有清楚的表述和定义</td>
-</tr>
-<tr>
-<td>输出</td>
-<td>至少会有一个输出结果，不可以没有输出结果</td>
-</tr>
-<tr>
-<td>明确性</td>
-<td>每个指令或者步骤都必须是简洁明确的</td>
-</tr>
-<tr>
-<td>有限性</td>
-<td>在有限步骤之后，一定会结束，不会产生无限循环</td>
-</tr>
-<tr>
-<td>有效性</td>
-<td>步骤清楚可行，能用笔计算出来</td>
-</tr>
-</tbody>
-</table>
-<h2 id="3描述算法复杂度的指标">3.描述算法复杂度的指标</h2>
-<h3 id="31-时间复杂度">3.1 时间复杂度</h3>
-<table>
-<thead>
-<tr>
-<th>Big-oh</th>
-<th>特色与说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>O(1)</td>
-<td>常数时间，表示算法的运行时间是一个常数倍数</td>
-</tr>
-<tr>
-<td>O(n)</td>
-<td>线性时间，表示执行的时间随着数据集合的大小而线性增长</td>
-</tr>
-<tr>
-<td>O(log2n)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="32-空间复杂度">3.2 空间复杂度</h3>
-<h2 id="4常见算法简介">4.常见算法简介</h2>
-<h3 id="41分治法">4.1分治法</h3>
-<h3 id="42-递归法">4.2 递归法</h3>
-<h3 id="43-贪心法">4.3 贪心法</h3>
-<h3 id="44-动态规划法">4.4 动态规划法</h3>
-<h3 id="45-迭代法">4.5 迭代法</h3>
-<h3 id="46-枚举法">4.6 枚举法</h3>
-<h3 id="47-回溯法">4.7 回溯法</h3>
-<h1 id="二-认识常用的算法">二、认识常用的算法</h1>
-<h1 id="三-排序算法">三、排序算法</h1>
-<h1 id="四-查找和哈希算法">四、查找和哈希算法</h1>
-<h1 id="五-数组与链表算法">五、数组与链表算法</h1>
-<h1 id="六-堆栈与队列算法">六、堆栈与队列算法</h1>
-<h1 id="七-树形结构与算法">七、树形结构与算法</h1>
-<h1 id="八-图形结构与算法">八、图形结构与算法</h1>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【吾日三省吾身10.31】]]></title>
-        <id>https://seutodaysz.github.io/Thinking1/</id>
-        <link href="https://seutodaysz.github.io/Thinking1/">
-        </link>
-        <updated>2020-10-31T07:38:31.000Z</updated>
+        <updated>2020-10-31T04:33:54.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604130045361.jpg" alt="" loading="lazy"></figure>
-<p>~~最近的状态很差，昨晚不知道为啥就失眠了，凌晨三点醒来以后，就异常的清醒，然后自己还控制不住一直在玩手机。躺在床上玩手机，真是一件不需要开动脑子的事情，只需要无意识的滑动那几个软件，从中取涉取一些能够刺激我感官兴趣的东西。午夜时分，睡不着觉，开始刷手机，我现在感觉，我想是一个没有灵魂的动物，在条件反射式的寻求一些精神上的快感，刺激自己的激素分泌，在明明知道这样会导致自己第二天的精神状态很差的情况下，依然选择刷手机，这样的事情，意识到我渐渐失去了对于自己的控制力，失去了自律，失去了自己沿着自己既定目标前进的能力，结果，可是也预见的。一事无成。</p>
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604119007499.jpg" alt="" loading="lazy"></figure>
+<h1 id="1模拟退火算法">【1】模拟退火算法</h1>
+<p>第一部分介绍一下模拟退火算法</p>
+<h2 id="11概述">【1.1】概述</h2>
+<p>模拟退火算法最早是在1953年提出的，然后1983年的时候，Krikpatrick利用模拟退火算法求解了组合最优化问题。模拟退火算法是一种基于迭代求解的随机寻优算法，其出发点是物理中固体物质的退火过程与一般组合优化求解策略的相似性，其目的在于为NP难问题提供有效的近似求解方法，克服了其他算法容易陷入局部极小的缺陷和对于初值的依赖。</p>
+<h2 id="12原理">【1.2】原理</h2>
+<p>模拟退火算法新解的产生和接受可以分为如下的三个步骤：<br>
+🌟 由一个产生函数从当前解产生一个位于解空间的新解；为了便于后续的计算和接受，减少算法耗时，通过简单变换即可产生新解的方法。新解的变换方法决定了当前解的邻域结构。<br>
+🌟 判断新解是否会被接受，判断依据是一个接受准则，最常用的接受准则是Metropolis准则，若delta E&lt; 0,则 接受X'作为新的当前解 X；否则，以概率exp(-deltaE/T) 作为新的当前解<br>
+🌟当新解被确定接受时，用新解代替当前解，将当前解中对应于产生新解的变换部分予以实现，同时修正目标函数值即可。此时，当前解实现了一次迭代，可在此基础上开始下一轮试验。若当前解被判定为舍弃，则在原当前解的基础上继续下一轮试验；</p>
+<h2 id="13源码">【1.3】源码</h2>
+<pre><code>%%%%%%%%%%%%%%%%%%%%%%模拟退火算法解决函数极值%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear all;                      %清除所有变量
+close all;                      %清图
+clc;                            %清屏
+D=10;                           %变量维数 
+Xs=20;                          %上限                                
+Xx=-20;                         %下限
+%%%%%%%%%%%%%%%%%%%%%%%%%%%冷却表参数%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+L = 200;                        %马可夫链长度
+K = 0.998;                      %衰减参数
+S = 0.01;                       %步长因子
+T=100;                          %初始温度
+YZ = 1e-8;                      %容差
+P = 0;                          %Metropolis过程中总接受点
+%%%%%%%%%%%%%%%%%%%%%%%%%%随机选点 初值设定%%%%%%%%%%%%%%%%%%%%%%%%%
+PreX = rand(D,1)*(Xs-Xx)+Xx;
+PreBestX = PreX;
+PreX =  rand(D,1)*(Xs-Xx)+Xx;
+BestX = PreX;
+%%%%%%%%%%%每迭代一次退火一次(降温), 直到满足迭代条件为止%%%%%%%%%%%%
+deta=abs( func1( BestX)-func1(PreBestX));
+while (deta &gt; YZ) &amp;&amp; (T&gt;0.001)
+    T=K*T; 
+    %%%%%%%%%%%%%%%%%%%%%在当前温度T下迭代次数%%%%%%%%%%%%%%%%%%%%%%
+    for i=1:L  
+        %%%%%%%%%%%%%%%%%在此点附近随机选下一点%%%%%%%%%%%%%%%%%%%%%
+            NextX = PreX + S* (rand(D,1) *(Xs-Xx)+Xx);
+            %%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%%%%%
+            for ii=1:D
+                if NextX(ii)&gt;Xs | NextX(ii)&lt;Xx
+                    NextX(ii)=PreX(ii) + S* (rand *(Xs-Xx)+Xx);
+                end
+            end            
+        %%%%%%%%%%%%%%%%%%%%%%%是否全局最优解%%%%%%%%%%%%%%%%%%%%%%
+        if (func1(BestX) &gt; func1(NextX))
+            %%%%%%%%%%%%%%%%%%保留上一个最优解%%%%%%%%%%%%%%%%%%%%%
+            PreBestX = BestX;
+            %%%%%%%%%%%%%%%%%%%此为新的最优解%%%%%%%%%%%%%%%%%%%%%%
+            BestX=NextX;
+        end
+        %%%%%%%%%%%%%%%%%%%%%%%% Metropolis过程%%%%%%%%%%%%%%%%%%%
+        if( func1(PreX) - func1(NextX) &gt; 0 )
+            %%%%%%%%%%%%%%%%%%%%%%%接受新解%%%%%%%%%%%%%%%%%%%%%%%%
+            PreX=NextX;
+            P=P+1;
+        else
+            changer = -1*(func1(NextX)-func1(PreX))/ T ;
+            p1=exp(changer);
+            %%%%%%%%%%%%%%%%%%%%%%%%接受较差的解%%%%%%%%%%%%%%%%%%%%
+            if p1 &gt; rand        
+                PreX=NextX;
+                P=P+1;         
+            end
+        end
+    trace(P+1)=func1( BestX);    
+    end
+    deta=abs( func1( BestX)-func1 (PreBestX)); 
+end
+disp('最小值在点:');
+BestX
+disp( '最小值为:');
+func1(BestX)
+figure
+plot(trace(2:end))
+xlabel('迭代次数')
+ylabel('目标函数值')
+title('适应度进化曲线')
+</code></pre>
+<h2 id="14结果">【1.4】结果</h2>
+<p><img src="https://seutodaysz.github.io/post-images/1604150708902.png" alt="" loading="lazy"><br>
+从中可以看出 基于模拟退火算法计算的结果，很快就收敛了。</p>
+<h1 id="2粒子群算法">【2】粒子群算法</h1>
+<p>第二部分，介绍粒子群算法</p>
+<h2 id="21概述">【2.1】概述</h2>
+<p>🗒 粒子群算法最早是在1987年提出，并经过许多人的改进和努力，最终在1995年提出，并引起广泛的注意和学习。粒子群优化算法源自鸟类群体活动的规律性，模拟了鸟类觅食的原理，将鸟比作粒子，将求解问题的搜索空间比作鸟类的覅恶性空间，将寻找最优解的过程比作鸟类飞行觅食的过程，进而求解复杂的优化算法。</p>
+<h2 id="22原理">【2.2】原理</h2>
+<p>🗒 在粒子群算法中，每个优化问题的潜在解都是搜索空间中的一只鸟，称为粒子。所有粒子都有一个被优化的函数决定的适应度值，每个粒子都有速度和位置，然后，每个粒子就追随当前的最优粒子在解空间中搜索。<br>
+🗒 粒子群基于“种群”和“进化”的概念，通过个体间的协作和竞争，实现复杂空间的最优化解的搜索，其流程如下：</p>
+<p>⚡️ （1）初始化粒子群，包括群体规模 <em>N，每个粒子的位置 xi和速度 vi</em>;<br>
+⚡️ （2）计算每个粒子的适应度值 <em>fit[i]</em><br>
+⚡️ （3）对于每个粒子用它的适应度值<em>fit[i]和个体极值pbest[i]</em>,如果<em>fit[t] &lt;pbest[i] ,则用fit[t] 替换掉 pbest[i]</em>；<br>
+⚡️ （4）对于每个粒子用它的适应度值<em>fit[i]和全体极值gbest[i]</em>,如果<em>fit[t]&lt; gbest[i],则用fit[t]替换掉gbest[i</em>]<br>
+⚡️ （5）迭代更新每个粒子的位置<em>xi和速度 vi</em>;;<br>
+⚡️ （6）边界处理<br>
+⚡️ （5）判断算法是否终止条件满足，若是，结束算法，并输出优化结果，否则，返回步骤(2)</p>
 <!-- more -->
-<p>~~或许博客的作用，在这个时候开始显示出来了。我在这样时候，开始自我反省。这应该是我自我调节的重要环节。之前，可能这样的反省，只会在脑中短短停留了一会儿，其他事情的到来，就将之冲散，久而久之，我的问题并没有得到解决，反而形成了更深的习惯和条件反射，因此，我觉得，很有必要，花时间，自己把自己的问题写下来，当做是一个明智的，理智的老师，在与我进行深入的交流和反思，强化我的自律意识，也让我的生活更快的回到正轨。</p>
+<h2 id="23源码">【2.3】源码</h2>
+<pre><code>%%%%%%%%%%%%%%%%%粒子群算法求函数极值%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear all;              %清除所有变量
+close all;              %清图
+clc;                    %清屏
+N=100;                  %群体粒子个数
+D=10;                   %粒子维数
+T=200;                  %最大迭代次数
+c1=1.5;                 %学习因子1
+c2=1.5;                 %学习因子2
+w=0.8;                  %惯性权重
+Xmax=20;                %位置最大值
+Xmin=-20;               %位置最小值
+Vmax=10;                %速度最大值
+Vmin=-10;               %速度最小值
+%%%%%%%%%%%%%%%%初始化种群个体（限定位置和速度）%%%%%%%%%%%%%%%%
+x=rand(N,D) * (Xmax-Xmin)+Xmin;
+v=rand(N,D) * (Vmax-Vmin)+Vmin;
+%%%%%%%%%%%%%%%%%%初始化个体最优位置和最优值%%%%%%%%%%%%%%%%%%%
+p=x;
+pbest=ones(N,1);
+for i=1:N
+    pbest(i)=func1(x(i,:));
+end
+%%%%%%%%%%%%%%%%%%%初始化全局最优位置和最优值%%%%%%%%%%%%%%%%%%
+g=ones(1,D);
+gbest=inf;
+for i=1:N
+    if(pbest(i)&lt;gbest)
+        g=p(i,:);
+        gbest=pbest(i);
+    end
+end
+gb=ones(1,T);
+%%%%%%%%%%%按照公式依次迭代直到满足精度或者迭代次数%%%%%%%%%%%%%
+for i=1:T
+    for j=1:N
+        %%%%%%%%%%%%%%更新个体最优位置和最优值%%%%%%%%%%%%%%%%%
+        if (func1(x(j,:))&lt;pbest(j))
+            p(j,:)=x(j,:);
+            pbest(j)=func1(x(j,:));
+        end
+        %%%%%%%%%%%%%%%%更新全局最优位置和最优值%%%%%%%%%%%%%%%
+        if(pbest(j)&lt;gbest)
+            g=p(j,:);
+            gbest=pbest(j);
+        end
+        %%%%%%%%%%%%%%%%%跟新位置和速度值%%%%%%%%%%%%%%%%%%%%%
+        v(j,:)=w*v(j,:)+c1*rand*(p(j,:)-x(j,:))...
+            +c2*rand*(g-x(j,:));
+        x(j,:)=x(j,:)+v(j,:);
+        %%%%%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%
+        for ii=1:D
+            if (v(j,ii)&gt;Vmax)  |  (v(j,ii)&lt; Vmin)
+                v(j,ii)=rand * (Vmax-Vmin)+Vmin;
+            end
+            if (x(j,ii)&gt;Xmax)  |  (x(j,ii)&lt; Xmin)
+                x(j,ii)=rand * (Xmax-Xmin)+Xmin;
+            end
+        end
+    end
+    %%%%%%%%%%%%%%%%%%%%记录历代全局最优值%%%%%%%%%%%%%%%%%%%%%
+    gb(i)=gbest;
+end
+g;                         %最优个体         
+gb(end);                   %最优值
+figure
+plot(gb)
+xlabel('迭代次数');
+ylabel('适应度值');
+title('适应度进化曲线')
+
+</code></pre>
+<p>fun1 函数附录为：</p>
+<pre><code>%%%%%%%%%%%%%%%%%%%适应度函数%%%%%%%%%%%%%%%%%%%%
+function result=func1(x)
+summ=sum(x.^2);
+result=summ;
+
+</code></pre>
+<h2 id="24结果">【2.4】结果</h2>
+<p><img src="https://seutodaysz.github.io/post-images/1604128875065.jpg" alt="" loading="lazy"><br>
+从结果可以看出 粒子群算法在迭代50次 的时候就已经收敛了。</p>
+<h1 id="3蚁群算法">【3】蚁群算法</h1>
+<h2 id="31概述">【3.1】概述</h2>
+<h2 id="32原理">【3.2】原理</h2>
+<h2 id="33源码">【3.3】源码</h2>
+<h2 id="34结果">【3.4】结果</h2>
+<h1 id="4遗传算法">【4】遗传算法</h1>
+<h2 id="41概述">【4.1】概述</h2>
+<h2 id="42原理">【4.2】原理</h2>
+<h2 id="43源码">【4.3】源码</h2>
+<h2 id="44结果">【4.4】结果</h2>
+<h1 id="5免疫算法">【5】免疫算法</h1>
+<h2 id="51概述">【5.1】概述</h2>
+<h2 id="52原理">【5.2】原理</h2>
+<h2 id="53源码">【5.3】源码</h2>
+<h2 id="54结果">【5.4】结果</h2>
+<h1 id="6差分进化算法">【6】差分进化算法</h1>
+<h2 id="61概述">【6.1】概述</h2>
+<h2 id="62原理">【6.2】原理</h2>
+<h2 id="63源码">【6.3】源码</h2>
+<h2 id="64结果">【6.4】结果</h2>
+<h1 id="7禁忌搜索算法">【7】禁忌搜索算法</h1>
+<h2 id="71概述">【7.1】概述</h2>
+<h2 id="72原理">【7.2】原理</h2>
+<h2 id="73源码">【7.3】源码</h2>
+<h2 id="74结果">【7.4】结果</h2>
+<h1 id="8神经网络算法">【8】神经网络算法</h1>
+<h2 id="81概述">【8.1】概述</h2>
+<h2 id="82原理">【8.2】原理</h2>
+<h2 id="83源码">【8.3】源码</h2>
+<h2 id="84结果">【8.4】结果</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Markdown语法小结】]]></title>
+        <id>https://seutodaysz.github.io/Markdown/</id>
+        <link href="https://seutodaysz.github.io/Markdown/">
+        </link>
+        <updated>2020-10-31T04:26:10.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603764829317.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
-<p>~~应该说，我近期的生活不顺畅，效率不高，我没有对其进行过一个全面的反省，或者说，也只是零星的反思，并没有形成一个系统的，全面的问题整理，但其实存在在身上的问题，已经到了不得不进行全面革新的阶段了。我的博客也搭建好了，我的新习惯，也要慢慢开始养成，今天的这一篇博文，就是一个好的开始。</p>
+<p><a href="https://segmentfault.com/markdown">Markdown 参考学习连接</a><br>
+<a href="https://www.cnblogs.com/q735613050/p/7253073.html">Markdown公式编辑学习笔记</a><br>
+<a href="https://www.zybuluo.com/codeep/note/163962">Cmd Markdown 公式指导手册</a></p>
+<h1 id="一-标题">一、标题</h1>
 <!-- more -->
-<p>我将我现在读研存在的问题归纳为三类：<br>
-1️⃣ 方向（战略）<br>
-2️⃣ 能力（战役）<br>
-3️⃣ 自律（战术）</p>
+<p>在想要设置为标题的文字前面加#来表示<br>
+一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。<br>
+注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。<br>
+<strong>--------------------------------------------------------------------------</strong><br>
+示例：</p>
+<h1 id="这是一级标题">这是一级标题</h1>
+<h2 id="这是二级标题">这是二级标题</h2>
+<h3 id="这是三级标题">这是三级标题</h3>
+<h4 id="这是四级标题">这是四级标题</h4>
+<h5 id="这是五级标题">这是五级标题</h5>
+<h6 id="这是六级标题">这是六级标题</h6>
+<p><strong>--------------------------------------------------------------------------</strong></p>
+<h1 id="二-字体">二、字体</h1>
 <!-- more -->
-<h2 id="关于选择">关于选择</h2>
-<p>~~一直以来，我就对于我的方向抱有极大的主动思考，面对方向，就要涉及到选择。一方面，人们总希望自己有尽可能多的选择。在生活中,选择也是无处不在，小到买什么东西，吃什么，大到国家走什么道路，选什么领导人。人们把拥有选择的权利作为一种神圣的权利加以捍卫，但问题又来了，既然不喜欢被安排和拘束，那么就要做出真正契合自己的选择。于是，诞生了很多优化算法，意见领袖。但其实，在我看来，这都不是一种真正意义上的选择。很多人，不愿意去思考什么样才是适合自己的，自己想要是什么？很多人更多的是借助长辈的观念，前辈的经验，甚至是排行榜的结果，但这样的选择真的是负责任的吗？毕竟选择的后果，就要由自己去承担。如果选到了不好的，会不会心有不甘?即使选到了大多数人认为合适的，又是否是真正自己追求的。这个一切的一切，都是一个及其复杂的问题。于是又回到了一个状态，一些人开始怀念没有那么多选择的时候，因为只要被动接受了这样的结果，才能沉下心去做一个学问，才能不断精进自己。因为，真正好的选择，并不是在于选择的时候，而是在于你选择以后，是如何度过的之后时光。你如何看清楚自己的喜好，对于自己的认识，是否到了足够的层次。</p>
+<h2 id="加粗">加粗</h2>
+<p>要加粗的文字左右分别用两个*号包起来</p>
+<h2 id="斜体">斜体</h2>
+<p>要倾斜的文字左右分别用一个*号包起来</p>
+<h2 id="斜体加粗">斜体加粗</h2>
+<p>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+<h2 id="删除线">删除线</h2>
+<p>要加删除线的文字左右分别用两个~~号包起来</p>
+<p><strong>--------------------------------------------------------------------------</strong><br>
+示例：<br>
+<strong>这是加粗的文字</strong><br>
+<em>这是倾斜的文字</em>`<br>
+<em><strong>这是斜体加粗的文字</strong></em><br>
+<s>这是加删除线的文字</s><br>
+<strong>--------------------------------------------------------------------------</strong></p>
+<h1 id="三-引用">三、引用</h1>
 <!-- more -->
-<p>~~选择是一门大学问。不同人有不同选择的方式。作为一个独立的人，我想对自己说，我和解了。我不要在纠结与过去的那个选择，我也不要去想未来会有怎么样的形态。对于过去，我想要清晰的总结出它的不足和缺点，这个是我成长的经验。也要看到自己做的好的地方，并不断保持下去。另一方面，对于未来，我要保持一种模糊的美感。一个简单的设想都足以激励我更多的精力去奋斗就好。因此，我更多的，要关注自己的当下。这也是我写博客的一个出发点。<br>
-~~既然已经选择了，就要沉下心，好好做。</p>
-<h2 id="关于自律">关于自律</h2>
-<p>~~选择， 可以说是一个对于自己的认识，以及对于世界认识的一个整体的结果，才导致了我们会做出不同 的选择。但是，自律可以说是这样一种认识的具体实践。并且，自律更会形成一种正向反馈，不断形成自己向上提高的源泉。自律形成一个习惯，深化为一个思维方式和认识形态，那么，成功也必然不远了。</p>
-<p>我觉得自己还是不够自律的。或者说我想自律，但是没有做好。</p>
-<p>我觉得自律应该是这三个方面的，事件类型，时间安排，做事优先级，这就形成了自己的时间效率，也决定了自己的成长方式。以下具体说明：<br>
-<strong>做事安排</strong> ：选择做什么事，什么事要加入到自己一天的安排中，这体现出自己的价值取向。比如，在个人成长方面：我要早起，我要按规律吃饭，我要减肥，我要选择有营养又管饱的食品，我要健身，我要保持自己的健康和美观，<br>
-在技术成长方面：我要学机器学习，我要学计算机，我要写文章，我要研究，这都是一种设想，这体现了自己的欲望和事情的安排，那么如何将这样的欲望统一好，合理的分配自己的精力，控制自己的欲望，我想这就是符合自己特性的时间管理。<br>
-<strong>时间管理</strong> 以前心理学讲到一个自己的兴奋点，那就是自己在什么时候，达到自己状态最好的时候， 自己什么时候状态最差，合理分配自己的事情，根据自己的作息规律和自己心理学上的精力变化曲线去改变的自己的行为方式，做最优秀的自己。<br>
-<strong>做事优先级</strong> 一个人的精力总是有限的，时间也是有限的。要做好事情的优先级安排，这样可以进一步提高自己的时间效率</p>
-<p>~~</p>
+<p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;    n个...</p>
+<p><strong>--------------------------------------------------------------------------</strong><br>
+示例：</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>--------------------------------------------------------------------------</strong></p>
+<h1 id="四-分割线">四、分割线</h1>
+<h2 id="-more-有4种类型如下所示"><!-- more --><br>
+有4种类型,如下所示：</h2>
+<hr>
+<hr>
+<hr>
+<p>效果是一样的</p>
+<h1 id="五-图片">五、图片</h1>
+<!-- more -->
+<p>![图片alt](图片地址 ''图片title'')</p>
+<p>说明：<br>
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<figure data-type="image" tabindex="2"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链" loading="lazy"></figure>
+<h1 id="六-超链接">六、超链接</h1>
+<!-- more -->
+<p><a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="超链接title">超链接名</a><br>
+title可加可不加</p>
+<p><a href="http://jianshu.com">简书</a><br>
+<a href="http://baidu.com">百度</a></p>
+<h1 id="七-列表">七、列表</h1>
+<!-- more -->
+<h2 id="无序列表">无序列表</h2>
+<p>无序列表用 - + * 任何一种都可以</p>
+<h2 id="示例">示例</h2>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<p>注意：- + * 跟内容之间都要有一个空格</p>
+<h2 id="有序列表">有序列表</h2>
+<p>数字加点</p>
+<h2 id="语法">语法</h2>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<p>注意：序号跟内容之间要有空格</p>
+<h2 id="列表嵌套">列表嵌套</h2>
+<p>上一级和下一级之间敲三个空格即可</p>
+<h1 id="八-表格">八、表格</h1>
+<!-- more -->
+<h2 id="语法-2">语法</h2>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th style="text-align:center">表头</th>
+<th style="text-align:right">表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:right">内容</td>
+</tr>
+</tbody>
+</table>
+<p>第二行分割表头和内容。</p>
+<ul>
+<li>有一个就行，为了对齐，多加了几个<br>
+文字默认居左<br>
+-两边加：表示文字居中<br>
+-右边加：表示文字居右<br>
+注：原生的语法两边都要用 | 包起来。此处省略</li>
+</ul>
+<h2 id="示例-2">示例</h2>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th style="text-align:center">技能</th>
+<th style="text-align:right">排行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刘备</td>
+<td style="text-align:center">哭</td>
+<td style="text-align:right">大哥</td>
+</tr>
+<tr>
+<td>关羽</td>
+<td style="text-align:center">打</td>
+<td style="text-align:right">二哥</td>
+</tr>
+<tr>
+<td>张飞</td>
+<td style="text-align:center">骂</td>
+<td style="text-align:right">三弟</td>
+</tr>
+</tbody>
+</table>
+<h1 id="九-代码">九、代码</h1>
+<!-- more -->
+<h2 id="语法-3">语法：</h2>
+<p>单行代码：代码之间分别用一个反引号包起来<br>
+代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
+<pre><code></code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【研究生规划】厦门大学移动计算实验室]]></title>
+        <id>https://seutodaysz.github.io/StudyPlan/</id>
+        <link href="https://seutodaysz.github.io/StudyPlan/">
+        </link>
+        <updated>2020-10-31T04:24:14.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604126372771.jpg" alt="" loading="lazy"></figure>
+<p>研究生阶段，要具备的能力和知识点清单如下:</p>
+<!-- more -->
+<h1 id="能力清单">👉 能力清单：</h1>
+<p>🙏 1. 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
+🙏 2. 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
+🙏 3. 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
+🙏 4.沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
+🙏 5.时间管理的能力：能合理管理自己的时间，高效做事；<br>
+🙏 6. 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
+<!-- more -->
+<h1 id="知识清单">👉 知识清单：</h1>
+<p>研究生期间需要掌握的知识清单：</p>
+<h2 id="编程语言">🏅 编程语言：</h2>
+<p>​       精通 python，matlab，C/C++，Java；<br>
+​       有项目经验，能独立完成实验和科研项目；</p>
+<h2 id="操作系统和工具">💻 操作系统和工具：</h2>
+<p>​ 熟悉Linux的部署、配置，基本命令等；（Cent OS、Ubuntu）<br>
+​ 尽量在Linux上开发和编程；<br>
+​ Linux上搭建常见应用（Apache、ftp等）；</p>
+<h2 id="计算机相关理论">🚀 计算机相关理论：</h2>
+<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
+​ 重点掌握机器学习基本原理；<br>
+​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
+<h2 id="常用工具的熟练掌握">🌉 常用工具的熟练掌握：</h2>
+<p>​ 常规机器学习平台：scikit learn<br>
+​ 深度学习平台：Pytorch、TensorFlow<br>
+​ 数据处理工具包：pandas、numpy<br>
+​ 数据库：my-sql、mongodb</p>
+<h2 id="科研和论文写作">📄 科研和论文写作：</h2>
+<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
+​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
+<h2 id="大数据平台构建和数据分析">📊 大数据平台构建和数据分析</h2>
+<p>​ 可选1-2个进行研究（如Spark、Hadoop等）；</p>
+<h2 id="其他工具">📤 其他工具</h2>
+<p>​ 版本控制：Git<br>
+​ 网站：WordPress、Apache、ngnix</p>
+<!-- more -->
+<h1 id="时间管理">👉 时间管理：</h1>
 ]]></content>
     </entry>
 </feed>
