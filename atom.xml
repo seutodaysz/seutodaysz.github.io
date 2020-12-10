@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-12-10T15:13:10.455Z</updated>
+    <updated>2020-12-10T15:18:34.574Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,331 +11,6 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
-    <entry>
-        <title type="html"><![CDATA[【厦门大学-大数据技术原理与应用-林子雨】]]></title>
-        <id>https://seutodaysz.github.io/BigData/</id>
-        <link href="https://seutodaysz.github.io/BigData/">
-        </link>
-        <updated>2020-11-14T12:26:51.000Z</updated>
-        <content type="html"><![CDATA[<p>本节主要是对于MOOC上中厦门大学《大数据技术原理与应用》的学习进行整理与复习<br>
-<img src="https://seutodaysz.github.io/post-images/1605356936852.jpg" alt="" loading="lazy"></p>
-<h1 id="hadoop-分布式文件系统两大核心技术">Hadoop 分布式文件系统（两大核心技术）</h1>
-<ol>
-<li>分布式存储技术（计算机集群）</li>
-<li>分布式处理技术</li>
-</ol>
-<p>一个机架：30~40台节点（交换机）</p>
-<p>HDFS实现的目标 :</p>
-<ol>
-<li>兼容廉价的硬件设备</li>
-<li>实现流数据读写（批量）</li>
-<li>支持大数据集</li>
-<li>支持简单的文件模型（支持增加，不支持修改）</li>
-<li>强大的跨平台特性</li>
-</ol>
-<p>局限性：</p>
-<ol>
-<li>不适合低延迟的数据访问（不能实时处理）</li>
-<li>无法高效存储大量小文件(名称节点过多)</li>
-<li>不支持多用户写入和任意修改</li>
-</ol>
-<h1 id="hdfs-中最重要的概念块设计">HDFS 中最重要的概念：块设计</h1>
-<p>联系：<br>
-区别：块很大，64M</p>
-<p>为什么？<br>
-支持面向大规模数据存储<br>
-降低分布式节点的寻址开销<br>
-块的设计受到Mapduce 的影响，不能过大。<br>
-好处：</p>
-<ol>
-<li>支持大规模文献存储（切割）</li>
-<li>简化系统设计（块的大小固定，为单元）</li>
-<li>很适合数据备份（冗余备份）</li>
-</ol>
-<h1 id="hadoop-两大组件">Hadoop 两大组件</h1>
-<ol>
-<li>名称节点：数据的存储（整个HDFS集群的管家，数据目录，记录每个块存储的地址）</li>
-<li>数据节点：具体存储数据节点</li>
-</ol>
-<p>元数据：</p>
-<ol>
-<li>文件是什么？</li>
-<li>文件被分成多少块</li>
-<li>每个块的怎么映射的？</li>
-<li>每个块存储在哪个服务器上？</li>
-</ol>
-<h2 id="名称节点保存到内存-合并操作">名称节点：保存到内存 合并操作</h2>
-<p>FsImage: 保存系统文件树木</p>
-<ol>
-<li>文件的复制等级</li>
-<li>块大小及其组成文件的块</li>
-<li>访问权限</li>
-<li>修改与访问的时间</li>
-</ol>
-<p>EditLog ：保存历史的各种操作</p>
-<p>当 EditLog 不断增大时，利用第二名称节点（第二名称节点也可以做冷备份）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【2020.11月 莆田地区招聘信息汇总】]]></title>
-        <id>https://seutodaysz.github.io/Jop/</id>
-        <link href="https://seutodaysz.github.io/Jop/">
-        </link>
-        <updated>2020-11-12T08:22:28.000Z</updated>
-        <content type="html"><![CDATA[<p>【1】 三棵树企业<br>
-<img src="https://seutodaysz.github.io/post-images/1605169704589.png" alt="" loading="lazy"><br>
-【2】 才子服饰<br>
-<img src="https://seutodaysz.github.io/post-images/1605169740022.png" alt="" loading="lazy"><br>
-【3】炬星教育科技有限公司<br>
-<img src="https://seutodaysz.github.io/post-images/1605169792735.png" alt="" loading="lazy"><br>
-【4】星云电子<br>
-<img src="https://seutodaysz.github.io/post-images/1605169797627.png" alt="" loading="lazy"><br>
-【5】云度公司<br>
-<img src="https://seutodaysz.github.io/post-images/1605169803051.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【数据分析 学习资料小结】]]></title>
-        <id>https://seutodaysz.github.io/Material Data/</id>
-        <link href="https://seutodaysz.github.io/Material Data/">
-        </link>
-        <updated>2020-11-07T08:13:22.000Z</updated>
-        <content type="html"><![CDATA[<p>网上的学习资料特别多，如何在如此众多的资料中，找到最有价值的信息来学习，我们需要听取前辈的经验，少走弯路。<br>
-<img src="https://seutodaysz.github.io/post-images/1604736924825.jpg" alt="" loading="lazy"></p>
-<h1 id="如何称为一个优秀的数据分析师">如何称为一个优秀的数据分析师</h1>
-<p><a href="https://kuaibao.qq.com/s/20191024A03EO100?refer=spider">职业规划</a><br>
-<a href="https://github.com/virgili0/Virgilio">Github 职业规划</a></p>
-<h1 id="数据分析的学习资料">数据分析的学习资料</h1>
-<p><a href="https://zhuanlan.zhihu.com/p/69869004">知乎推荐</a></p>
-<h1 id="数据集哪里找">数据集哪里找</h1>
-<p><a href="https://lionbridge.ai/datasets/the-50-best-free-datasets-for-machine-learning-zh/">数据集</a></p>
-<h1 id="数理基础">数理基础</h1>
-<h1 id="计算机基础">计算机基础</h1>
-<h1 id=""></h1>
-<p><strong>持续更新中...</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【Matlab 智能算法】]]></title>
-        <id>https://seutodaysz.github.io/Matlab/</id>
-        <link href="https://seutodaysz.github.io/Matlab/">
-        </link>
-        <updated>2020-10-31T04:33:54.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604119007499.jpg" alt="" loading="lazy"></figure>
-<h1 id="1模拟退火算法">【1】模拟退火算法</h1>
-<p>第一部分介绍一下模拟退火算法</p>
-<h2 id="11概述">【1.1】概述</h2>
-<p>模拟退火算法最早是在1953年提出的，然后1983年的时候，Krikpatrick利用模拟退火算法求解了组合最优化问题。模拟退火算法是一种基于迭代求解的随机寻优算法，其出发点是物理中固体物质的退火过程与一般组合优化求解策略的相似性，其目的在于为NP难问题提供有效的近似求解方法，克服了其他算法容易陷入局部极小的缺陷和对于初值的依赖。</p>
-<h2 id="12原理">【1.2】原理</h2>
-<p>模拟退火算法新解的产生和接受可以分为如下的三个步骤：<br>
-🌟 由一个产生函数从当前解产生一个位于解空间的新解；为了便于后续的计算和接受，减少算法耗时，通过简单变换即可产生新解的方法。新解的变换方法决定了当前解的邻域结构。<br>
-🌟 判断新解是否会被接受，判断依据是一个接受准则，最常用的接受准则是Metropolis准则，若delta E&lt; 0,则 接受X'作为新的当前解 X；否则，以概率exp(-deltaE/T) 作为新的当前解<br>
-🌟当新解被确定接受时，用新解代替当前解，将当前解中对应于产生新解的变换部分予以实现，同时修正目标函数值即可。此时，当前解实现了一次迭代，可在此基础上开始下一轮试验。若当前解被判定为舍弃，则在原当前解的基础上继续下一轮试验；</p>
-<h2 id="13源码">【1.3】源码</h2>
-<pre><code>%%%%%%%%%%%%%%%%%%%%%%模拟退火算法解决函数极值%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clear all;                      %清除所有变量
-close all;                      %清图
-clc;                            %清屏
-D=10;                           %变量维数 
-Xs=20;                          %上限                                
-Xx=-20;                         %下限
-%%%%%%%%%%%%%%%%%%%%%%%%%%%冷却表参数%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-L = 200;                        %马可夫链长度
-K = 0.998;                      %衰减参数
-S = 0.01;                       %步长因子
-T=100;                          %初始温度
-YZ = 1e-8;                      %容差
-P = 0;                          %Metropolis过程中总接受点
-%%%%%%%%%%%%%%%%%%%%%%%%%%随机选点 初值设定%%%%%%%%%%%%%%%%%%%%%%%%%
-PreX = rand(D,1)*(Xs-Xx)+Xx;
-PreBestX = PreX;
-PreX =  rand(D,1)*(Xs-Xx)+Xx;
-BestX = PreX;
-%%%%%%%%%%%每迭代一次退火一次(降温), 直到满足迭代条件为止%%%%%%%%%%%%
-deta=abs( func1( BestX)-func1(PreBestX));
-while (deta &gt; YZ) &amp;&amp; (T&gt;0.001)
-    T=K*T; 
-    %%%%%%%%%%%%%%%%%%%%%在当前温度T下迭代次数%%%%%%%%%%%%%%%%%%%%%%
-    for i=1:L  
-        %%%%%%%%%%%%%%%%%在此点附近随机选下一点%%%%%%%%%%%%%%%%%%%%%
-            NextX = PreX + S* (rand(D,1) *(Xs-Xx)+Xx);
-            %%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%%%%%
-            for ii=1:D
-                if NextX(ii)&gt;Xs | NextX(ii)&lt;Xx
-                    NextX(ii)=PreX(ii) + S* (rand *(Xs-Xx)+Xx);
-                end
-            end            
-        %%%%%%%%%%%%%%%%%%%%%%%是否全局最优解%%%%%%%%%%%%%%%%%%%%%%
-        if (func1(BestX) &gt; func1(NextX))
-            %%%%%%%%%%%%%%%%%%保留上一个最优解%%%%%%%%%%%%%%%%%%%%%
-            PreBestX = BestX;
-            %%%%%%%%%%%%%%%%%%%此为新的最优解%%%%%%%%%%%%%%%%%%%%%%
-            BestX=NextX;
-        end
-        %%%%%%%%%%%%%%%%%%%%%%%% Metropolis过程%%%%%%%%%%%%%%%%%%%
-        if( func1(PreX) - func1(NextX) &gt; 0 )
-            %%%%%%%%%%%%%%%%%%%%%%%接受新解%%%%%%%%%%%%%%%%%%%%%%%%
-            PreX=NextX;
-            P=P+1;
-        else
-            changer = -1*(func1(NextX)-func1(PreX))/ T ;
-            p1=exp(changer);
-            %%%%%%%%%%%%%%%%%%%%%%%%接受较差的解%%%%%%%%%%%%%%%%%%%%
-            if p1 &gt; rand        
-                PreX=NextX;
-                P=P+1;         
-            end
-        end
-    trace(P+1)=func1( BestX);    
-    end
-    deta=abs( func1( BestX)-func1 (PreBestX)); 
-end
-disp('最小值在点:');
-BestX
-disp( '最小值为:');
-func1(BestX)
-figure
-plot(trace(2:end))
-xlabel('迭代次数')
-ylabel('目标函数值')
-title('适应度进化曲线')
-</code></pre>
-<h2 id="14结果">【1.4】结果</h2>
-<p><img src="https://seutodaysz.github.io/post-images/1604150708902.png" alt="" loading="lazy"><br>
-从中可以看出 基于模拟退火算法计算的结果，很快就收敛了。</p>
-<h1 id="2粒子群算法">【2】粒子群算法</h1>
-<p>第二部分，介绍粒子群算法</p>
-<h2 id="21概述">【2.1】概述</h2>
-<p>🗒 粒子群算法最早是在1987年提出，并经过许多人的改进和努力，最终在1995年提出，并引起广泛的注意和学习。粒子群优化算法源自鸟类群体活动的规律性，模拟了鸟类觅食的原理，将鸟比作粒子，将求解问题的搜索空间比作鸟类的覅恶性空间，将寻找最优解的过程比作鸟类飞行觅食的过程，进而求解复杂的优化算法。</p>
-<h2 id="22原理">【2.2】原理</h2>
-<p>🗒 在粒子群算法中，每个优化问题的潜在解都是搜索空间中的一只鸟，称为粒子。所有粒子都有一个被优化的函数决定的适应度值，每个粒子都有速度和位置，然后，每个粒子就追随当前的最优粒子在解空间中搜索。<br>
-🗒 粒子群基于“种群”和“进化”的概念，通过个体间的协作和竞争，实现复杂空间的最优化解的搜索，其流程如下：</p>
-<p>⚡️ （1）初始化粒子群，包括群体规模 <em>N，每个粒子的位置 xi和速度 vi</em>;<br>
-⚡️ （2）计算每个粒子的适应度值 <em>fit[i]</em><br>
-⚡️ （3）对于每个粒子用它的适应度值<em>fit[i]和个体极值pbest[i]</em>,如果<em>fit[t] &lt;pbest[i] ,则用fit[t] 替换掉 pbest[i]</em>；<br>
-⚡️ （4）对于每个粒子用它的适应度值<em>fit[i]和全体极值gbest[i]</em>,如果<em>fit[t]&lt; gbest[i],则用fit[t]替换掉gbest[i</em>]<br>
-⚡️ （5）迭代更新每个粒子的位置<em>xi和速度 vi</em>;;<br>
-⚡️ （6）边界处理<br>
-⚡️ （5）判断算法是否终止条件满足，若是，结束算法，并输出优化结果，否则，返回步骤(2)</p>
-<!-- more -->
-<h2 id="23源码">【2.3】源码</h2>
-<pre><code>%%%%%%%%%%%%%%%%%粒子群算法求函数极值%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%初始化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clear all;              %清除所有变量
-close all;              %清图
-clc;                    %清屏
-N=100;                  %群体粒子个数
-D=10;                   %粒子维数
-T=200;                  %最大迭代次数
-c1=1.5;                 %学习因子1
-c2=1.5;                 %学习因子2
-w=0.8;                  %惯性权重
-Xmax=20;                %位置最大值
-Xmin=-20;               %位置最小值
-Vmax=10;                %速度最大值
-Vmin=-10;               %速度最小值
-%%%%%%%%%%%%%%%%初始化种群个体（限定位置和速度）%%%%%%%%%%%%%%%%
-x=rand(N,D) * (Xmax-Xmin)+Xmin;
-v=rand(N,D) * (Vmax-Vmin)+Vmin;
-%%%%%%%%%%%%%%%%%%初始化个体最优位置和最优值%%%%%%%%%%%%%%%%%%%
-p=x;
-pbest=ones(N,1);
-for i=1:N
-    pbest(i)=func1(x(i,:));
-end
-%%%%%%%%%%%%%%%%%%%初始化全局最优位置和最优值%%%%%%%%%%%%%%%%%%
-g=ones(1,D);
-gbest=inf;
-for i=1:N
-    if(pbest(i)&lt;gbest)
-        g=p(i,:);
-        gbest=pbest(i);
-    end
-end
-gb=ones(1,T);
-%%%%%%%%%%%按照公式依次迭代直到满足精度或者迭代次数%%%%%%%%%%%%%
-for i=1:T
-    for j=1:N
-        %%%%%%%%%%%%%%更新个体最优位置和最优值%%%%%%%%%%%%%%%%%
-        if (func1(x(j,:))&lt;pbest(j))
-            p(j,:)=x(j,:);
-            pbest(j)=func1(x(j,:));
-        end
-        %%%%%%%%%%%%%%%%更新全局最优位置和最优值%%%%%%%%%%%%%%%
-        if(pbest(j)&lt;gbest)
-            g=p(j,:);
-            gbest=pbest(j);
-        end
-        %%%%%%%%%%%%%%%%%跟新位置和速度值%%%%%%%%%%%%%%%%%%%%%
-        v(j,:)=w*v(j,:)+c1*rand*(p(j,:)-x(j,:))...
-            +c2*rand*(g-x(j,:));
-        x(j,:)=x(j,:)+v(j,:);
-        %%%%%%%%%%%%%%%%%%%%边界条件处理%%%%%%%%%%%%%%%%%%%%%%
-        for ii=1:D
-            if (v(j,ii)&gt;Vmax)  |  (v(j,ii)&lt; Vmin)
-                v(j,ii)=rand * (Vmax-Vmin)+Vmin;
-            end
-            if (x(j,ii)&gt;Xmax)  |  (x(j,ii)&lt; Xmin)
-                x(j,ii)=rand * (Xmax-Xmin)+Xmin;
-            end
-        end
-    end
-    %%%%%%%%%%%%%%%%%%%%记录历代全局最优值%%%%%%%%%%%%%%%%%%%%%
-    gb(i)=gbest;
-end
-g;                         %最优个体         
-gb(end);                   %最优值
-figure
-plot(gb)
-xlabel('迭代次数');
-ylabel('适应度值');
-title('适应度进化曲线')
-
-</code></pre>
-<p>fun1 函数附录为：</p>
-<pre><code>%%%%%%%%%%%%%%%%%%%适应度函数%%%%%%%%%%%%%%%%%%%%
-function result=func1(x)
-summ=sum(x.^2);
-result=summ;
-
-</code></pre>
-<h2 id="24结果">【2.4】结果</h2>
-<p><img src="https://seutodaysz.github.io/post-images/1604128875065.jpg" alt="" loading="lazy"><br>
-从结果可以看出 粒子群算法在迭代50次 的时候就已经收敛了。</p>
-<h1 id="3蚁群算法">【3】蚁群算法</h1>
-<h2 id="31概述">【3.1】概述</h2>
-<h2 id="32原理">【3.2】原理</h2>
-<h2 id="33源码">【3.3】源码</h2>
-<h2 id="34结果">【3.4】结果</h2>
-<h1 id="4遗传算法">【4】遗传算法</h1>
-<h2 id="41概述">【4.1】概述</h2>
-<h2 id="42原理">【4.2】原理</h2>
-<h2 id="43源码">【4.3】源码</h2>
-<h2 id="44结果">【4.4】结果</h2>
-<h1 id="5免疫算法">【5】免疫算法</h1>
-<h2 id="51概述">【5.1】概述</h2>
-<h2 id="52原理">【5.2】原理</h2>
-<h2 id="53源码">【5.3】源码</h2>
-<h2 id="54结果">【5.4】结果</h2>
-<h1 id="6差分进化算法">【6】差分进化算法</h1>
-<h2 id="61概述">【6.1】概述</h2>
-<h2 id="62原理">【6.2】原理</h2>
-<h2 id="63源码">【6.3】源码</h2>
-<h2 id="64结果">【6.4】结果</h2>
-<h1 id="7禁忌搜索算法">【7】禁忌搜索算法</h1>
-<h2 id="71概述">【7.1】概述</h2>
-<h2 id="72原理">【7.2】原理</h2>
-<h2 id="73源码">【7.3】源码</h2>
-<h2 id="74结果">【7.4】结果</h2>
-<h1 id="8神经网络算法">【8】神经网络算法</h1>
-<h2 id="81概述">【8.1】概述</h2>
-<h2 id="82原理">【8.2】原理</h2>
-<h2 id="83源码">【8.3】源码</h2>
-<h2 id="84结果">【8.4】结果</h2>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[【Markdown语法小结】]]></title>
         <id>https://seutodaysz.github.io/Markdown/</id>
@@ -519,6 +194,54 @@ title可加可不加</p>
 <p>单行代码：代码之间分别用一个反引号包起来<br>
 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
 <pre><code></code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【研究生规划】厦门大学移动计算实验室]]></title>
+        <id>https://seutodaysz.github.io/StudyPlan/</id>
+        <link href="https://seutodaysz.github.io/StudyPlan/">
+        </link>
+        <updated>2020-10-31T04:24:14.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604126372771.jpg" alt="" loading="lazy"></figure>
+<p>研究生阶段，要具备的能力和知识点清单如下:</p>
+<!-- more -->
+<h1 id="能力清单">👉 能力清单：</h1>
+<p>🙏 1. 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
+🙏 2. 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
+🙏 3. 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
+🙏 4. 沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
+🙏 5. 时间管理的能力：能合理管理自己的时间，高效做事；<br>
+🙏 6. 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
+<!-- more -->
+<h1 id="知识清单">👉 知识清单：</h1>
+<p>研究生期间需要掌握的知识清单：</p>
+<h2 id="编程语言">🏅 编程语言：</h2>
+<p>​       精通 python，matlab，C/C++，Java；<br>
+​       有项目经验，能独立完成实验和科研项目；</p>
+<h2 id="操作系统和工具">💻 操作系统和工具：</h2>
+<p>​ 熟悉Linux的部署、配置，基本命令等；（Ubuntu、Cent OS）<br>
+​ 尽量在Linux上开发和编程；<br>
+​ 能在Linux上搭建常见应用（Apache、ftp等）；</p>
+<h2 id="计算机相关理论">🚀 计算机相关理论：</h2>
+<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
+​ 重点掌握机器学习基本原理；<br>
+​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
+<h2 id="常用工具的熟练掌握">🌉 常用工具的熟练掌握：</h2>
+<p>​ 常规机器学习平台：scikit learn<br>
+​ 深度学习平台：Pytorch、TensorFlow<br>
+​ 数据处理工具包：pandas、numpy<br>
+​ 数据库：my-sql、mongodb</p>
+<h2 id="科研和论文写作">📄 科研和论文写作：</h2>
+<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
+​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
+<h2 id="大数据平台构建和数据分析">📊 大数据平台构建和数据分析</h2>
+<p>​ 可选1-2个进行研究（如Hadoop、Spark等）；</p>
+<h2 id="其他工具">📤 其他工具</h2>
+<p>​ 版本控制：Git<br>
+​ 网站：WordPress、Apache、ngnix</p>
+<!-- more -->
+<h1 id="时间管理">👉 时间管理：</h1>
 ]]></content>
     </entry>
 </feed>
