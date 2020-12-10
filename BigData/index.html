@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>项目 | 九天之遥</title>
+<title>【厦门大学-大数据技术原理与应用-林子雨】 | 九天之遥</title>
 
 <link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1607559732540">
 
@@ -210,59 +210,92 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    项目
+                    【厦门大学-大数据技术原理与应用-林子雨】
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2020-10-26 ·
+                        · 2020-11-14 ·
                     </time>
+                    
+                        <a href="https://seutodaysz.github.io/GkLZHZsdO/" class="post-tags">
+                            # BigData
+                        </a>
                     
                 </div>
                 <div class="post-content">
-                    <!-- more -->
-<p>完善中.......</p>
-<!-- more -->
-<h1 id="基于rfid的物联网应用开发">👉 基于RFID的物联网应用开发</h1>
-<p><img src="https://seutodaysz.github.io/post-images/1603796866870.jpg" alt="" loading="lazy"><br>
-✏️ 基于RFID技术的危化品管理系统</p>
+                    <p>本节主要是对于MOOC上中厦门大学《大数据技术原理与应用》的学习进行整理与复习<br>
+<img src="https://seutodaysz.github.io/post-images/1605356936852.jpg" alt="" loading="lazy"></p>
+<h1 id="hadoop-分布式文件系统两大核心技术">Hadoop 分布式文件系统（两大核心技术）</h1>
 <ol>
-<li>专利  10.31</li>
-<li>构思</li>
-<li>实现<br>
-✏️ 基于RFID技术的医疗溯源管理系统</li>
-<li>概述</li>
-<li>原理</li>
-<li>实现<br>
-✏️ 基于RFID技术的手术推车管理系统</li>
-<li>概述</li>
-<li>原理</li>
-<li>实现</li>
+<li>分布式存储技术（计算机集群）</li>
+<li>分布式处理技术</li>
 </ol>
-<h1 id="基于人工智能的数据挖掘与数据分析">👉 基于人工智能的数据挖掘与数据分析</h1>
-<p><img src="https://seutodaysz.github.io/post-images/1603796879985.jpg" alt="" loading="lazy"><br>
-✏️ 波士顿房价预测</p>
+<p>一个机架：30~40台节点（交换机）</p>
+<p>HDFS实现的目标 :</p>
 <ol>
-<li>概述</li>
-<li>分析</li>
-<li>实现</li>
+<li>兼容廉价的硬件设备</li>
+<li>实现流数据读写（批量）</li>
+<li>支持大数据集</li>
+<li>支持简单的文件模型（支持增加，不支持修改）</li>
+<li>强大的跨平台特性</li>
 </ol>
-<h1 id="基于fpga的嵌入式芯片开发">👉 基于FPGA的嵌入式芯片开发</h1>
-<p><img src="https://seutodaysz.github.io/post-images/1603801986331.jpg" alt="" loading="lazy"><br>
-✏️ FPGA 基本实验</p>
+<p>局限性：</p>
 <ol>
-<li>概述</li>
-<li>分析</li>
-<li>实现</li>
+<li>不适合低延迟的数据访问（不能实时处理）</li>
+<li>无法高效存储大量小文件(名称节点过多)</li>
+<li>不支持多用户写入和任意修改</li>
 </ol>
+<h1 id="hdfs-中最重要的概念块设计">HDFS 中最重要的概念：块设计</h1>
+<p>联系：<br>
+区别：块很大，64M</p>
+<p>为什么？<br>
+支持面向大规模数据存储<br>
+降低分布式节点的寻址开销<br>
+块的设计受到Mapduce 的影响，不能过大。<br>
+好处：</p>
+<ol>
+<li>支持大规模文献存储（切割）</li>
+<li>简化系统设计（块的大小固定，为单元）</li>
+<li>很适合数据备份（冗余备份）</li>
+</ol>
+<h1 id="hadoop-两大组件">Hadoop 两大组件</h1>
+<ol>
+<li>名称节点：数据的存储（整个HDFS集群的管家，数据目录，记录每个块存储的地址）</li>
+<li>数据节点：具体存储数据节点</li>
+</ol>
+<p>元数据：</p>
+<ol>
+<li>文件是什么？</li>
+<li>文件被分成多少块</li>
+<li>每个块的怎么映射的？</li>
+<li>每个块存储在哪个服务器上？</li>
+</ol>
+<h2 id="名称节点保存到内存-合并操作">名称节点：保存到内存 合并操作</h2>
+<p>FsImage: 保存系统文件树木</p>
+<ol>
+<li>文件的复制等级</li>
+<li>块大小及其组成文件的块</li>
+<li>访问权限</li>
+<li>修改与访问的时间</li>
+</ol>
+<p>EditLog ：保存历史的各种操作</p>
+<p>当 EditLog 不断增大时，利用第二名称节点（第二名称节点也可以做冷备份）</p>
 
                 </div>
             </article>
         </div>
 
         
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://seutodaysz.github.io/Jop/" class="post-title gt-a-link">
+                    【2020.11月 莆田地区招聘信息汇总】
+                </a>
+            </div>
+        
 
         
-            <span id="/project//" class="leancloud_visitors" data-flag-title="项目">
+            <span id="/BigData//" class="leancloud_visitors" data-flag-title="【厦门大学-大数据技术原理与应用-林子雨】">
                 <em class="post-meta-item-text">阅读量 </em>
                 <i class="leancloud-visitors-count">0</i>
             </span>

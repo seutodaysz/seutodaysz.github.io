@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2020-11-12T08:50:28.423Z</updated>
+    <updated>2020-12-10T00:22:32.184Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,6 +11,71 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[【厦门大学-大数据技术原理与应用-林子雨】]]></title>
+        <id>https://seutodaysz.github.io/BigData/</id>
+        <link href="https://seutodaysz.github.io/BigData/">
+        </link>
+        <updated>2020-11-14T12:26:51.000Z</updated>
+        <content type="html"><![CDATA[<p>本节主要是对于MOOC上中厦门大学《大数据技术原理与应用》的学习进行整理与复习<br>
+<img src="https://seutodaysz.github.io/post-images/1605356936852.jpg" alt="" loading="lazy"></p>
+<h1 id="hadoop-分布式文件系统两大核心技术">Hadoop 分布式文件系统（两大核心技术）</h1>
+<ol>
+<li>分布式存储技术（计算机集群）</li>
+<li>分布式处理技术</li>
+</ol>
+<p>一个机架：30~40台节点（交换机）</p>
+<p>HDFS实现的目标 :</p>
+<ol>
+<li>兼容廉价的硬件设备</li>
+<li>实现流数据读写（批量）</li>
+<li>支持大数据集</li>
+<li>支持简单的文件模型（支持增加，不支持修改）</li>
+<li>强大的跨平台特性</li>
+</ol>
+<p>局限性：</p>
+<ol>
+<li>不适合低延迟的数据访问（不能实时处理）</li>
+<li>无法高效存储大量小文件(名称节点过多)</li>
+<li>不支持多用户写入和任意修改</li>
+</ol>
+<h1 id="hdfs-中最重要的概念块设计">HDFS 中最重要的概念：块设计</h1>
+<p>联系：<br>
+区别：块很大，64M</p>
+<p>为什么？<br>
+支持面向大规模数据存储<br>
+降低分布式节点的寻址开销<br>
+块的设计受到Mapduce 的影响，不能过大。<br>
+好处：</p>
+<ol>
+<li>支持大规模文献存储（切割）</li>
+<li>简化系统设计（块的大小固定，为单元）</li>
+<li>很适合数据备份（冗余备份）</li>
+</ol>
+<h1 id="hadoop-两大组件">Hadoop 两大组件</h1>
+<ol>
+<li>名称节点：数据的存储（整个HDFS集群的管家，数据目录，记录每个块存储的地址）</li>
+<li>数据节点：具体存储数据节点</li>
+</ol>
+<p>元数据：</p>
+<ol>
+<li>文件是什么？</li>
+<li>文件被分成多少块</li>
+<li>每个块的怎么映射的？</li>
+<li>每个块存储在哪个服务器上？</li>
+</ol>
+<h2 id="名称节点保存到内存-合并操作">名称节点：保存到内存 合并操作</h2>
+<p>FsImage: 保存系统文件树木</p>
+<ol>
+<li>文件的复制等级</li>
+<li>块大小及其组成文件的块</li>
+<li>访问权限</li>
+<li>修改与访问的时间</li>
+</ol>
+<p>EditLog ：保存历史的各种操作</p>
+<p>当 EditLog 不断增大时，利用第二名称节点（第二名称节点也可以做冷备份）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2020.11月 莆田地区招聘信息汇总】]]></title>
         <id>https://seutodaysz.github.io/Jop/</id>
@@ -454,54 +519,6 @@ title可加可不加</p>
 <p>单行代码：代码之间分别用一个反引号包起来<br>
 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
 <pre><code></code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【研究生规划】厦门大学移动计算实验室]]></title>
-        <id>https://seutodaysz.github.io/StudyPlan/</id>
-        <link href="https://seutodaysz.github.io/StudyPlan/">
-        </link>
-        <updated>2020-10-31T04:24:14.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604126372771.jpg" alt="" loading="lazy"></figure>
-<p>研究生阶段，要具备的能力和知识点清单如下:</p>
-<!-- more -->
-<h1 id="能力清单">👉 能力清单：</h1>
-<p>🙏 1. 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
-🙏 2. 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
-🙏 3. 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
-🙏 4.沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
-🙏 5.时间管理的能力：能合理管理自己的时间，高效做事；<br>
-🙏 6. 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
-<!-- more -->
-<h1 id="知识清单">👉 知识清单：</h1>
-<p>研究生期间需要掌握的知识清单：</p>
-<h2 id="编程语言">🏅 编程语言：</h2>
-<p>​       精通 python，matlab，C/C++，Java；<br>
-​       有项目经验，能独立完成实验和科研项目；</p>
-<h2 id="操作系统和工具">💻 操作系统和工具：</h2>
-<p>​ 熟悉Linux的部署、配置，基本命令等；（Cent OS、Ubuntu）<br>
-​ 尽量在Linux上开发和编程；<br>
-​ Linux上搭建常见应用（Apache、ftp等）；</p>
-<h2 id="计算机相关理论">🚀 计算机相关理论：</h2>
-<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
-​ 重点掌握机器学习基本原理；<br>
-​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
-<h2 id="常用工具的熟练掌握">🌉 常用工具的熟练掌握：</h2>
-<p>​ 常规机器学习平台：scikit learn<br>
-​ 深度学习平台：Pytorch、TensorFlow<br>
-​ 数据处理工具包：pandas、numpy<br>
-​ 数据库：my-sql、mongodb</p>
-<h2 id="科研和论文写作">📄 科研和论文写作：</h2>
-<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
-​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
-<h2 id="大数据平台构建和数据分析">📊 大数据平台构建和数据分析</h2>
-<p>​ 可选1-2个进行研究（如Spark、Hadoop等）；</p>
-<h2 id="其他工具">📤 其他工具</h2>
-<p>​ 版本控制：Git<br>
-​ 网站：WordPress、Apache、ngnix</p>
-<!-- more -->
-<h1 id="时间管理">👉 时间管理：</h1>
 ]]></content>
     </entry>
 </feed>
