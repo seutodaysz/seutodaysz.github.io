@@ -1,39 +1,137 @@
 <html>
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>【研二】知行合一 | 九天之遥</title>
+<title>【研究生规划】厦门大学-移动计算实验室 | 九天之遥</title>
 
-<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1604111924351">
+<link rel="shortcut icon" href="https://seutodaysz.github.io/favicon.ico?v=1607740683267">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://seutodaysz.github.io/styles/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
 
 <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
 <!-- DEMO JS -->
 <!--<script src="media/scripts/index.js"></script>-->
 
-
-
- <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
- <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <nav class="navbar navbar-expand-lg">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -41,71 +139,82 @@
         </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav mr-auto" style="text-align: center">
             
-                <div class="nav-item">
-                    
-                        <a href="https://seutodaysz.github.io" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
+            <div class="nav-item">
+                
+                <a href="https://seutodaysz.github.io" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
             
-                <div class="nav-item">
-                    
-                        <a href="https://seutodaysz.github.io/archives" class="menu gt-a-link">
-                            博客
-                        </a>
-                    
-                </div>
+            <div class="nav-item">
+                
+                <a href="https://seutodaysz.github.io/archives" class="menu gt-a-link">
+                    博客
+                </a>
+                
+            </div>
             
-                <div class="nav-item">
-                    
-                        <a href="https://seutodaysz.github.io/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
+            <div class="nav-item">
+                
+                <a href="https://seutodaysz.github.io/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
             
-                <div class="nav-item">
-                    
-                        <a href="https://seutodaysz.github.io/project" class="menu gt-a-link" target="_blank">
-                            项目
-                        </a>
-                    
-                </div>
+            <div class="nav-item">
+                
+                <a href="https://seutodaysz.github.io/project" class="menu gt-a-link" target="_blank">
+                    项目
+                </a>
+                
+            </div>
             
-                <div class="nav-item">
-                    
-                        <a href="https://seutodaysz.github.io/aboutme" class="menu gt-a-link" target="_blank">
-                            关于
-                        </a>
-                    
-                </div>
+            <div class="nav-item">
+                
+                <a href="https://seutodaysz.github.io/aboutme" class="menu gt-a-link" target="_blank">
+                    关于
+                </a>
+                
+            </div>
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1604111924351" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1607740683267"
+                action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
         </div>
     </div>
 </nav>
-
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
     <div class="post-container">
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    【研二】知行合一
+                    【研究生规划】厦门大学-移动计算实验室
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2020-08-30 ·
+                        · 2020-12-12 ·
                     </time>
                     
                         <a href="https://seutodaysz.github.io/04FwS2mAP/" class="post-tags">
@@ -114,89 +223,62 @@
                     
                 </div>
                 <div class="post-content">
-                    <figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1603718131034.jpg" alt="" loading="lazy"></figure>
+                    <!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604126372771.jpg" alt="" loading="lazy"></figure>
+<p>研究生阶段，要具备的能力和知识点清单如下:</p>
 <!-- more -->
-<h2 id="第八周-规划">第八周 规划</h2>
-<ol>
-<li>数字编码超材料</li>
-<li>数据挖掘</li>
-</ol>
-<p>不知不觉，已经研究生二年级了。我的很多事情正在慢慢进入轨道。今天是开学第一周的周日，我。留下一个时间，写写博客，做个总结。<br>
-我首先我做个思路导图，就是说我的主要内容分为4个方面，</p>
-<h1 id="健康生活">健康生活</h1>
-<p>这一周，我洗了衣服，洗了鞋子，把自己生活做个全面的清洁和整理，总体上来说，我认为已经很干净和卫生了。接下在保持良好的生活习惯方面继续改进，多买几件好看的衣服，好好收拾一下自己的脸面，自己穿搭，显得不那么邋遢。以及自己良好的作息习惯。洗澡完，衣服尽量尽快洗掉。</p>
-<h1 id="快乐科研">快乐科研</h1>
-<p>这一周，我的科研也慢慢有了方向和进展。总的来说，我进一步明确了导师对于自己的要求和自己的毕业能力要求。首先是自己的电子专业能力要进一步扎实。会画板子，会设计天线，会写嵌入式的代码，会调底层代码。进一步提高自己硬件开发的能力。 对于自己的研究方向，我也慢慢明确，研究柔性射频电子技术。<br>
-更多的东西我也需要进一步沉下心去理解，接受，和学习。</p>
-<h1 id="人际交往">人际交往</h1>
-<h1 id="职业发展">职业发展</h1>
-<p>一个优秀的数据分析师</p>
-<h1 id="第二周的规划和安排">第二周的规划和安排</h1>
-<p>第二周，会有新生要加入集体，大家可以进一步开展学习。我也要要明确我的学习目标和学习任务。</p>
-<ol>
-<li>学会AltiumDesigner  第一周 第二周 第三周</li>
-<li>根据功能来设计设计电路图，然后进行版图绘制</li>
-<li>研究RFID防碰撞协议</li>
-<li>整理电磁场与微波技术的基础课</li>
-<li>自己小论文：标签天线的设计文档</li>
-</ol>
-<hr>
-<p>三、毕业的能力</p>
-<ol>
-<li>自己设计电路图，画出电子版图，制作成板子，编写嵌入式程序</li>
-<li>自己设计天线，调试天线性能，完成基本的通信功能</li>
-</ol>
-<hr>
-<p>四、发文章<br>
-毕业能写一篇高水平的文章</p>
-<p>短期规划和长远目标相结合，分清主次任务，确定一个阶段性的目标，然后一步一步去努力实现</p>
-<hr>
-<p>9月7号~ 9 月 14号</p>
-<ol>
-<li>学习 AD 画板子</li>
-<li>学习嵌入式开发<br>
-推进自己的项目</li>
-<li>整理电磁场理论基础</li>
-<li>整理Python 和一些常用的算法------------------------------------------------------------------------------</li>
-</ol>
-<p>9/10</p>
-<p>这周是开学的第三周的周四，我先用一点时间，对于自己要做的事情，做个路线规划。毕竟老师是没有责任心的，我只能自己对自己负责。<br>
-首先，明确一个事情，那就是我不读博，我要工作。而且我想做的工作，也和当前的专业不相关，是转行计算机。因此，文章对于我来说，并没有什么太大的价值。我的重心应该是如何实现自己找工作能力的最大化。</p>
-<p>首先明确，我现在做的项目，唯一的价值就是为了满足我的毕业要求，满足老板对于我的一些要求。因此，产品开发还是要有一个专门的训练。</p>
-<p>其次，当前做的产品对于我找工作并没有起到一个加分的作用。因此，为了找自己喜欢的工作，我只能自己去规划。但是当前做的东西，确实对于我的电子专业能力有一个系统性的培养。因此可以理解为，锻炼成为一个电子设计的大佬。<br>
-👉能够自己设计电路，做嵌入式开发，写网络接口，实现一个物联网项目的系统设计。<br>
-👉注重团队配合，讲究自己的思路与团队的进度的配合</p>
-<p>最后，总计一下自己研二这一年要掌握的一些技能吧<br>
-<img src="https://seutodaysz.github.io/post-images/1599719437625.png" alt="" loading="lazy"></p>
-<p>从时间规划上分析;</p>
-<h2 id="9-月">9 月 ：</h2>
-<p>1.AD 画板子 + 嵌入式STM32 开发</p>
-<p>2.数据库(MySQL) ， 操作系统(嵌入式操作系统)</p>
-<p>3.Python + 两个数据处理包+可视化处理</p>
-<p>4.项目管理</p>
-<h2 id="10-月">10 月：</h2>
-<h2 id="计算机组成原理-数据结构ad-画板子-嵌入式linux开发hfss-软件ads-软件-电磁场基础理论">计算机组成原理+ 数据结构<br>
-AD 画板子 + 嵌入式Linux开发<br>
-HFSS 软件+ADS 软件+ 电磁场基础理论</h2>
-<h2 id="11-月">11 月：</h2>
-<p>数据结构+机器学习<br>
-项目</p>
-<h2 id="12-月">12 月：</h2>
-<p>数据结构+深度学习</p>
-<p>虽然你有很多的规划，但是有这样一个老板，你也没办法实现自己的目标？<br>
-真的吗？我嫉觉得我还是有机会的，就像是在外面上班的员工，也要想办法实现自己的自由<br>
-我觉得自己走错了陆，但是在过来人看来，也不过是三年罢了。<br>
-在越高的地方，可以看见更多优秀的人，稍不留神，你就已经落后很多了。<br>
-环境还是一个很重要的因素，我可以做好这些事情。</p>
+<h1 id="能力清单">👉 能力清单：</h1>
+<p>🙏 1. 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
+🙏 2. 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
+🙏 3. 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
+🙏 4. 沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
+🙏 5. 时间管理的能力：能合理管理自己的时间，高效做事；<br>
+🙏 6. 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
+<!-- more -->
+<h1 id="知识清单">👉 知识清单：</h1>
+<p>研究生期间需要掌握的知识清单：</p>
+<h2 id="编程语言">🏅 编程语言：</h2>
+<p>​       精通 python，matlab，C/C++，Java；<br>
+​       有项目经验，能独立完成实验和科研项目；</p>
+<h2 id="操作系统和工具">💻 操作系统和工具：</h2>
+<p>​ 熟悉Linux的部署、配置，基本命令等；（Ubuntu、Cent OS）<br>
+​ 尽量在Linux上开发和编程；<br>
+​ 能在Linux上搭建常见应用（Apache、ftp等）；</p>
+<h2 id="计算机相关理论">🚀 计算机相关理论：</h2>
+<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
+​ 重点掌握机器学习基本原理；<br>
+​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
+<h2 id="常用工具的熟练掌握">🌉 常用工具的熟练掌握：</h2>
+<p>​ 常规机器学习平台：scikit learn<br>
+​ 深度学习平台：Pytorch、TensorFlow<br>
+​ 数据处理工具包：pandas、numpy<br>
+​ 数据库：my-sql、mongodb</p>
+<h2 id="科研和论文写作">📄 科研和论文写作：</h2>
+<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
+​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
+<h2 id="大数据平台构建和数据分析">📊 大数据平台构建和数据分析</h2>
+<p>​ 可选1-2个进行研究（如Hadoop、Spark等）；</p>
+<h2 id="其他工具">📤 其他工具</h2>
+<p>​ 版本控制：Git<br>
+​ 网站：WordPress、Apache、ngnix</p>
+<!-- more -->
+<!-- more -->
 
                 </div>
             </article>
         </div>
 
         
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://seutodaysz.github.io/Markdown/" class="post-title gt-a-link">
+                    【Markdown语法小结】
+                </a>
+            </div>
+        
 
         
-            <span id="/Plan//" class="leancloud_visitors" data-flag-title="【研二】知行合一">
+            <span id="/Plan//" class="leancloud_visitors" data-flag-title="【研究生规划】厦门大学-移动计算实验室">
                 <em class="post-meta-item-text">阅读量 </em>
                 <i class="leancloud-visitors-count">0</i>
             </span>
@@ -231,12 +313,9 @@ HFSS 软件+ADS 软件+ 电磁场基础理论</h2>
 	});
 </script>
 
-
         
 
-        <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-
-<div class="site-footer gt-c-content-color-first">
+        <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">不积跬步无以至千里
 不积小流无以成江海</div>
     <div class="social-container">
@@ -248,7 +327,15 @@ HFSS 软件+ADS 软件+ 电磁场基础理论</h2>
             
         
             
+                <a href="https://twitter.com/seusunzhen" target="_blank">
+                    <i class="fab fa-twitter gt-c-content-color-first"></i>
+                </a>
+            
         
+            
+                <a href="https://www.weibo.com/u/7313160936" target="_blank">
+                    <i class="fab fa-weibo gt-c-content-color-first"></i>
+                </a>
             
         
             
@@ -259,6 +346,10 @@ HFSS 软件+ADS 软件+ 电磁场基础理论</h2>
         
             
         
+            
+                <a href="https://www.facebook.com/profile.php?id=100015308880333" target="_blank">
+                    <i class="fab fa-facebook gt-c-content-color-first"></i>
+                </a>
             
         
     </div>
@@ -274,7 +365,6 @@ HFSS 软件+ADS 软件+ 电磁场基础理论</h2>
 <script>
   hljs.initHighlightingOnLoad()
 </script>
-
 
     </div>
 </div>
