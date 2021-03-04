@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2021-03-04T16:07:56.280Z</updated>
+    <updated>2021-03-04T16:14:16.534Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -11,6 +11,16 @@
     <logo>https://seutodaysz.github.io/images/avatar.png</logo>
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 九天之遥</rights>
+    <entry>
+        <title type="html"><![CDATA[关于科研的一些想法]]></title>
+        <id>https://seutodaysz.github.io/think/</id>
+        <link href="https://seutodaysz.github.io/think/">
+        </link>
+        <updated>2021-03-04T16:08:55.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://seutodaysz.github.io/post-images/1614874263119.jpg" alt="" loading="lazy"><br>
+作为一个研究生，最大的慕目标在对于搞清楚自己的研究课题和研究方向，才能确定自己的研究内容，取得自己的研究成果。导师就是自己在科研道路上最重要的引路人。想走上做科研的道路，去探索自然，思考社会，成为这个社会的智者。研究，是一种重要的能力。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我所奋斗的目标与意义]]></title>
         <id>https://seutodaysz.github.io/生活所感/</id>
