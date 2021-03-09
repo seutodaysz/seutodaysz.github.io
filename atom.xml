@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://seutodaysz.github.io</id>
     <title>九天之遥</title>
-    <updated>2021-03-07T12:51:04.158Z</updated>
+    <updated>2021-03-09T15:17:00.738Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://seutodaysz.github.io"/>
     <link rel="self" href="https://seutodaysz.github.io/atom.xml"/>
@@ -12,6 +12,46 @@
     <icon>https://seutodaysz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 九天之遥</rights>
     <entry>
+        <title type="html"><![CDATA[电子信息知识体系结构]]></title>
+        <id>https://seutodaysz.github.io/Knowledge/</id>
+        <link href="https://seutodaysz.github.io/Knowledge/">
+        </link>
+        <updated>2021-03-09T13:33:51.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>我的本科专业是电子信息科学与技术，之所以选择这个专业，可以说是由于自己的迷茫，但也是由于自己从大一的时候，就有所依据。那就是清华大学的电子信息科学与技术知识体系MAP。</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1615296999843.png" alt="" loading="lazy"></figure>
+<!-- more -->
+<p>我相信，沿着这个MAP图，我可以很深入的掌握电子信息领域的学科知识结构。写下此文，也是为了总结自己的知识结构，并安排自己的复习计划。</p>
+<!-- more -->
+<h1 id="数学基础">👉数学基础</h1>
+<p>主要是数学一的内容，当然还有复变函数、离散数学等。</p>
+<h2 id="高等数学">高等数学</h2>
+<p>主要是一元微积分、多元微积分</p>
+<h2 id="线性代数">线性代数</h2>
+<p>主要是矩阵的计算与化简，从线性方程到矩阵的运算</p>
+<h2 id="概率论与统计">概率论与统计</h2>
+<p>主要是随机函数的数字特征</p>
+<h1 id="英语基础">👉英语基础</h1>
+<p>主要是单词，表达，语法，各种表达</p>
+<h1 id="电子基础">👉 电子基础</h1>
+<p>电子工程的基础课程</p>
+<h2 id="电路原理">🙏 电路原理</h2>
+<p>主要是电路分析方法</p>
+<h2 id="电磁场与微波技术">🙏 电磁场与微波技术</h2>
+<p>主要麦克斯韦方程组，以及天线设计方法</p>
+<h2 id="数字电子技术">🙏 数字电子技术</h2>
+<p>主要是 逻辑电路、时序电路、脉冲电路分析</p>
+<h2 id="模拟电子技术">🙏 模拟电子技术</h2>
+<p>主要是 二极管、晶体管、电路放大特性分析</p>
+<h2 id="射频电子技术">🙏 射频电子技术</h2>
+<p>主要是射频微波段集成芯片设计</p>
+<h2 id="移动天线设计原理">🙏 移动天线设计原理</h2>
+<p>主要是各种类型的天线设计和天线阵列分析</p>
+<h1 id="通信信号基础">👉 通信信号基础</h1>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[关于科研的一些想法]]></title>
         <id>https://seutodaysz.github.io/think/</id>
         <link href="https://seutodaysz.github.io/think/">
@@ -19,7 +59,7 @@
         <updated>2021-03-04T16:08:55.000Z</updated>
         <content type="html"><![CDATA[<p><img src="https://seutodaysz.github.io/post-images/1614874263119.jpg" alt="" loading="lazy"><br>
 作为一个研究生，最大的慕目标在对于搞清楚自己的研究课题和研究方向，才能确定自己的研究内容，取得自己的研究成果。导师就是自己在科研道路上最重要的引路人。想走上做科研的道路，去探索自然，思考社会，成为这个社会的智者。研究，是一种重要的能力。</p>
-<h1 id="对于自己的一些要求">对于自己的一些要求</h1>
+<h1 id="对于自己的">对于自己的</h1>
 <h1 id="什么才是好的导师">什么才是好的导师</h1>
 <h1 id="如何结交志同道合的好友">如何结交志同道合的好友</h1>
 <h1 id="我为什么要做科研">我为什么要做科研？</h1>
@@ -278,56 +318,6 @@ title可加可不加</p>
 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
 <pre><code>
 </code></pre>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【研究生学习规划】]]></title>
-        <id>https://seutodaysz.github.io/Plan/</id>
-        <link href="https://seutodaysz.github.io/Plan/">
-        </link>
-        <updated>2020-12-13T10:37:07.000Z</updated>
-        <summary type="html"><![CDATA[<p>三年匆匆，找好自己的方向，抓紧时间，脚踏实地。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>三年匆匆，找好自己的方向，抓紧时间，脚踏实地。</p>
-<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://seutodaysz.github.io/post-images/1604126372771.jpg" alt="" loading="lazy"></figure>
-<p>研究生阶段，要具备的能力和知识点清单如下:</p>
-<!-- more -->
-<h1 id="能力清单">👉 能力清单：</h1>
-<p>🙏 1. 自我实现的能力：明确目标、价值，能自我激励完整做事情，自我成长；<br>
-🙏 2. 科研创新的能力：大量阅读论文，总结分析，找问题并提出解决方法；<br>
-🙏 3. 动手实践的能力：超过平均水平的编程能力，独立完成实验；<br>
-🙏 4. 沟通交流的能力：善于学习和沟通，会积极主动和他人沟通；<br>
-🙏 5. 时间管理的能力：能合理管理自己的时间，高效做事；<br>
-🙏 6. 团队协作的能力：帮助他人，带领小组，知识分享和输出的能力</p>
-<!-- more -->
-<h1 id="知识清单">👉 知识清单：</h1>
-<p>研究生期间需要掌握的知识清单：</p>
-<h2 id="编程语言">🏅 编程语言：</h2>
-<p>​       精通 python，matlab，C/C++，Java；<br>
-​       有项目经验，能独立完成实验和科研项目；</p>
-<h2 id="操作系统和工具">💻 操作系统和工具：</h2>
-<p>​ 熟悉Linux的部署、配置，基本命令等；（Ubuntu、Cent OS）<br>
-​ 尽量在Linux上开发和编程；<br>
-​ 能在Linux上搭建常见应用（Apache、ftp等）；</p>
-<h2 id="计算机相关理论">🚀 计算机相关理论：</h2>
-<p>​ 机器学习、数据库、软件工程、大数据等基本概念；<br>
-​ 重点掌握机器学习基本原理；<br>
-​ 掌握深度学习原理； 可参考 数据分析和机器学习资料推荐</p>
-<h2 id="常用工具的熟练掌握">🌉 常用工具的熟练掌握：</h2>
-<p>​ 常规机器学习平台：scikit learn<br>
-​ 深度学习平台：Pytorch、TensorFlow<br>
-​ 数据处理工具包：pandas、numpy<br>
-​ 数据库：my-sql、mongodb</p>
-<h2 id="科研和论文写作">📄 科研和论文写作：</h2>
-<p>​ 英语能力：阅读英文论文、用英文进行论文写作的能力；<br>
-​ 论文写作类工具：Latex、Markdown；Matplotlib、Plot；</p>
-<h2 id="大数据平台构建和数据分析">📊 大数据平台构建和数据分析</h2>
-<p>​ 可选1-2个进行研究（如Hadoop、Spark等）；</p>
-<h2 id="其他工具">📤 其他工具</h2>
-<p>​ 版本控制：Git<br>
-​ 网站：WordPress、Apache、ngnix</p>
 <!-- more -->
 ]]></content>
     </entry>
